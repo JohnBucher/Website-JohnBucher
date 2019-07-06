@@ -1,0 +1,35 @@
+<div class="experience-page-div" style="background-color: white;">
+  <div class="section-title">
+    Work Experience
+  </div>
+
+  <p-carousel headerText="Jobs" [value]="jobs" numVisible="1" circular="circular" easing="easeOutStrong" [style]="{'width':'90%', 'margin':'0 auto'}">
+    <ng-template let-job pTemplate="item">
+      <div class="ui-grid ui-grid-responsive">
+        <div class="ui-row company-picture">
+          <img src="{{job.image}}" class="experience-picture" />
+        </div>
+        <div class="ui-row company-name">
+          <span class="text">{{job.companyName}}</span>
+        </div>
+        <div class="ui-row job-title">
+          <span class="text">{{job.jobTitle}}</span>
+        </div>
+        <div class="ui-row dates">
+          <span class="text"> <span class="date">Date:</span> {{job.dates}}</span>
+        </div>
+        <div class="ui-row responsibilities">
+          <span class="text responsibility-header">Responsibilities:</span>
+        </div>
+        <div class="ui-row responsibilities-list">
+          <ul class="list">
+            <li *ngFor="let item of job.responsibilities" class="li-list">
+              {{item}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+
+</div>

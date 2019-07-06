@@ -1,0 +1,35 @@
+<div class="education-page-div">
+  <div class="section-title">
+    Education
+  </div>
+
+  <p-carousel headerText="Schools" [value]="schools" numVisible="1" circular="circular" easing="easeOutStrong" [style]="{'width':'90%', 'margin':'0 auto'}">
+    <ng-template let-school pTemplate="item">
+      <div class="ui-grid ui-grid-responsive">
+        <div class="ui-row company-picture">
+          <img src="{{school.image}}" class="education-picture" />
+        </div>
+        <div class="ui-row company-name">
+          <span class="text">{{school.schoolName}}</span>
+        </div>
+        <div class="ui-row degree">
+          <span class="text">{{school.degree}}</span>
+        </div>
+        <div class="ui-row dates">
+          <span class="text"> <span class="date">Date:</span> {{school.dates}}</span>
+        </div>
+        <div class="ui-row activities">
+          <span class="text responsibility-header">Honors and Activities:</span>
+        </div>
+        <div class="ui-row activities-list">
+          <ul class="list">
+            <li *ngFor="let item of school.activities" class="li-list">
+              {{item}}
+            </li>
+          </ul>
+        </div>
+      </div>
+    </ng-template>
+  </p-carousel>
+
+</div>

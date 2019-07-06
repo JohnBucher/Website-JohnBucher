@@ -1,0 +1,110 @@
+
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<div class="backgroundImage">
+
+  <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
+    <div style="margin-top: 30%;">
+      <div class="menu-item" (click)="scrollToSection(home); display = false">
+        Home
+      </div>
+      <div class="menu-item" (click)="scrollToSection(aboutMe); display = false">
+        About Me
+      </div>
+      <div class="menu-item" (click)="scrollToSection(skills); display = false">
+        Skills
+      </div>
+      <div class="menu-item" (click)="scrollToSection(experience); display = false">
+        Work Experience
+      </div>
+      <div class="menu-item" (click)="scrollToSection(education); display = false">
+        Education
+      </div>
+      <div class="menu-item" (click)="scrollToSection(research); display = false">
+        Research
+      </div>
+      <div class="menu-item" (click)="scrollToSection(contact); display = false">
+        Contact Me
+      </div>
+
+      <div style="width: 100%;">
+        <div class="sidebar-icon-group sidebar-resume">
+          Resume:
+        </div>
+        <div class="sidebar-icon-group sidebar-pdf-icon">
+          <span><a href="../../assets/Resume - John Bucher.pdf" class="fa fa-file-pdf-o fa-2x" target="_blank"></a></span>
+        </div>
+
+        <div class="sidebar-icon-group">
+          <span><a href="https://www.linkedin.com/in/johnbuchercs/" class="fa fa-linkedin fa-2x sidebar-icon" target="_blank"></a></span>
+          <span><a href="https://github.com/JohnBucher" class="fa fa-github fa-2x" target="_blank"></a></span>
+        </div>
+      </div>
+    </div>
+  </p-sidebar>
+
+  <div class="toolbar" #toolbar style="top: 0px; width: 100%; height: 50px;">
+    <div class="hover">
+      <img src="../../assets/Header-logo-v2.png" width="43" height="32" style="margin-top: 9px; float: left; margin-left: 20px;" (click)="scrollToSection(home);">
+    </div>
+    <div class="hover" (click)="display = true" style="float: right;">
+      <span style="color: white; display: inline-block; vertical-align: middle; line-height: 50px; font-size: 1em; margin-right: 5px;"> MENU </span>
+      <i class="pi pi-bars" style="color: white; display: inline-block; vertical-align: middle; line-height: 50px; font-size: 2em; margin-right: 10px;"></i>
+    </div>
+  </div>
+
+
+
+  <div class="front-page-div" #home>
+    <div class="backgroundImage-content">
+
+      <div class="title-block">
+        <div [@titleFadeRightAnimation]="'in'" class="border-top"></div>
+        <div class="title" [@titleOpacityAnimation]="'in'" style="width: 100%;"> John Bucher </div>
+        <div [@titleFadeLeftAnimation]="'in'" class="border-bottom"></div>
+        <div class="subtitle" [@subTitleOpacityAnimation]="'in'"> Software Engineer | Full Stack Developer | Student </div>
+      </div>
+
+      <div class="learnMoreArrow" [@LearnMoreAnimation]="'in'" style="position: absolute; width: 30vw; bottom: 5vh; left: 35vw;">
+        <div style="font-size: 18px; font-family: 'Titillium Web', sans-serif; font-weight: normal; margin-bottom: 5px;">Learn more</div>
+        <div> <i class="pi pi-arrow-down" style="font-size: 1.5em"></i> </div>
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
+
+<div #aboutMe>
+  <app-background></app-background>
+</div>
+
+<div #skills>
+  <app-skills></app-skills>
+</div>
+
+<div #experience>
+  <app-experience></app-experience>
+</div>
+
+<div #education>
+  <app-education></app-education>
+</div>
+
+<div #research>
+  <app-research></app-research>
+</div>
+
+<div #contact>
+  <app-contact></app-contact>
+</div>
+
+<div class="footer">
+  <div style="text-align: center">
+    John Bucher - 2019
+  </div>
+</div>
