@@ -18,7 +18,7 @@ export class EducationComponent implements OnInit, AfterContentInit {
         location: 'Shippensburg, PA',
         degree: 'Computer Science',
         dates: 'August 2014 - June 2018',
-        image: '../../assets/Ship-Logo.png',
+        image: 'assets/Ship-Logo.png',
         activities: [
           'Shippensburg Honors Program',
           'Computer Programming Team',
@@ -30,7 +30,7 @@ export class EducationComponent implements OnInit, AfterContentInit {
         location: 'Elizabethtown, PA',
         degree: 'High School Diploma',
         dates: 'August 2012 - June 2014',
-        image: '../../assets/EAHS-Logo.png',
+        image: 'assets/EAHS-Logo.png',
         activities: [
           'National Honor Society',
           'Bronze and Silver Duke of Edinburgh (Awards for Community Service)',

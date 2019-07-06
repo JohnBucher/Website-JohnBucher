@@ -19,7 +19,7 @@ export class ExperienceComponent implements OnInit, AfterContentInit {
         companyName: 'Lockheed Martin',
         jobTitle: 'Asc Software Engineer',
         dates: 'July 2018 - Present',
-        image: '../../assets/LM-Logo.png',
+        image: 'assets/LM-Logo.png',
         responsibilities: [
           'Create, maintain, and develop for web-based applications used by the US Government',
           'Particular focuses in regards to Angular and the Spring Framework',
@@ -31,7 +31,7 @@ export class ExperienceComponent implements OnInit, AfterContentInit {
         companyName: 'Computer Aid, Inc',
         jobTitle: 'Software Development Intern',
         dates: 'June 2017 - August 2017',
-        image: '../../assets/CAI-Logo.png',
+        image: 'assets/CAI-Logo.png',
         responsibilities: [
           'Created and maintained relational databases and web-based application including E-commerce websites',
           'Inspected and documented professional Computer Aid, Inc. applications',
