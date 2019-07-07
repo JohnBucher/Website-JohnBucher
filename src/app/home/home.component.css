@@ -148,6 +148,9 @@
     font-size: 14px;
     margin-top: 10px;
   }
+  .section-title {
+    font-size: 44px;
+  }
 }
 @media(max-width: 470px) {
   .subtitle {
@@ -423,6 +426,7 @@
 
 .text {
   margin: 0 auto;
+  text-align: center;
 }
 
 .experience-picture {
