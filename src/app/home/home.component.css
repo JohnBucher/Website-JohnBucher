@@ -17,6 +17,15 @@
   -o-background-size: cover;
 }
 
+/*-------- Mobile Phones --------*/
+@media only screen and (max-device-width : 1024px) {
+  .backgroundImage {
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../../assets/EarthBackground.jpg");
+    background-size: auto;
+    background-attachment: initial;
+  }
+}
+
 .front-page-div {
   color: white;
   height: 100vh;
