@@ -12,6 +12,9 @@
   bottom: 0px;
   height: 100vh;
   z-index: -10;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
 }
 
 .front-page-div {
