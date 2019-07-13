@@ -189,8 +189,8 @@
   overflow: hidden;
   float: none;
   flex-wrap: wrap;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .aboutMe-Text {
@@ -276,8 +276,8 @@
   align-items: center;
   justify-content: center;
   float: none;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   flex-wrap: wrap;
   position: relative;
 }
@@ -364,8 +364,8 @@
 .experience-page-div {
   width: 100%;
   float: none;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .experience-section-title {
@@ -523,8 +523,8 @@ body .education-page-div .ui-carousel .ui-carousel-viewport {
   background-color: #f4f4f4;
   width: 100%;
   float: none;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .education-section-title {
@@ -551,8 +551,8 @@ body .education-page-div .ui-carousel .ui-carousel-viewport {
   align-items: center;
   justify-content: center;
   float: none;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   flex-wrap: wrap;
 }
 
