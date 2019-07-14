@@ -218,7 +218,7 @@
   visibility: hidden;
   height: 0;
   width: 0;
-  top: 30px;
+  top: 20px;
   position: relative;
 }
 
@@ -232,7 +232,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 60px;
+    margin-top: 50px;
     height: auto;
   }
 
@@ -528,6 +528,35 @@ body .education-page-div .ui-carousel .ui-carousel-viewport {
 }
 
 .education-section-title {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  border-bottom: solid;
+  margin-bottom: 60px;
+}
+/* ------------------------------------------------------------------------------------- */
+
+
+
+/* PEOJECTS */
+/* ------------------------------------------------------------------------------------- */
+.projects-page-div {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.projects-section-title {
   width: 80%;
   display: flex;
   align-items: center;
