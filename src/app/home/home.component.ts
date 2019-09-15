@@ -121,8 +121,14 @@ export class HomeComponent implements OnInit, AfterContentInit {
     
   }
 
-  scrollToSection(el: HTMLElement) {
-    el.scrollIntoView({ behavior: 'smooth' });
+  scrollToSection(el: string) {
+    const section = document.getElementById(el);
+    // Account for the height of the fixed header when determining how much to scroll
+    const headerHeight = 50
+
+    // Get the amount you need to scroll to reach the desired section
+    const scrollAmount = section.offsetTop - window.pageYOffset - headerHeight;
+    window.scrollBy({ top: scrollAmount, left: 0, behavior: 'smooth' });
   }
 
 }

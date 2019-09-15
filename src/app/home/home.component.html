@@ -8,25 +8,25 @@
 
   <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
     <div style="margin-top: 10%;">
-      <div class="menu-item" (click)="scrollToSection(home); display = false">
+      <div class="menu-item" (click)="scrollToSection('home'); display = false">
         Home
       </div>
-      <div class="menu-item" (click)="scrollToSection(aboutMe); display = false">
+      <div class="menu-item" (click)="scrollToSection('aboutMe'); display = false">
         Background
       </div>
-      <div class="menu-item" (click)="scrollToSection(skills); display = false">
+      <div class="menu-item" (click)="scrollToSection('skills'); display = false">
         Skills
       </div>
-      <div class="menu-item" (click)="scrollToSection(experience); display = false">
+      <div class="menu-item" (click)="scrollToSection('experience'); display = false">
         Work Experience
       </div>
-      <div class="menu-item" (click)="scrollToSection(education); display = false">
+      <div class="menu-item" (click)="scrollToSection('education'); display = false">
         Education
       </div>
-      <div class="menu-item" (click)="scrollToSection(research); display = false">
+      <div class="menu-item" (click)="scrollToSection('research'); display = false">
         Research
       </div>
-      <div class="menu-item" (click)="scrollToSection(contact); display = false">
+      <div class="menu-item" (click)="scrollToSection('contact'); display = false">
         Contact Me
       </div>
 
@@ -48,7 +48,7 @@
 
   <div class="toolbar" #toolbar style="top: 0px; width: 100%; height: 50px;">
     <div class="hover">
-      <img src="assets/JB-Logo-White-v3.png" width="36" height="36" style="margin-top: 7px; float: left; margin-left: 20px;" (click)="scrollToSection(home);">
+      <img src="assets/JB-Logo-White-v3.png" width="36" height="36" style="margin-top: 7px; float: left; margin-left: 20px;" (click)="scrollToSection('home');">
     </div>
     <div class="hover" (click)="display = true" style="float: right;">
       <span style="color: white; display: inline-block; vertical-align: middle; line-height: 50px; font-size: 1em; margin-right: 5px;"> MENU </span>
@@ -58,7 +58,7 @@
 
 
 
-  <div class="front-page-div" #home>
+  <div class="front-page-div" id="home">
     <div class="backgroundImage-content">
 
       <div class="title-block">
@@ -79,27 +79,27 @@
 </div>
 
 
-<div #aboutMe>
+<div id="aboutMe">
   <app-background></app-background>
 </div>
 
-<div #skills>
+<div id="skills">
   <app-skills></app-skills>
 </div>
 
-<div #experience>
+<div id="experience">
   <app-experience></app-experience>
 </div>
 
-<div #education>
+<div id="education">
   <app-education></app-education>
 </div>
 
-<div #research>
+<div id="research">
   <app-research></app-research>
 </div>
 
-<div #contact>
+<div id="contact">
   <app-contact></app-contact>
 </div>
 
