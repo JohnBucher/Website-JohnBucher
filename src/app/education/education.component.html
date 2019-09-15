@@ -3,8 +3,8 @@
     Education
   </div>
 
-  <p-carousel headerText="Schools" [value]="schools" numVisible="1" circular="circular" easing="easeOutStrong" [style]="{'width':'90%', 'margin':'0 auto'}">
-    <ng-template let-school pTemplate="item">
+  <mat-tab-group style="width: 90%; margin: 0 auto;">
+    <mat-tab *ngFor="let school of schools" [label]="school.schoolName">
       <div class="ui-grid ui-grid-responsive">
         <div class="ui-row company-picture">
           <img src="{{school.image}}" class="education-picture" />
@@ -29,7 +29,8 @@
           </ul>
         </div>
       </div>
-    </ng-template>
-  </p-carousel>
+    </mat-tab>
+  </mat-tab-group>
+
 
 </div>
