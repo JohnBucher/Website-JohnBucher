@@ -20,15 +20,14 @@ import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { DialogModule } from 'primeng/dialog';
 import { ProgressBarModule } from 'primeng/progressbar';
-import { CarouselModule } from 'primeng/carousel';
 import { ToastModule } from 'primeng/toast';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 
 import { MatProgressBarModule } from '@angular/material';
+import { MatTabsModule } from '@angular/material/tabs';
 
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
-import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -52,13 +51,12 @@ import { NgbCarouselModule } from '@ng-bootstrap/ng-bootstrap';
     SidebarModule,
     DialogModule,
     ProgressBarModule,
-    CarouselModule,
     ToastModule,
     InputTextModule,
     InputTextareaModule,
     MatProgressBarModule,
     NgbModule,
-    NgbCarouselModule
+    MatTabsModule
   ],
   exports: [
     MatProgressBarModule
