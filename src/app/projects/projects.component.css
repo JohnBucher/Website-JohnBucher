@@ -1,0 +1,23 @@
+.projects-page-div {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .projects-section-title {
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    border-bottom: solid;
+    margin-bottom: 60px;
+  }

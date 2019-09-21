@@ -1,3 +1,89 @@
+.skills-page-div {
+  background-color: #f4f4f4;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  float: none;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.skills-section-title {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+  border-bottom: solid;
+  margin-bottom: 60px;
+}
+
+.skill-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #404a5b;
+  height: 175px;
+  color: white;
+}
+.skill-off-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #495568;
+  height: 175px;
+  color: white;
+}
+
+.col-title-text {
+  color: lightblue;
+  font-size: 24px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.overlay {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #030b19;
+  height: 175px;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+  position: absolute;
+}
+
+.hover-col:hover .overlay {
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.skill-button {
+  height: 50px;
+  width: 50px;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in;
+  position: absolute;
+}
+
+.hover-col:hover .skill-button {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.popUp-skill-title {
+  font-weight: bold;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
 
 .skill-year-star {
   color: #0b1e42;

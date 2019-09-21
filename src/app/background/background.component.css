@@ -1,0 +1,82 @@
+.aboutMe-page-div {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    float: none;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .aboutMe-Text {
+    color: grey;
+    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-right: 10px;
+    top: 0px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 400px;
+  }
+  
+  .aboutMe-Picture {
+    float: left;
+    margin-left: 30px;
+    margin-right: 50px;
+    position: relative;
+  }
+  
+  .aboutMe-Picture-Circle {
+    visibility: hidden;
+    height: 0;
+    width: 0;
+    top: 20px;
+    position: relative;
+  }
+  
+  @media(max-width: 875px) {
+    .aboutMe-Text {
+      float: none;
+      margin-left: 3vw;
+      margin-right: 3vw;
+      padding-left: 0px;
+      padding-right: 0px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 50px;
+      height: auto;
+    }
+  
+    .aboutMe-section-title {
+      margin-bottom: 25px;
+    }
+  
+    .aboutMe-Picture {
+      visibility: hidden;
+      float: none;
+      height: 0;
+      width: 0;
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+  
+    .aboutMe-Picture-Circle {
+      visibility: visible;
+      height: 300px;
+      width: initial;
+      float: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  
+    .aboutMe {
+      float: none;
+    }
+  }
