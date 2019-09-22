@@ -1,5 +1,5 @@
 
-.backgroundImage {
+.background-container {
   /* The image used */
   background-image: url("../../assets/EarthBackground.jpg");
   background-size: cover;
@@ -17,7 +17,7 @@
 
 /*-------- Mobile Phones --------*/
 @media only screen and (max-device-width : 1024px) {
-  .backgroundImage {
+  .background-container {
     background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../../assets/EarthBackground.jpg");
     background-size: auto;
     background-attachment: initial;
@@ -54,7 +54,7 @@
   height: 160px;
 }
 
-.backgroundImage-content {
+.background-container-content {
   text-align: center;
   height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
@@ -68,6 +68,7 @@
   font-weight: bold;
   width: 450px;
   opacity: 0;
+  width: 100%;
 }
 
 .title-block {
@@ -98,6 +99,19 @@
   color: white;
   margin-bottom: 50px;
   box-shadow: 1px 1px 30px 1px #303030;
+}
+
+.learn-more-arrow {
+  position: absolute; 
+  width: 30vw; 
+  bottom: 5vh; 
+  left: 35vw;
+}
+.learn-more-text {
+  font-size: 18px; 
+  font-family: 'Titillium Web', sans-serif; 
+  font-weight: normal; 
+  margin-bottom: 5px;
 }
 
 @media(max-width: 600px) {

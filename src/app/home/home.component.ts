@@ -1,6 +1,5 @@
-import { Component, OnInit, AfterContentInit, ViewEncapsulation } from '@angular/core';
-import { trigger, state, style, animate, transition, keyframes, query, stagger } from '@angular/animations';
-import { delay } from 'q';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { trigger, state, style, animate, transition } from '@angular/animations';
 
 @Component({
   selector: 'app-home',
@@ -55,39 +54,27 @@ import { delay } from 'q';
 //-------------------------------------------------------------------------------------------
   ],
 })
-export class HomeComponent implements OnInit, AfterContentInit {
+export class HomeComponent implements OnInit {
   display: boolean;
 
   constructor() {
-    
   }
 
   ngOnInit() {
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
-    let vh = window.innerHeight * 0.01;
     // Then we set the value in the --vh custom property to the root of the document
+    let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
 
-    const width = window.innerWidth;
-    if (width >= 767) {
-      let skillBar = document.getElementsByClassName('skill-industry')[0];
-      let otherBar = document.getElementsByClassName('skill-other')[0];
-      skillBar.setAttribute("style", "height: 175px; color: white; background-color: #495568;");
-      otherBar.setAttribute("style", "height: 175px; color: white; background-color: #404a5b;");
-    }
-    else if (width <= 767) {
-      let skillBar = document.getElementsByClassName('skill-industry')[0];
-      let otherBar = document.getElementsByClassName('skill-other')[0];
-      skillBar.setAttribute("style", "height: 175px; color: white; background-color: #404a5b;");
-      otherBar.setAttribute("style", "height: 175px; color: white; background-color: #495568;");
-    }
+    // Set initial values for skill-column colorings
+    this.checkSkillColumnColors();
 
 
     // Keep track of the current scroll position for CSS
     window.addEventListener('scroll', () => {
       const scrolled = window.scrollY;
-
+      // If the user has scrolled past the home-page, set the tollbar to be fixed at the top of the page
       if (scrolled >= (window.innerHeight - 65)) {
         let toolbar = document.getElementsByClassName('toolbar')[0];
         toolbar.setAttribute("style", "position: fixed; z-index: 1000; background-color: 	#050E1F; width: 100%;");
@@ -98,10 +85,16 @@ export class HomeComponent implements OnInit, AfterContentInit {
       }
     })
 
-    // Keep track of the current screen width for CSS
+    // Keep track of the current screen width for CSS purposes
     window.addEventListener('resize', () => {
-      const width = window.innerWidth;
+      this.checkSkillColumnColors();
+    })
+  }
 
+  checkSkillColumnColors() {
+    const width = window.innerWidth;
+
+      // If the skill sections collapse into one column account for that by getting the 3rd and 4th section and alter the color ordering
       if (width >= 767) {
         let skillBar = document.getElementsByClassName('skill-industry')[0];
         let otherBar = document.getElementsByClassName('skill-other')[0];
@@ -114,11 +107,6 @@ export class HomeComponent implements OnInit, AfterContentInit {
         skillBar.setAttribute("style", "height: 175px; color: white; background-color: #404a5b;");
         otherBar.setAttribute("style", "height: 175px; color: white; background-color: #495568;");
       }
-    })
-  }
-
-  ngAfterContentInit() {
-    
   }
 
   scrollToSection(el: string) {
@@ -130,5 +118,4 @@ export class HomeComponent implements OnInit, AfterContentInit {
     const scrollAmount = section.offsetTop - window.pageYOffset - headerHeight;
     window.scrollBy({ top: scrollAmount, left: 0, behavior: 'smooth' });
   }
-
 }

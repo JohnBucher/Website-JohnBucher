@@ -1,20 +1,25 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
 
+<meta name="viewport" content="width=device-width, initial-scale=1" />
 <div class='container-fluid'>
-
   <div class='body-content'>
+    <!-- Landing Section -->
     <app-home></app-home>
-  </div>
 
-  <!--
-  <div class='row'>
-    <div class='col-sm-3'>
-      <app-nav-menu></app-nav-menu>
-    </div>
-    <div class='col-sm-9 body-content'>
-      <router-outlet></router-outlet>
+    <!-- Additional Sections -->
+    <div id="aboutMe">    <app-background></app-background> </div>
+    <div id="skills">     <app-skills></app-skills>         </div>
+    <div id="experience"> <app-experience></app-experience> </div>
+    <div id="education">  <app-education></app-education>   </div>
+    <div id="research">   <app-research></app-research>     </div>
+    <div id="contact">    <app-contact></app-contact>       </div>
+    
+    <!-- Footer -->
+    <div class="footer">
+      John Bucher - 2019
     </div>
   </div>
-  -->
-
 </div>
