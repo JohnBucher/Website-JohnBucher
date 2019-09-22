@@ -7,7 +7,6 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
 import { HomeComponent } from './home/home.component';
-import { HeaderComponent } from './header/header.component';
 import { BackgroundComponent } from './background/background.component';
 import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
@@ -33,7 +32,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   declarations: [
     AppComponent,
     HomeComponent,
-    HeaderComponent,
     BackgroundComponent,
     SkillsComponent,
     ExperienceComponent,
