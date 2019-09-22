@@ -24,19 +24,27 @@
     height: 400px;
   }
   
-  .background-Picture {
+  .background-picture-div {
     float: left;
     margin-left: 30px;
     margin-right: 50px;
     position: relative;
   }
+  .background-picture {
+    width: 350px; 
+    height: 400px;
+  }
   
-  .background-Picture-Circle {
+  .background-picture-circle-div {
     visibility: hidden;
     height: 0;
     width: 0;
     top: 20px;
     position: relative;
+  }
+  .background-picture-circle {
+    width: 275px; 
+    height: 300px;
   }
   
   @media(max-width: 875px) {
@@ -57,7 +65,7 @@
       margin-bottom: 25px;
     }
   
-    .background-Picture {
+    .background-picture-div {
       visibility: hidden;
       float: none;
       height: 0;
@@ -66,7 +74,7 @@
       margin-bottom: 0px;
     }
   
-    .background-Picture-Circle {
+    .background-picture-circle-div {
       visibility: visible;
       height: 300px;
       width: initial;
