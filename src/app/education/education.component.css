@@ -5,18 +5,3 @@
     padding-top: 50px;
     padding-bottom: 50px;
   }
-  
-  .education-section-title {
-    width: 100%;
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-    font-weight: bold;
-    background-color: #050E1F;
-    color: white;
-    margin-bottom: 50px;
-    box-shadow: 1px 1px 30px 1px #303030;
-  }
