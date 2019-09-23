@@ -68,7 +68,7 @@
   font-weight: bold;
   width: 450px;
   opacity: 0;
-  width: 100%;
+  width: auto;
 }
 
 .title-block {
@@ -117,7 +117,6 @@
 @media(max-width: 600px) {
   .title {
     font-size: 66px;
-    width: 450px;
   }
   .subtitle {
     font-size: 18px;
@@ -144,7 +143,6 @@
 @media(max-width: 512px) {
   .title {
     font-size: 60px;
-    width: 450px;
   }
   .subtitle {
     font-size: 14px;
