@@ -1,6 +1,4 @@
-import { Component, OnInit, AfterContentInit, ViewEncapsulation } from '@angular/core';
-import { trigger, state, style, animate, transition, keyframes, query, stagger } from '@angular/animations';
-import { delay } from 'q';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-contact',
@@ -8,17 +6,8 @@ import { delay } from 'q';
   styleUrls: ['./contact.component.css', '../app.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ContactComponent implements OnInit, AfterContentInit {
+export class ContactComponent {
 
   constructor() {
-
-  }
-
-  ngOnInit() {
-    
-  }
-
-  ngAfterContentInit() {
-    
   }
 }
