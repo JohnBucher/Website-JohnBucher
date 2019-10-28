@@ -1,4 +1,16 @@
 <div class="background-container">
+  <div class="mask" [@maskAnimate]="'in'" style="position: absolute; width: 100%; height: 100%; background-color: #242424;"></div>
+  
+  <img src="assets/B-Logo-White.png" [@logoBAnimate]="logo_J_state" 
+    (@logoBAnimate.done)="onJLogoAnimationEvent($event)"
+    width="150" 
+    height="150" 
+    style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;">
+  <img src="assets/J-Logo-White.png" [@logoJAnimate]="logo_B_state"
+    (@logoJAnimate.done)="onBLogoAnimationEvent($event)"
+    width="150"
+    height="150"
+    style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;">
   
   <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
     <div class="sidebar-container">
@@ -40,10 +52,10 @@
   <div class="front-page-div" id="home">
     <div class="background-container-content">
       <div class="title-block">
-        <div [@titleFadeRightAnimation]="'in'" class="border-top"></div>
-        <div class="title" [@titleOpacityAnimation]="'in'"> John Bucher </div>
-        <div [@titleFadeLeftAnimation]="'in'" class="border-bottom"></div>
-        <div class="subtitle" [@subTitleOpacityAnimation]="'in'"> Software Engineer | Full Stack Developer | Student </div>
+        <div class="border-top"></div>
+        <div class="title"> John Bucher </div>
+        <div class="border-bottom"></div>
+        <div class="subtitle"> Software Engineer | Full Stack Developer | Student </div>
       </div>
 
       <div class="learn-more-arrow" [@LearnMoreAnimation]="'in'">

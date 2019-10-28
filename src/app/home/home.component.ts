@@ -52,10 +52,45 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
       ]),
     ]),
 //-------------------------------------------------------------------------------------------
+trigger('logoBAnimate', [
+  state('in', style({ opacity: 1, transform: 'translateY(0%)', width: '150px', height: '150px' })),
+  state('resize', style({ opacity: 1, width: '36px', height: '36px', margin: '7px 0px 0px 20px', float: 'left' })),
+  state('disappear', style({ display: 'none' })),
+  transition('in => resize', animate('0.75s 1s ease-in')),
+  transition('resize => disappear', animate('1s 0s')),
+  transition(':enter', [
+    style({ opacity: 0, transform: 'translateY(-30%)', width: '150px', height: '150px' }),
+    animate('1s 500ms ease-in-out')
+  ]),
+]),
+//-------------------------------------------------------------------------------------------
+trigger('logoJAnimate', [
+  state('in', style({ opacity: 1, transform: 'translateX(0%)', width: '150px', height: '150px' })),
+  state('resize', style({ opacity: 1, width: '36px', height: '36px', margin: '7px 0px 0px 20px', float: 'left' })),
+  state('disappear', style({ display: 'none' })),
+  transition('in => resize', animate('0.75s 1s ease-in')),
+  transition('resize => disappear', animate('1s 0s')),
+  transition(':enter', [
+    style({ opacity: 0, transform: 'translateX(-30%)', width: '150px', height: '150px' }),
+    animate('1s 500ms ease-in-out')
+  ]),
+]),
+//-------------------------------------------------------------------------------------------
+trigger('maskAnimate', [
+  state('in', style({ opacity: 0, display: 'none' })),
+  transition(':enter', [
+    style({ opacity: 1 }),
+    animate('1s 2.5s ease-in-out')
+  ]),
+]),
+//-------------------------------------------------------------------------------------------
   ],
 })
 export class HomeComponent implements OnInit {
   display: boolean;
+
+  logo_B_state: string = 'in';
+  logo_J_state: string = 'in';
 
   constructor() {
   }
@@ -117,5 +152,20 @@ export class HomeComponent implements OnInit {
     // Get the amount you need to scroll to reach the desired section
     const scrollAmount = section.offsetTop - window.pageYOffset - headerHeight;
     window.scrollBy({ top: scrollAmount, left: 0, behavior: 'smooth' });
+  }
+
+  onJLogoAnimationEvent( event: AnimationEvent ) {
+    if (this.logo_J_state === 'in') {
+      this.logo_J_state = 'resize';
+    } else if (this.logo_J_state === 'resize') {
+      this.logo_J_state = 'disappear';
+    }
+  }
+  onBLogoAnimationEvent( event: AnimationEvent ) {
+    if (this.logo_B_state === 'in') {
+      this.logo_B_state = 'resize';
+    } else if (this.logo_B_state === 'resize') {
+      this.logo_B_state = 'disappear';
+    }
   }
 }
