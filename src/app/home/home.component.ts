@@ -7,90 +7,54 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   styleUrls: ['./home.component.css', '../app.component.css'],
   encapsulation: ViewEncapsulation.None,
   animations: [
-//-------------------------------------------------------------------------------------------
-    trigger('titleFadeRightAnimation', [
-      state('in', style({ opacity: 1, transform: 'scale(1, 1)' })),
-      transition(':enter', [
-        style({ opacity: 0, transform: 'scale(0, 1)' }),
-        animate('0.5s 0.75s')
+  // -------------------------------------------------------------------------------------------
+      trigger('LearnMoreAnimation', [
+        state('in', style({ opacity: 1, transform: 'translateY(0%)' })),
+        transition(':enter', [
+          style({ opacity: 0, transform: 'translateY(30%)' }),
+          animate('0.75s 4s ease-in')
+        ]),
+        transition(':leave', [
+          style({ opacity: 0, transform: 'translateY(-30%)' }),
+          animate('500ms ease-out')
+        ]),
       ]),
-    ]),
-//-------------------------------------------------------------------------------------------
-    trigger('titleFadeLeftAnimation', [
-      state('in', style({ opacity: 1, transform: 'scaleX(1)' })),
-      transition(':enter', [
-        style({ opacity: 0, transform: 'scaleX(0)' }),
-        animate('0.5s 0.75s')
-      ]),
-    ]),
-//-------------------------------------------------------------------------------------------
-    trigger('titleOpacityAnimation', [
-      state('in', style({ opacity: 1 })),
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate('1s 1.5s')
-      ]),
-    ]),
-//-------------------------------------------------------------------------------------------
-    trigger('subTitleOpacityAnimation', [
-      state('in', style({ opacity: 1 })),
-      transition(':enter', [
-        style({ opacity: 0 }),
-        animate('2s 2.5s')
-      ]),
-    ]),
-//-------------------------------------------------------------------------------------------
-    trigger('LearnMoreAnimation', [
-      state('in', style({ opacity: 1, transform: 'translateY(0%)' })),
-      transition(':enter', [
-        style({ opacity: 0, transform: 'translateY(30%)' }),
-        animate('0.75s 4s ease-in')
-      ]),
-      transition(':leave', [
-        style({ opacity: 0, transform: 'translateY(-30%)' }),
-        animate('500ms ease-out')
-      ]),
-    ]),
-//-------------------------------------------------------------------------------------------
-trigger('logoBAnimate', [
-  state('in', style({ opacity: 1, transform: 'translateY(0%)', width: '150px', height: '150px' })),
-  state('resize', style({ opacity: 1, width: '36px', height: '36px', margin: '7px 0px 0px 20px', float: 'left' })),
-  state('disappear', style({ display: 'none' })),
-  transition('in => resize', animate('0.75s 1s ease-in')),
-  transition('resize => disappear', animate('1s 0s')),
-  transition(':enter', [
-    style({ opacity: 0, transform: 'translateY(-30%)', width: '150px', height: '150px' }),
-    animate('1s 500ms ease-in-out')
+  // -------------------------------------------------------------------------------------------
+  trigger('logoBAnimate', [
+    state('out', style({ opacity: 0, transform: 'translateY(-30%)', width: '150px', height: '150px' })),
+    state('in', style({ opacity: 1, transform: 'translateY(0%)', width: '150px', height: '150px' })),
+    state('resize', style({ opacity: 1, width: '36px', height: '36px', 'margin-top': '7px', 'margin-left': '20px', float: 'left' })),
+    state('disappear', style({ display: 'none' })),
+
+    transition('out => in', animate('1s 500ms ease-in-out')),
+    transition('in => resize', animate('0.75s 1s ease-in-out')),
+    transition('resize => disappear', animate('0.5s 0s')),
   ]),
-]),
-//-------------------------------------------------------------------------------------------
-trigger('logoJAnimate', [
-  state('in', style({ opacity: 1, transform: 'translateX(0%)', width: '150px', height: '150px' })),
-  state('resize', style({ opacity: 1, width: '36px', height: '36px', margin: '7px 0px 0px 20px', float: 'left' })),
-  state('disappear', style({ display: 'none' })),
-  transition('in => resize', animate('0.75s 1s ease-in')),
-  transition('resize => disappear', animate('1s 0s')),
-  transition(':enter', [
-    style({ opacity: 0, transform: 'translateX(-30%)', width: '150px', height: '150px' }),
-    animate('1s 500ms ease-in-out')
+  // -------------------------------------------------------------------------------------------
+  trigger('logoJAnimate', [
+    state('out', style({ opacity: 0, transform: 'translateX(-30%)', width: '150px', height: '150px' })),
+    state('in', style({ opacity: 1, transform: 'translateX(0%)', width: '150px', height: '150px' })),
+    state('resize', style({ opacity: 1, width: '36px', height: '36px', 'margin-top': '7px', 'margin-left': '20px', float: 'left' })),
+    state('disappear', style({ display: 'none' })),
+
+    transition('out => in', animate('1s 500ms ease-in-out')),
+    transition('in => resize', animate('0.75s 1s ease-in-out')),
+    transition('resize => disappear', animate('0.5s 0s')),
   ]),
-]),
-//-------------------------------------------------------------------------------------------
-trigger('maskAnimate', [
-  state('in', style({ opacity: 0, display: 'none' })),
-  transition(':enter', [
-    style({ opacity: 1 }),
-    animate('1s 2.5s ease-in-out')
+  // -------------------------------------------------------------------------------------------
+  trigger('maskAnimate', [
+    state('in', style({ opacity: 0, display: 'none' })),
+    transition(':enter', [
+      style({ opacity: 1 }),
+      animate('1s 2.5s ease-in-out')
+    ]),
   ]),
-]),
-//-------------------------------------------------------------------------------------------
-  ],
-})
+]})
 export class HomeComponent implements OnInit {
   display: boolean;
 
-  logo_B_state: string = 'in';
-  logo_J_state: string = 'in';
+  logoBState = 'out';
+  logoJState = 'out';
 
   constructor() {
   }
@@ -101,10 +65,8 @@ export class HomeComponent implements OnInit {
     let vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-
     // Set initial values for skill-column colorings
     this.checkSkillColumnColors();
-
 
     // Keep track of the current scroll position for CSS
     window.addEventListener('scroll', () => {
@@ -155,17 +117,22 @@ export class HomeComponent implements OnInit {
   }
 
   onJLogoAnimationEvent( event: AnimationEvent ) {
-    if (this.logo_J_state === 'in') {
-      this.logo_J_state = 'resize';
-    } else if (this.logo_J_state === 'resize') {
-      this.logo_J_state = 'disappear';
+    console.log('J State: ' + this.logoJState);
+    if (this.logoJState === 'out') {
+      this.logoJState = 'in';
+    } else if (this.logoJState === 'in') {
+      this.logoJState = 'resize';
+    } else if (this.logoJState === 'resize') {
+      this.logoJState = 'disappear';
     }
   }
   onBLogoAnimationEvent( event: AnimationEvent ) {
-    if (this.logo_B_state === 'in') {
-      this.logo_B_state = 'resize';
-    } else if (this.logo_B_state === 'resize') {
-      this.logo_B_state = 'disappear';
+    if (this.logoBState === 'out') {
+      this.logoBState = 'in';
+    } else if (this.logoBState === 'in') {
+      this.logoBState = 'resize';
+    } else if (this.logoBState === 'resize') {
+      this.logoBState = 'disappear';
     }
   }
 }
