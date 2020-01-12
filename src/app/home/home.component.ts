@@ -71,7 +71,7 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
     // Then we set the value in the --vh custom property to the root of the document
-    let vh = window.innerHeight * 0.01;
+    const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
     // Set initial values for skill-column colorings
@@ -80,45 +80,40 @@ export class HomeComponent implements OnInit {
     // Keep track of the current scroll position for CSS
     window.addEventListener('scroll', () => {
       const scrolled = window.scrollY;
+      const toolbar = document.getElementsByClassName('toolbar')[0];
       // If the user has scrolled past the home-page, set the tollbar to be fixed at the top of the page
       if (scrolled >= (window.innerHeight - 65)) {
-        let toolbar = document.getElementsByClassName('toolbar')[0];
-        toolbar.setAttribute("style", "position: fixed; z-index: 1000; background-color: 	#050E1F; width: 100%;");
+        toolbar.setAttribute('style', 'position: fixed; z-index: 1000; background-color: #050E1F; width: 100%;');
+      } else if (scrolled <= (window.innerHeight - 65)) {
+        toolbar.setAttribute('style', 'position: initial;');
       }
-      else if (scrolled <= (window.innerHeight - 65)) {
-        let toolbar = document.getElementsByClassName('toolbar')[0];
-        toolbar.setAttribute("style", "position: initial;");
-      }
-    })
+    });
 
     // Keep track of the current screen width for CSS purposes
     window.addEventListener('resize', () => {
       this.checkSkillColumnColors();
-    })
+    });
   }
 
   checkSkillColumnColors() {
     const width = window.innerWidth;
+    const skillBar = document.getElementsByClassName('skill-industry')[0];
+    const otherBar = document.getElementsByClassName('skill-other')[0];
 
-      // If the skill sections collapse into one column account for that by getting the 3rd and 4th section and alter the color ordering
-      if (width >= 767) {
-        let skillBar = document.getElementsByClassName('skill-industry')[0];
-        let otherBar = document.getElementsByClassName('skill-other')[0];
-        skillBar.setAttribute("style", "height: 175px; color: white; background-color: #495568;");
-        otherBar.setAttribute("style", "height: 175px; color: white; background-color: #404a5b;");
-      }
-      else if (width <= 767) {
-        let skillBar = document.getElementsByClassName('skill-industry')[0];
-        let otherBar = document.getElementsByClassName('skill-other')[0];
-        skillBar.setAttribute("style", "height: 175px; color: white; background-color: #404a5b;");
-        otherBar.setAttribute("style", "height: 175px; color: white; background-color: #495568;");
-      }
+    // If the skill sections collapse into one column account for that by getting the 3rd and 4th section and alter the color ordering
+    if (width >= 767) {
+      skillBar.setAttribute('style', 'height: 175px; color: white; background-color: #495568;');
+      otherBar.setAttribute('style', 'height: 175px; color: white; background-color: #404a5b;');
+    } else if (width <= 767) {
+      skillBar.setAttribute('style', 'height: 175px; color: white; background-color: #404a5b;');
+      otherBar.setAttribute('style', 'height: 175px; color: white; background-color: #495568;');
+    }
   }
 
   scrollToSection(el: string) {
     const section = document.getElementById(el);
     // Account for the height of the fixed header when determining how much to scroll
-    const headerHeight = 50
+    const headerHeight = 50;
 
     // Get the amount you need to scroll to reach the desired section
     const scrollAmount = section.offsetTop - window.pageYOffset - headerHeight;

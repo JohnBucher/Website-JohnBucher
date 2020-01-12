@@ -1,7 +1,4 @@
-import { Component, OnInit, AfterContentInit, ViewEncapsulation } from '@angular/core';
-import { trigger, state, style, animate, transition, keyframes, query, stagger } from '@angular/animations';
-import { delay } from 'q';
-import { MessageService } from 'primeng/components/common/messageservice';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-experience',
@@ -9,7 +6,7 @@ import { MessageService } from 'primeng/components/common/messageservice';
   styleUrls: ['./experience.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ExperienceComponent implements OnInit, AfterContentInit {
+export class ExperienceComponent {
   jobs: Job[];
 
   constructor() {
@@ -40,20 +37,6 @@ export class ExperienceComponent implements OnInit, AfterContentInit {
       }
     ];
   }
-
-  ngOnInit() {
-    
-  }
-
-  ngAfterContentInit() {
-    
-  }
-
-  /*
-  selectJob(job: Job) {
-    this.messageService.add({ severity: 'info', summary: 'Job Selected', detail: 'Company Name:' + job.companyName });
-  }
-  */
 }
 
 export class Job {

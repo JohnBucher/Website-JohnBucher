@@ -1,6 +1,4 @@
-import { Component, OnInit, AfterContentInit, ViewEncapsulation } from '@angular/core';
-import { trigger, state, style, animate, transition, keyframes, query, stagger } from '@angular/animations';
-import { delay } from 'q';
+import { Component, AfterContentInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-skills',
@@ -8,28 +6,21 @@ import { delay } from 'q';
   styleUrls: ['./skills.component.css', '../app.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class SkillsComponent implements OnInit, AfterContentInit {
+export class SkillsComponent implements AfterContentInit {
 
-  state: string = 'small';
-  frontEndSymbol: string = "</ >";
-  frontEndText: string = "Front End";
-  backEndSymbol: string = "{ }";
-  backEndText: string = "Back End";
+  state = 'small';
+  frontEndSymbol = '</ >';
+  frontEndText = 'Front End';
+  backEndSymbol = '{ }';
+  backEndText = 'Back End';
 
-  //Dialog booleans
-  frontEndDialog: boolean = false;
-  backEndDialog: boolean = false;
-  industryStandardsDialog: boolean = false;
-  otherSkillsDialog: boolean = false;
-
-  testText = '';
+  // Dialog booleans
+  frontEndDialog = false;
+  backEndDialog = false;
+  industryStandardsDialog = false;
+  otherSkillsDialog = false;
 
   constructor() {
-
-  }
-
-  ngOnInit() {
-    
   }
 
   ngAfterContentInit() {

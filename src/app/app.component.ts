@@ -7,8 +7,4 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Website-JohnBucher';
-
-  private testClick() {
-    console.log("entered method");
-  }
 }

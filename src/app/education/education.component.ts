@@ -1,6 +1,4 @@
-import { Component, OnInit, AfterContentInit, ViewEncapsulation } from '@angular/core';
-import { trigger, state, style, animate, transition, keyframes, query, stagger } from '@angular/animations';
-import { delay } from 'q';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-education',
@@ -8,7 +6,7 @@ import { delay } from 'q';
   styleUrls: ['./education.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class EducationComponent implements OnInit, AfterContentInit {
+export class EducationComponent {
   schools: School[];
 
   constructor() {
@@ -22,7 +20,8 @@ export class EducationComponent implements OnInit, AfterContentInit {
         activities: [
           'Shippensburg Honors Program',
           'Computer Programming Team',
-          'Participant in the 2018 Minds at Work Conference presenting the research project: \'The Prevalence and Impact of the \'QWERTY Effect\' on the Russian Language\''
+          `Participant in the 2018 Minds at Work Conference presenting the research project:
+            \"The Prevalence and Impact of the \'QWERTY Effect\' on the Russian Language\"`
         ]
       },
       {
@@ -38,14 +37,6 @@ export class EducationComponent implements OnInit, AfterContentInit {
         ]
       }
     ];
-  }
-
-  ngOnInit() {
-    
-  }
-
-  ngAfterContentInit() {
-    
   }
 }
 

@@ -1,6 +1,4 @@
-import { Component, OnInit, AfterContentInit, ViewEncapsulation } from '@angular/core';
-import { trigger, state, style, animate, transition, keyframes, query, stagger } from '@angular/animations';
-import { delay } from 'q';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-projects',
@@ -8,16 +6,8 @@ import { delay } from 'q';
   styleUrls: ['./projects.component.css', '../app.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ProjectsComponent implements OnInit, AfterContentInit {
+export class ProjectsComponent {
 
   constructor() {
-  }
-
-  ngOnInit() {
-
-  }
-
-  ngAfterContentInit() {
-
   }
 }

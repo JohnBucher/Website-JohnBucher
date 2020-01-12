@@ -30,6 +30,7 @@
   background-color: #404a5b;
   height: 175px;
   color: white;
+  text-align: center;
 }
 .skill-off-col {
   display: flex;
@@ -38,6 +39,7 @@
   background-color: #495568;
   height: 175px;
   color: white;
+  text-align: center;
 }
 
 .col-title-text {
