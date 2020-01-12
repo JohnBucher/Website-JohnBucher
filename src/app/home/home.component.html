@@ -1,16 +1,10 @@
 <div class="background-container">
-  <div class="mask" [@maskAnimate]="'in'" style="position: absolute; width: 100%; height: 100%; background-color: #242424;"></div>
-
-  <img src="assets/B-Logo-White.png" [@logoBAnimate]="logoBState" 
-    (@logoBAnimate.done)="onBLogoAnimationEvent($event)"
-    width="150" 
-    height="150" 
-    style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;">
-  <img src="assets/J-Logo-White.png" [@logoJAnimate]="logoJState"
-    (@logoJAnimate.done)="onJLogoAnimationEvent($event)"
-    width="150"
-    height="150"
-    style="position: absolute; left: 0; right: 0; top: 0; bottom: 0; margin: auto;">
+  
+  <div class="mask" [@maskAnimate]="'in'"></div>
+  <img src="assets/B-Logo-White.png" [@logoBAnimate]="logoBState" class="jb-logo"
+    (@logoBAnimate.done)="onBLogoAnimationEvent($event)" width="150" height="150">
+  <img src="assets/J-Logo-White.png" [@logoJAnimate]="logoJState" class="jb-logo"
+    (@logoJAnimate.done)="onJLogoAnimationEvent($event)" width="150" height="150">
   
   <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
     <div class="sidebar-container">

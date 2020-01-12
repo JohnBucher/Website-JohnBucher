@@ -25,9 +25,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     state('in', style({ opacity: 1, transform: 'translateY(0%)' })),
     state('resize', style({ opacity: 1, transform: 'scale(0.24, 0.24)', 'transform-origin': 'left top',
                             'margin-top': '7px', 'margin-left': '20px' })),
+    state('mobile-fade-out', style({ opacity: 0 })),
     state('disappear', style({ display: 'none' })),
 
     transition('out => in', animate('1s 500ms ease-in-out')),
+    transition('in => mobile-fade-out', animate('0.5s 0.5s')),
     transition('in => resize', animate('0.75s 1s ease-in-out')),
     transition('resize => disappear', animate('0.5s 0s')),
   ]),
@@ -37,9 +39,11 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
     state('in', style({ opacity: 1, transform: 'translateX(0%)' })),
     state('resize', style({ opacity: 1, transform: 'scale(0.24, 0.24)', 'transform-origin': 'left top',
                             'margin-top': '7px', 'margin-left': '20px' })),
+    state('mobile-fade-out', style({ opacity: 0 })),
     state('disappear', style({ display: 'none' })),
 
     transition('out => in', animate('1s 500ms ease-in-out')),
+    transition('in => mobile-fade-out', animate('0.5s 0.5s')),
     transition('in => resize', animate('0.75s 1s ease-in-out')),
     transition('resize => disappear', animate('0.5s 0s')),
   ]),
@@ -57,8 +61,11 @@ export class HomeComponent implements OnInit {
 
   logoBState = 'out';
   logoJState = 'out';
+  isMobile = false;
 
   constructor() {
+    // Detect if the device is mobile to determine what animations to play
+    this.isMobile = window.matchMedia('only screen and (max-width: 760px)').matches;
   }
 
   ngOnInit() {
@@ -122,6 +129,8 @@ export class HomeComponent implements OnInit {
     console.log('J State: ' + this.logoJState);
     if (this.logoJState === 'out') {
       this.logoJState = 'in';
+    } else if (this.isMobile && this.logoJState === 'in') {
+      this.logoJState = 'mobile-fade-out';
     } else if (this.logoJState === 'in') {
       this.logoJState = 'resize';
     } else if (this.logoJState === 'resize') {
@@ -131,6 +140,8 @@ export class HomeComponent implements OnInit {
   onBLogoAnimationEvent( event: AnimationEvent ) {
     if (this.logoBState === 'out') {
       this.logoBState = 'in';
+    } else if (this.isMobile && this.logoBState === 'in') {
+      this.logoBState = 'mobile-fade-out';
     } else if (this.logoBState === 'in') {
       this.logoBState = 'resize';
     } else if (this.logoBState === 'resize') {
