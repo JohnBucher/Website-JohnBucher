@@ -21,9 +21,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
       ]),
   // -------------------------------------------------------------------------------------------
   trigger('logoBAnimate', [
-    state('out', style({ opacity: 0, transform: 'translateY(-30%)', width: '150px', height: '150px' })),
-    state('in', style({ opacity: 1, transform: 'translateY(0%)', width: '150px', height: '150px' })),
-    state('resize', style({ opacity: 1, width: '36px', height: '36px', 'margin-top': '7px', 'margin-left': '20px', float: 'left' })),
+    state('out', style({ opacity: 0, transform: 'translateY(-30%)' })),
+    state('in', style({ opacity: 1, transform: 'translateY(0%)' })),
+    state('resize', style({ opacity: 1, transform: 'scale(0.24, 0.24)', 'transform-origin': 'left top',
+                            'margin-top': '7px', 'margin-left': '20px' })),
     state('disappear', style({ display: 'none' })),
 
     transition('out => in', animate('1s 500ms ease-in-out')),
@@ -32,9 +33,10 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   ]),
   // -------------------------------------------------------------------------------------------
   trigger('logoJAnimate', [
-    state('out', style({ opacity: 0, transform: 'translateX(-30%)', width: '150px', height: '150px' })),
-    state('in', style({ opacity: 1, transform: 'translateX(0%)', width: '150px', height: '150px' })),
-    state('resize', style({ opacity: 1, width: '36px', height: '36px', 'margin-top': '7px', 'margin-left': '20px', float: 'left' })),
+    state('out', style({ opacity: 0, transform: 'translateX(-30%)' })),
+    state('in', style({ opacity: 1, transform: 'translateX(0%)' })),
+    state('resize', style({ opacity: 1, transform: 'scale(0.24, 0.24)', 'transform-origin': 'left top',
+                            'margin-top': '7px', 'margin-left': '20px' })),
     state('disappear', style({ display: 'none' })),
 
     transition('out => in', animate('1s 500ms ease-in-out')),
