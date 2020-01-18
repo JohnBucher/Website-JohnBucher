@@ -1,315 +1,142 @@
 <p-dialog header="Front End Skills" [(visible)]="frontEndDialog" position="center center" [style]="{width: '90%'}" appendTo="body"
-          [modal]="true" [closeOnEscape]="true" [dismissableMask]="true">
-  <div style="padding: 10px 0 10px 0;">
-
-    <div>
-      <i class="pi pi-star skill-year-star"></i> = Years Experience
-    </div>
-
+          [modal]="true" [closeOnEscape]="true" [dismissableMask]="true" (onShow)="populateFrontEndDialog()">
+  <div class="skill-dialog-container">
+    <div> <i class="pi pi-star skill-year-star"></i> = Years Experience </div>
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Angular </div>
-        <i *ngFor="let i of [].constructor(2)" class="pi pi-star skill-year-star"></i>
-        (2)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> AngularJS </div>
-        <i *ngFor="let i of [].constructor(1)" class="pi pi-star skill-year-star"></i>
-        (1)
-      </div>
+      <div class="col-6 star-col" id="Angular"></div>
+      <div class="col-6 star-col" id="AngularJS"></div>
     </div>
-
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> HTML </div>
-        <i *ngFor="let i of [].constructor(3)" class="pi pi-star skill-year-star"></i>
-        (3)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> CSS </div>
-        <i *ngFor="let i of [].constructor(3)" class="pi pi-star skill-year-star"></i>
-        (3)
-      </div>
+      <div class="col-6 star-col" id="HTML"></div>
+      <div class="col-6 star-col" id="CSS"></div>
     </div>
-
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Bootstrap </div>
-        <i *ngFor="let i of [].constructor(3)" class="pi pi-star skill-year-star"></i>
-        (3)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Typescript </div>
-        <i *ngFor="let i of [].constructor(3)" class="pi pi-star skill-year-star"></i>
-        (3)
-      </div>
+      <div class="col-6 star-col" id="Typescript"></div>
+      <div class="col-6 star-col" id="Javascript"></div>
     </div>
-
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> JavaScript </div>
-        <i *ngFor="let i of [].constructor(2)" class="pi pi-star skill-year-star"></i>
-        (2)
+      <div class="col-6 star-col" id="Bootstrap"></div>
+      <div class="col-6 star-col" id="jQuery"></div>
     </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> jQuery </div>
-        <i *ngFor="let i of [].constructor(2)" class="pi pi-star skill-year-star"></i>
-        (2)
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> XAML </div>
-        <i *ngFor="let i of [].constructor(1)" class="pi pi-star skill-year-star"></i>
-        (1)
-      </div>
-      <div class="col-6 star-col">
-      </div>
-    </div>
-
   </div>
 </p-dialog>
 
-<p-dialog header="Back End Skills" [(visible)]="backEndDialog" position="center center" [style]="{width: '90%'}" appendTo="body"
-          [modal]="true" [closeOnEscape]="true" [dismissableMask]="true">
-  <div style="padding: 10px 0 10px 0;">
-
-    <div>
-      <i class="pi pi-star skill-year-star"></i> = Years Experience
-    </div>
-
+<p-dialog header="Back End Skills / Other Languages" [(visible)]="backEndDialog" position="center center" [style]="{width: '90%'}" appendTo="body"
+          [modal]="true" [closeOnEscape]="true" [dismissableMask]="true" (onShow)="populateBackEndDialog()">
+  <div class="skill-dialog-container">
+    <div> <i class="pi pi-star skill-year-star"></i> = Years Experience </div>
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> C# </div>
-        <i *ngFor="let i of [].constructor(3)" class="pi pi-star skill-year-star"></i>
-        (3)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> C </div>
-        <i *ngFor="let i of [].constructor(5)" class="pi pi-star skill-year-star"></i>
-        (5)
-      </div>
+      <div class="col-6 star-col" id="C#"></div>
+      <div class="col-6 star-col" id="Java"></div>
     </div>
-
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Java </div>
-        <i *ngFor="let i of [].constructor(7)" class="pi pi-star skill-year-star"></i>
-        (7)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Spring Framework </div>
-        <i *ngFor="let i of [].constructor(1)" class="pi pi-star skill-year-star"></i>
-        (1)
-      </div>
+      <div class="col-6 star-col" id="C"></div>
+      <div class="col-6 star-col" id="SQL"></div>
     </div>
-
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> REST </div>
-        <i *ngFor="let i of [].constructor(1)" class="pi pi-star skill-year-star"></i>
-        (1)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Kotlin </div>
-        <i *ngFor="let i of [].constructor(1)" class="pi pi-star skill-year-star"></i>
-        (1)
-      </div>
+      <div class="col-6 star-col" id="ASP.NET"></div>
+      <div class="col-6 star-col" id="Ruby On Rails"></div>
     </div>
-
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Hibernate </div>
-        <i *ngFor="let i of [].constructor(1)" class="pi pi-star skill-year-star"></i>
-        (1)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> .NET </div>
-        <i *ngFor="let i of [].constructor(2)" class="pi pi-star skill-year-star"></i>
-        (2)
-      </div>
+      <div class="col-6 star-col" id="Python"></div>
+      <div class="col-6 star-col" id="Kotlin"></div>
     </div>
-
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> SQL </div>
-        <i *ngFor="let i of [].constructor(3)" class="pi pi-star skill-year-star"></i>
-        (3)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Ruby on Rails </div>
-        <i *ngFor="let i of [].constructor(1)" class="pi pi-star skill-year-star"></i>
-        (1)
-      </div>
+      <div class="col-6 star-col" id="Spring"></div>
     </div>
-
-    <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Python </div>
-        <i *ngFor="let i of [].constructor(1)" class="pi pi-star skill-year-star"></i>
-        (1)
-      </div>
-      <div class="col-6 star-col">
-      </div>
-    </div>
-
   </div>
 </p-dialog>
 
 <p-dialog header="Industry Standards" [(visible)]="industryStandardsDialog" position="center center" [style]="{width: '90%'}" appendTo="body"
-          [modal]="true" [closeOnEscape]="true" [dismissableMask]="true">
-  <div style="padding: 10px 0 10px 0;">
-
-    <div>
-      <i class="pi pi-star skill-year-star"></i> = Years Experience
-    </div>
-
+          [modal]="true" [closeOnEscape]="true" [dismissableMask]="true" (onShow)="populateIndustryDialog()">
+  <div class="skill-dialog-container">
+    <div> <i class="pi pi-star skill-year-star"></i> = Years Experience </div>
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Agile </div>
-        <i *ngFor="let i of [].constructor(2)" class="pi pi-star skill-year-star"></i>
-        (2)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Git </div>
-        <i *ngFor="let i of [].constructor(3)" class="pi pi-star skill-year-star"></i>
-        (3)
-      </div>
+      <div class="col-6 star-col" id="Agile"></div>
+      <div class="col-6 star-col" id="Git"></div>
     </div>
-
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> JSON </div>
-        <i *ngFor="let i of [].constructor(3)" class="pi pi-star skill-year-star"></i>
-        (3)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> XML </div>
-        <i *ngFor="let i of [].constructor(2)" class="pi pi-star skill-year-star"></i>
-        (2)
-      </div>
+      <div class="col-6 star-col" id="VSCode"></div>
+      <div class="col-6 star-col" id="IntelliJ"></div>
     </div>
-
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Relational Databases </div>
-        <i *ngFor="let i of [].constructor(2)" class="pi pi-star skill-year-star"></i>
-        (2)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> SQL Server </div>
-        <i *ngFor="let i of [].constructor(2)" class="pi pi-star skill-year-star"></i>
-        (2)
-      </div>
+      <div class="col-6 star-col" id="Visual Studio"></div>
+      <div class="col-6 star-col" id="Eclipse"></div>
     </div>
-
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Visual Studio </div>
-        <i *ngFor="let i of [].constructor(3)" class="pi pi-star skill-year-star"></i>
-        (3)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> VSCode </div>
-        <i *ngFor="let i of [].constructor(2)" class="pi pi-star skill-year-star"></i>
-        (2)
-      </div>
+      <div class="col-6 star-col" id="JSON"></div>
+      <div class="col-6 star-col" id="XML"></div>
     </div>
-
     <div class="row">
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> IntelliJ </div>
-        <i *ngFor="let i of [].constructor(1)" class="pi pi-star skill-year-star"></i>
-        (1)
-      </div>
-      <div class="col-6 star-col">
-        <div class="popUp-skill-title"> Eclipse </div>
-        <i *ngFor="let i of [].constructor(4)" class="pi pi-star skill-year-star"></i>
-        (4)
-      </div>
+      <div class="col-6 star-col" id="Relational Databases"></div>
+      <div class="col-6 star-col" id="SQL Server"></div>
     </div>
-
   </div>
 </p-dialog>
 
 
 <div class="skills-page-div">
-  <div class="section-title">
-    Skills
-  </div>
-
-  <div class="clearfix"></div>
-  <br />
-
-  <div style="height: 80%; width: 80%; background-color: white; box-shadow: 1px 1px 35px 1px grey; max-width: 1000px;">
-
+  <div class="section-title"> Skills </div>
+  <div class="clearfix"></div> <br />
+  <div class="skill-content">
     <div class="row">
+
+      <!-- Front End Section -->
       <div class="col-md-6 skill-col hover-col" (click)="showFrontEndDialog();">
         <!-- Hover Overlay -->
-        <div class="overlay"></div>
-        <img class="skill-button" src="assets/skill-hover.png">
-
+        <div class="overlay"></div> <img class="skill-button" src="assets/skill-hover.png">
         <div>
           <div class="col-title-text">
             <label style="padding-right: 10px;">{{frontEndSymbol}}</label>
             <label>{{frontEndText}}</label>
           </div>
-          <div class="clearfix"></div>
-          <br />
-          Angular, AngularJS, HTML, CSS, Bootstrap, Typescript, JavaScript, jQuery, XAML
+          <div class="clearfix"></div> <br />
+          <div id="frontEndSkillList"></div>
         </div>
       </div>
 
+      <!-- Back End Section -->
       <div class="col-md-6 skill-off-col hover-col" (click)="showBackEndDialog();">
         <!-- Hover Overlay -->
-        <div class="overlay"></div>
-        <img class="skill-button" src="assets/skill-hover.png">
-
+        <div class="overlay"></div> <img class="skill-button" src="assets/skill-hover.png">
         <div>
           <div class="col-title-text">
             <label style="padding-right: 10px;">{{backEndSymbol}}</label>
             <label>{{backEndText}}</label>
           </div>
-          <div class="clearfix"></div>
-          <br />
-          C#, C, Java, Spring Framework, REST, Kotlin, Hibernate, .NET, SQL, Ruby on Rails, Python
+          <div class="clearfix"></div> <br />
+          <div id="backEndSkillList"></div>
         </div>
       </div>
 
+      <!-- Industry Tools/Standards Section -->
       <div class="col-md-6 skill-off-col skill-industry hover-col" (click)="showIndustryStandardsDialog();">
         <!-- Hover Overlay -->
-        <div class="overlay"></div>
-        <img class="skill-button" src="assets/skill-hover.png">
-
+        <div class="overlay"></div> <img class="skill-button" src="assets/skill-hover.png">
         <div>
           <div class="col-title-text">
             <label style="padding-right: 10px; display: flex; align-items: center;"><i class="pi pi-cloud"></i></label>
-            <label>Industry Standards</label>
+            <label>Industry Tools/Standards</label>
           </div>
-          <div class="clearfix"></div>
-          <br />
-          Agile, Git, JSON, XML, Relational Databases, SQL Server, Visual Studio, VSCode, IntelliJ, Eclipse
+          <div class="clearfix"></div> <br />
+          <div id="industrySkillList"></div>
         </div>
       </div>
 
+      <!-- Other Skills Section -->
       <div class="col-md-6 skill-col skill-other" (click)="showOtherSkillsDialog();">
         <!-- Hover Overlay -->
-        <div class="overlay"></div>
-        <img class="skill-button" src="assets/skill-hover.png">
-
+        <div class="overlay"></div> <img class="skill-button" src="assets/skill-hover.png">
         <div>
           <div class="col-title-text">
             <label style="padding-right: 10px; display: flex; align-items: center;"><i class="pi pi-briefcase"></i></label>
             <label>Other Skills</label>
           </div>
-          <div class="clearfix"></div>
-          <br />
-          Continuous Self-Learning, Microsoft Office Products
+          <div class="clearfix"></div> <br />
+          <div id="otherSkillList"></div>
         </div>
       </div>
 
     </div>
-
   </div>
 </div>
