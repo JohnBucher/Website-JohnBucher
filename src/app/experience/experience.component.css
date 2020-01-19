@@ -6,7 +6,7 @@
   }
   
   .company-picture {
-    padding-top: 30px;
+    padding-top: 15px;
     padding-bottom: 15px;
     height: auto;
     width: 60%;
@@ -105,3 +105,24 @@
     width: 1em;
     margin-left: -1em;
   }
+
+  .carousel-inner>.item {
+    width: 100%;
+  }
+  .carousel-item {
+    padding-bottom: 1em;
+  }
+  .carousel-control-next,
+  .carousel-control-prev {
+      filter: invert(100%);
+  }
+  .carousel-indicators li {
+    background-color: black !important;
+  }
+
+  /*-------- Mobile Phones --------*/
+@media only screen and (max-device-width : 1024px) {
+  .li-list {
+    max-width: 70%;
+  }
+}
