@@ -121,7 +121,6 @@ export class HomeComponent implements OnInit {
   }
 
   onJLogoAnimationEvent( event: AnimationEvent ) {
-    console.log('J State: ' + this.logoJState);
     if (this.logoJState === 'out') {
       this.logoJState = 'in';
     } else if (this.isMobile && this.logoJState === 'in') {
