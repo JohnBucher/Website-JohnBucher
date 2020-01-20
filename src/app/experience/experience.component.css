@@ -123,6 +123,6 @@
   /*-------- Mobile Phones --------*/
 @media only screen and (max-device-width : 1024px) {
   .li-list {
-    max-width: 70%;
+    max-width: 75%;
   }
 }
