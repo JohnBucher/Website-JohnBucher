@@ -12,7 +12,7 @@ export class SkillsComponent implements AfterContentInit {
   frontEndSymbol = '</ >';
   frontEndText = 'Front End';
   backEndSymbol = '{ }';
-  backEndText = 'Back End / Other Languages';
+  backEndText = 'Back End / Other';
 
   // HTML
   starHtml = '<i class="pi pi-star skill-year-star"></i>';

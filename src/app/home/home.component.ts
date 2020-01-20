@@ -102,11 +102,11 @@ export class HomeComponent implements OnInit {
 
     // If the skill sections collapse into one column account for that by getting the 3rd and 4th section and alter the color ordering
     if (width >= 767) {
-      skillBar.setAttribute('style', 'height: 175px; color: white; background-color: #495568;');
-      otherBar.setAttribute('style', 'height: 175px; color: white; background-color: #404a5b;');
+      skillBar.setAttribute('style', 'min-height: 175px; color: white; background-color: #495568;');
+      otherBar.setAttribute('style', 'min-height: 175px; color: white; background-color: #404a5b;');
     } else if (width <= 767) {
-      skillBar.setAttribute('style', 'height: 175px; color: white; background-color: #404a5b;');
-      otherBar.setAttribute('style', 'height: 175px; color: white; background-color: #495568;');
+      skillBar.setAttribute('style', 'min-height: 175px; color: white; background-color: #404a5b;');
+      otherBar.setAttribute('style', 'min-height: 175px; color: white; background-color: #495568;');
     }
   }
 
