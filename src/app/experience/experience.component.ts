@@ -43,11 +43,11 @@ export class ExperienceComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.populateSkillsCarousel();
+    this.populateExperienceCarousel();
   }
 
-  populateSkillsCarousel() {
-    const container = document.getElementById('skill-carousel');
+  populateExperienceCarousel() {
+    const container = document.getElementById('experience-carousel');
     let activeCounter = 0;
 
     this.jobs.forEach((job) => {
