@@ -16,7 +16,7 @@
   .company-name {
     padding-bottom: 5px;
     padding-top: 5px;
-    font-size: 22px;
+    font-size: 28px;
     font-weight: bolder;
   }
   .job-title {
@@ -89,7 +89,7 @@
   
   .li-list {
     margin: 0 auto;
-    max-width: 90%;
+    max-width: 80% !important;
     text-align: center;
   }
   
@@ -118,6 +118,11 @@
   }
   .carousel-indicators li {
     background-color: black !important;
+  }
+
+  .carousel-control-next,
+  .carousel-control-prev {
+    width: 10% !important;
   }
 
   /*-------- Mobile Phones --------*/
