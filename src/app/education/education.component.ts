@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation } from '@angular/core';
+import { Component, ViewEncapsulation, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-education',
@@ -6,7 +6,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
   styleUrls: ['./education.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class EducationComponent {
+export class EducationComponent implements OnInit {
   schools: School[];
 
   constructor() {
@@ -37,6 +37,50 @@ export class EducationComponent {
         ]
       }
     ];
+  }
+
+  ngOnInit() {
+    this.populateEducationCarousel();
+  }
+
+  populateEducationCarousel() {
+    const container = document.getElementById('education-carousel');
+    let activeCounter = 0;
+
+    this.schools.forEach((school) => {
+      let constructedString = '';
+      if (activeCounter === 0) {
+        constructedString += '<div class="carousel-item active">';
+        activeCounter++;
+      } else {
+        constructedString += '<div class="carousel-item">';
+      }
+
+      constructedString += `<div class="ui-row company-picture">
+                              <img src="` + school.image + `" class="education-picture" />
+                            </div>
+                            <div class="ui-row company-name">
+                              <span class="text">` + school.schoolName + `</span>
+                            </div>
+                            <div class="ui-row degree">
+                              <span class="text">` + school.degree + `</span>
+                            </div>
+                            <div class="ui-row dates">
+                              <span class="text"> <span class="date">Date:</span>` + school.dates + `</span>
+                            </div>
+                            <div class="ui-row activities">
+                              <span class="text responsibility-header">Honors and Activities:</span>
+                            </div>
+                            <div class="ui-row activities-list">
+                              <ul class="list">`;
+      school.activities.forEach((activity: string) => {
+        constructedString += `<li class="li-list">` + activity + `</li>`;
+      });
+      constructedString += `  </ul>
+                            </div>`;
+
+      container.innerHTML += constructedString;
+    });
   }
 }
 

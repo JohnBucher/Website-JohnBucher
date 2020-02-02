@@ -1,36 +1,23 @@
 <div class="education-page-div">
-  <div class="section-title">
-    Education
+  <div class="section-title"> Education </div>
+
+  <!-- Education Carousel -->
+  <div id="educationCarousel" class="carousel slide" data-ride="false" data-interval="false">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#educationCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#educationCarousel" data-slide-to="1"></li>
+    </ol>
+
+    <!-- Content -->
+    <div class="carousel-inner" id="education-carousel"></div>
+    
+    <!-- Arrow Controls -->
+    <a class="carousel-control-prev" href="#educationCarousel" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#educationCarousel" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span>
+    </a>
   </div>
-
-  <mat-tab-group style="width: 90%; margin: 0 auto;">
-    <mat-tab *ngFor="let school of schools" [label]="school.schoolName">
-      <div class="ui-grid ui-grid-responsive">
-        <div class="ui-row company-picture">
-          <img src="{{school.image}}" class="education-picture" />
-        </div>
-        <div class="ui-row company-name">
-          <span class="text">{{school.schoolName}}</span>
-        </div>
-        <div class="ui-row degree">
-          <span class="text">{{school.degree}}</span>
-        </div>
-        <div class="ui-row dates">
-          <span class="text"> <span class="date">Date:</span> {{school.dates}}</span>
-        </div>
-        <div class="ui-row activities">
-          <span class="text responsibility-header">Honors and Activities:</span>
-        </div>
-        <div class="ui-row activities-list">
-          <ul class="list">
-            <li *ngFor="let item of school.activities" class="li-list">
-              {{item}}
-            </li>
-          </ul>
-        </div>
-      </div>
-    </mat-tab>
-  </mat-tab-group>
-
-
 </div>
