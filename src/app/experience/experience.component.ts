@@ -16,7 +16,7 @@ export class ExperienceComponent implements OnInit {
         companyName: 'Lockheed Martin',
         jobTitle: 'Asc Software Engineer',
         dates: 'July 2018 - Present',
-        image: 'assets/LM-Logo.png',
+        image: 'assets/Experience/LM-Logo.png',
         responsibilities: [
           `Engineer, develop, and maintain web-based applications used by various agencies of the US Government`,
           `Coordinate and collaborate with numerous teams and inviduals across
@@ -30,7 +30,7 @@ export class ExperienceComponent implements OnInit {
         companyName: 'Computer Aid, Inc',
         jobTitle: 'Software Development Intern',
         dates: 'June 2017 - August 2017',
-        image: 'assets/CAI-Logo.png',
+        image: 'assets/Experience/CAI-Logo.png',
         responsibilities: [
           `Created and maintained relational databases and web-based applications such as E-commerce websites`,
           `Inspected and documented professional Computer Aid, Inc. applications to ensure smoother knowledge transfer in the future`,

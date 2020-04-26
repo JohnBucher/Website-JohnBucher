@@ -1,7 +1,7 @@
 
 .background-container {
   /* The image used */
-  background-image: url("../../assets/EarthBackground.jpg");
+  background-image: url("../../assets/Home/EarthBackground.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -18,7 +18,7 @@
 /*-------- Mobile Phones --------*/
 @media only screen and (max-device-width : 1024px) {
   .background-container {
-    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../../assets/EarthBackground.jpg");
+    background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url("../../assets/Home/EarthBackground.jpg");
     background-size: auto;
     background-attachment: initial;
   }

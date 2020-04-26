@@ -1,9 +1,9 @@
 <div class="background-container">
   
   <div class="mask" [@maskAnimate]="'in'"></div>
-  <img src="assets/B-Logo-White.png" [@logoBAnimate]="logoBState" class="jb-logo"
+  <img src="assets/JB Logo/B-Logo-White.png" [@logoBAnimate]="logoBState" class="jb-logo"
     (@logoBAnimate.done)="onBLogoAnimationEvent($event)" width="150" height="150">
-  <img src="assets/J-Logo-White.png" [@logoJAnimate]="logoJState" class="jb-logo"
+  <img src="assets/JB Logo/J-Logo-White.png" [@logoJAnimate]="logoJState" class="jb-logo"
     (@logoJAnimate.done)="onJLogoAnimationEvent($event)" width="150" height="150">
   
   <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
@@ -20,7 +20,7 @@
       <!-- Resume Icon -->
       <div class="sidebar-icon-group sidebar-resume">   Resume: </div>
       <div class="sidebar-icon-group sidebar-pdf-icon">
-        <span><a href="assets/Resume - John Bucher.pdf" class="fa fa-file-pdf-o fa-2x" target="_blank"></a></span>
+        <span><a href="assets/Resume/Resume - John Bucher.pdf" class="fa fa-file-pdf-o fa-2x" target="_blank"></a></span>
       </div>
 
       <!-- Social Icons -->
@@ -34,7 +34,7 @@
   <!-- Toolbar -->
   <div class="toolbar" #toolbar>
     <div class="hover">
-      <img src="assets/JB-Logo-White.png" class="logo" width="36" height="36" (click)="scrollToSection('home');">
+      <img src="assets/JB Logo/JB-Logo-White.png" class="logo" width="36" height="36" (click)="scrollToSection('home');">
     </div>
     <div class="toolbar-menu-container hover" (click)="display = true">
       <span class="toolbar-menu"> MENU </span>
