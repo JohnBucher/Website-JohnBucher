@@ -23,10 +23,10 @@ import { ToastModule } from 'primeng/toast';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 
-import { MatProgressBarModule } from '@angular/material';
-import { MatTabsModule } from '@angular/material/tabs';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+// CLARITY
+// import { ClarityModule } from '@clr/angular';
 
 @NgModule({
   declarations: [
@@ -53,8 +53,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     InputTextModule,
     InputTextareaModule,
     MatProgressBarModule,
-    NgbModule,
-    MatTabsModule
+    // ClarityModule
   ],
   exports: [
     MatProgressBarModule
