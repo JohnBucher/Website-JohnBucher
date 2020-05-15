@@ -142,3 +142,9 @@ body .ui-sidebar .ui-sidebar-close:hover {
   padding-bottom: 15px;
   text-align: center;
 }
+
+.sub-section-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #050E1F;
+}

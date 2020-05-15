@@ -1,23 +1,4 @@
-<div class="education-page-div">
-  <div class="section-title"> Education </div>
-
-  <!-- Education Carousel -->
-  <div id="educationCarousel" class="carousel slide" data-ride="false" data-interval="false">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#educationCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#educationCarousel" data-slide-to="1"></li>
-    </ol>
-
-    <!-- Content -->
-    <div class="carousel-inner" id="education-carousel"></div>
-    
-    <!-- Arrow Controls -->
-    <a class="carousel-control-prev" href="#educationCarousel" role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span> <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#educationCarousel" role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span> <span class="sr-only">Next</span>
-    </a>
-  </div>
+<div class="education-page-div"  style="background-color: white;">
+  <div class="sub-section-title"> <span class="fas fa-graduation-cap"></span> Education </div>
+  <app-timeline [timelineData]="schools" descriptorLabel="Honors and Activities"></app-timeline>
 </div>
