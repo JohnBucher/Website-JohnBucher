@@ -1,0 +1,36 @@
+.timeline-container {
+    padding: 15px 0px;
+    margin: 15px 0px 15px 25px;
+    border-left: 4px solid grey;
+}
+
+.timeline-item {
+    padding: 15px;
+}
+.timeline-item-marker {
+    border-radius: 9999px;
+    background-color: lightgray;
+    box-shadow: 0px 0px 5px black;
+    width: 12px;
+    height: 12px;
+    position: absolute;
+    margin: 22px 0px 0px -8px;
+}
+.timeline-item-name {
+    font-weight: bold;
+}
+.timeline-item-dates {
+    font-size: 0.8rem;
+}
+.timeline-item-descriptor-container {
+    overflow: hidden;
+}
+.timeline-item-descriptors {
+    font-size: 0.75rem;
+    color: grey;
+    transition: all 2s ease-in-out;
+    margin: 2px 0px;
+}
+.timeline-item-image {
+    height: 32px;
+}

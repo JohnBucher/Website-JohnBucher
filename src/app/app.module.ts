@@ -15,18 +15,17 @@ import { ProjectsComponent } from './projects/projects.component';
 import { ResearchComponent } from './research/research.component';
 import { ContactComponent } from './contact/contact.component';
 
+// COMMON-LIB
+import { TimelineComponent } from './common-lib/timeline/timeline.component';
+
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { DialogModule } from 'primeng/dialog';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { ToastModule } from 'primeng/toast';
-import { InputTextModule } from 'primeng/inputtext';
-import { InputTextareaModule } from 'primeng/inputtextarea';
+import { TooltipModule } from 'primeng/tooltip';
 
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatButtonModule } from '@angular/material/button';
 
-// CLARITY
-// import { ClarityModule } from '@clr/angular';
 
 @NgModule({
   declarations: [
@@ -38,7 +37,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     EducationComponent,
     ProjectsComponent,
     ResearchComponent,
-    ContactComponent
+    ContactComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,
@@ -48,12 +48,9 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
     ButtonModule,
     SidebarModule,
     DialogModule,
-    ProgressBarModule,
-    ToastModule,
-    InputTextModule,
-    InputTextareaModule,
+    TooltipModule,
     MatProgressBarModule,
-    // ClarityModule
+    MatButtonModule
   ],
   exports: [
     MatProgressBarModule
