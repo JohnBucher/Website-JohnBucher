@@ -8,15 +8,19 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
   encapsulation: ViewEncapsulation.None,
   animations: [
   // -------------------------------------------------------------------------------------------
+    trigger('JBLogoAnimate', [
+      state('visible', style({ opacity: 1 })),
+      state('invisible', style({ opacity: 0 })),
+      transition('invisible => visible', [
+        animate('1ms 3.75s')
+      ]),
+    ]),
+  // -------------------------------------------------------------------------------------------
       trigger('LearnMoreAnimation', [
         state('in', style({ opacity: 1, transform: 'translateY(0%)' })),
         transition(':enter', [
           style({ opacity: 0, transform: 'translateY(30%)' }),
           animate('0.75s 4s ease-in')
-        ]),
-        transition(':leave', [
-          style({ opacity: 0, transform: 'translateY(-30%)' }),
-          animate('500ms ease-out')
         ]),
       ]),
   // -------------------------------------------------------------------------------------------
@@ -59,8 +63,9 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 export class HomeComponent implements OnInit {
   display: boolean;
 
-  logoBState = 'out';
-  logoJState = 'out';
+  logoBFragmentState = 'out';
+  logoJFragmentState = 'out';
+  jbFullLogoState = 'visible';
   isMobile = false;
 
   constructor() {
@@ -93,6 +98,12 @@ export class HomeComponent implements OnInit {
     window.addEventListener('resize', () => {
       this.checkSkillColumnColors();
     });
+
+    if (!this.isMobile) {
+      // IF the device is not mobile, then set the main logo to the first animation state
+      // which will enable the rest of the animation steps
+      this.jbFullLogoState = 'invisible';
+    }
   }
 
   checkSkillColumnColors() {
@@ -121,25 +132,30 @@ export class HomeComponent implements OnInit {
   }
 
   onJLogoAnimationEvent( event: AnimationEvent ) {
-    if (this.logoJState === 'out') {
-      this.logoJState = 'in';
-    } else if (this.isMobile && this.logoJState === 'in') {
-      this.logoJState = 'mobile-fade-out';
-    } else if (this.logoJState === 'in') {
-      this.logoJState = 'resize';
-    } else if (this.logoJState === 'resize') {
-      this.logoJState = 'disappear';
+    if (this.logoJFragmentState === 'out') {
+      this.logoJFragmentState = 'in';
+    } else if (this.isMobile && this.logoJFragmentState === 'in') {
+      this.logoJFragmentState = 'mobile-fade-out';
+    } else if (this.logoJFragmentState === 'in') {
+      this.logoJFragmentState = 'resize';
+    } else if (this.logoJFragmentState === 'resize') {
+      this.logoJFragmentState = 'disappear';
     }
   }
   onBLogoAnimationEvent( event: AnimationEvent ) {
-    if (this.logoBState === 'out') {
-      this.logoBState = 'in';
-    } else if (this.isMobile && this.logoBState === 'in') {
-      this.logoBState = 'mobile-fade-out';
-    } else if (this.logoBState === 'in') {
-      this.logoBState = 'resize';
-    } else if (this.logoBState === 'resize') {
-      this.logoBState = 'disappear';
+    if (this.logoBFragmentState === 'out') {
+      this.logoBFragmentState = 'in';
+    } else if (this.isMobile && this.logoBFragmentState === 'in') {
+      this.logoBFragmentState = 'mobile-fade-out';
+    } else if (this.logoBFragmentState === 'in') {
+      this.logoBFragmentState = 'resize';
+    } else if (this.logoBFragmentState === 'resize') {
+      this.logoBFragmentState = 'disappear';
+    }
+  }
+  onJBLogoAnimate( event: AnimationEvent ) {
+    if (this.jbFullLogoState === 'invisible') {
+      this.jbFullLogoState = 'visible';
     }
   }
 }
