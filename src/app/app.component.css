@@ -147,4 +147,8 @@ body .ui-sidebar .ui-sidebar-close:hover {
   font-size: 1.5rem;
   font-weight: bold;
   color: #050E1F;
+  padding-left: 10px;
+}
+.sub-section-small-icon-padding {
+  padding-left: 15px;
 }

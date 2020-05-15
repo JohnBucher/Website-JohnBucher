@@ -15,7 +15,9 @@
                 ({{ item.dates }})
             </div>
 
-            <button mat-stroked-button color="primary" (click)="toggleVisibility(item)" style="margin: 10px 0px;"> View {{ descriptorLabel }} </button>
+            <button mat-stroked-button color="primary" (click)="toggleVisibility(item)" style="margin: 10px 0px;">
+                {{ getDescriptorButtonText(item) }}
+            </button>
 
             <div [@openClose]="item.showDescriptors ? 'open' : 'closed'" class="timeline-item-descriptor-container">
                 <div *ngFor="let descriptor of item.descriptors" class="timeline-item-descriptors">

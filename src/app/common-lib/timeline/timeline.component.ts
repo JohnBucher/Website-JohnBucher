@@ -33,4 +33,7 @@ export class TimelineComponent implements OnInit {
   public toggleVisibility(item: TimelineItem) {
       item.showDescriptors = !item.showDescriptors;
   }
+  public getDescriptorButtonText(item: TimelineItem): string {
+    return (item.showDescriptors ? 'Hide ' : 'View ') + this.descriptorLabel;
+  }
 }
