@@ -162,7 +162,7 @@
   }
 }
 @media(max-width: 959px) {
-  /* -- ON SCREEN SIZES SMALLER THAN 960 -- */
+  /* -- ON SCREEN SIZES SMALLER THAN 960 (Bootstrap lg col) -- */
   .background-container-content {
     margin-top: 0px;
   }
@@ -171,5 +171,18 @@
   }
   .subtitle {
     font-size: 18px;
+  }
+}
+
+@media(max-width: 575px) {
+  /* -- ON SCREEN SIZES SMALLER THAN 576 (Bootstrap xs col) -- */
+  .background-container-content {
+    margin-top: 0px;
+  }
+  .title {
+    font-size: 38px;
+  }
+  .subtitle {
+    font-size: 14px;
   }
 }
