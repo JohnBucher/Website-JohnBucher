@@ -13,78 +13,38 @@
   .background-Text {
     color: grey;
     font-size: 20px;
-    padding-left: 10px;
     padding-right: 10px;
     padding-right: 10px;
-    top: 0px;
-    position: relative;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    height: 400px;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   
-  .background-picture-div {
-    float: left;
-    margin-left: 30px;
-    margin-right: 50px;
-    position: relative;
-  }
   .background-picture {
-    width: 350px; 
-    height: 400px;
+    width: 250px; 
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: 15px;
+    padding-right: 45px;
   }
-  
-  .background-picture-circle-div {
-    visibility: hidden;
-    height: 0;
-    width: 0;
-    top: 20px;
-    position: relative;
+  .auto-align {
+    margin-top: auto;
+    margin-bottom: auto;
   }
-  .background-picture-circle {
-    width: 275px; 
-    height: 300px;
+
+  .logo-container {
+    border-right: 2px solid #050E1F;
   }
-  
-  @media(max-width: 875px) {
-    .background-Text {
-      float: none;
-      margin-left: 3vw;
-      margin-right: 3vw;
-      padding-left: 0px;
+
+  @media(max-width: 991px) {
+    /* -- ON SCREEN SIZES SMALLER THAN 992 (Bootstrap lg grid column) -- */
+    .background-picture {
+      margin-right: auto;
       padding-right: 0px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: 50px;
-      height: auto;
+      margin-bottom: 15px;
     }
-  
-    .background-section-title {
-      margin-bottom: 25px;
-    }
-  
-    .background-picture-div {
-      visibility: hidden;
-      float: none;
-      height: 0;
-      width: 0;
-      margin-top: 0px;
-      margin-bottom: 0px;
-    }
-  
-    .background-picture-circle-div {
-      visibility: visible;
-      height: 300px;
-      width: initial;
-      float: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-  
-    .background {
-      float: none;
+    .logo-container {
+      border-right: none;
     }
   }
