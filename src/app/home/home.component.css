@@ -180,9 +180,16 @@
     margin-top: 0px;
   }
   .title {
-    font-size: 38px;
+    font-size: 36px;
   }
   .subtitle {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  /* -- FOR MOBILE DEVICES WITH SCREEN SIZES SMALLER THAN 576 (Bootstrap xs col) -- */
+  .title-block {
+    top: -5vh;
   }
 }
