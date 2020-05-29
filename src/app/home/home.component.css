@@ -190,6 +190,6 @@
 @media only screen and (max-width: 575px) {
   /* -- FOR MOBILE DEVICES WITH SCREEN SIZES SMALLER THAN 576 (Bootstrap xs col) -- */
   .title-block {
-    top: -10vh;
+    top: -7vh;
   }
 }
