@@ -3,7 +3,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-background',
   templateUrl: './background.component.html',
-  styleUrls: ['./background.component.css', '../app.component.css'],
+  styleUrls: ['./background.component.scss', '../app.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
 export class BackgroundComponent {

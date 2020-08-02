@@ -1,0 +1,66 @@
+
+@import '../styles/variables';
+
+.contact-page-div {
+    background-color: var(--header-background-color);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    float: none;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .contact-me-title {
+    text-align: center;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Roboto Slab', serif;
+    color: var(--secondary-text-color);
+    border-bottom: solid;
+    border-bottom-color: var(--secondary-text-color);
+    border-bottom-width: 2px;
+    width: 50%;
+    margin: 0 auto;
+  }
+  
+  .contact-me-info {
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Roboto Slab', serif;
+    color: var(--secondary-text-color);
+    width: 66%;
+    margin: 0 auto;
+    margin-top: 20px;
+  }
+  
+  .contact-col {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .icon-group {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .icon {
+    margin-right: 20px;
+  }
+  
+  .full-width-container {
+    width: 100%;
+  }
+  
+  @media(max-width: 800px) {
+    .contact-me-title {
+      width: 80% !important;
+      font-size: 30px !important;
+    }
+    .contact-me-info {
+      width: 90% !important;
+    }
+  }
+  

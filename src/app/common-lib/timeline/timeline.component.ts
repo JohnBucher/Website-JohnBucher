@@ -5,7 +5,7 @@ import { state, style, transition, animate, trigger } from '@angular/animations'
 @Component({
   selector: 'app-timeline',
   templateUrl: './timeline.component.html',
-  styleUrls: ['./timeline.component.css'],
+  styleUrls: ['./timeline.component.scss'],
   encapsulation: ViewEncapsulation.None,
   animations: [
     trigger('openClose', [

@@ -25,6 +25,7 @@ import { TooltipModule } from 'primeng/tooltip';
 
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
+import { ThemeUtilityService } from './services/theme-utility-service';
 
 
 @NgModule({
@@ -50,7 +51,8 @@ import { MatButtonModule } from '@angular/material/button';
     DialogModule,
     TooltipModule,
     MatProgressBarModule,
-    MatButtonModule
+    MatButtonModule,
+    ThemeUtilityService
   ],
   exports: [
     MatProgressBarModule

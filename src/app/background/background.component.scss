@@ -1,4 +1,8 @@
+
+@import '../styles/variables';
+
 .background-page-div {
+    background-color: var(--primary-section-background-color);
     width: 100%;
     display: flex;
     align-items: center;
@@ -11,7 +15,7 @@
   }
   
   .background-Text {
-    color: grey;
+    color: var(--primary-text-color);
     font-size: 20px;
     padding-right: 10px;
     padding-right: 10px;
@@ -34,7 +38,7 @@
   }
 
   .logo-container {
-    border-right: 2px solid #050E1F;
+    border-right: 2px solid var(--header-background-color);
   }
 
   @media(max-width: 991px) {

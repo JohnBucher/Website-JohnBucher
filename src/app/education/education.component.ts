@@ -4,7 +4,7 @@ import { TimelineItem } from '../models/timeline-model';
 @Component({
   selector: 'app-education',
   templateUrl: './education.component.html',
-  styleUrls: ['./education.component.css'],
+  styleUrls: ['./education.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
 export class EducationComponent implements OnInit {

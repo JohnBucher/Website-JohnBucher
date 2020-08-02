@@ -1,5 +1,8 @@
+
+@import '../styles/variables';
+
 .projects-page-div {
-    background-color: white;
+    background-color: var(--primary-section-background-color);
     width: 100%;
     display: flex;
     align-items: center;

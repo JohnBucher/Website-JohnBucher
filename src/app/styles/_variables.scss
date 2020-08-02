@@ -1,0 +1,59 @@
+
+/* THEME VARIABLES */
+/* ----------------------------- */
+
+:root {
+    // WHITE THEME
+    --whiteTheme-primary-section-background-color: white;
+    --whiteTheme-secondary-section-background-color: #f1f1f1;
+
+    --whiteTheme-primary-text-color: black;
+    --whiteTheme-secondary-text-color: white;
+    --whiteTheme-sidebar-text-color: #262626;
+
+    --whiteTheme-sidebar-background-color: #262626;
+    --whiteTheme-sidebar-border-color: #202020;
+
+    --whiteTheme-timeline-border: grey;
+    --whiteTheme-timeline-item-marker-background-color: lightgray;
+    --whiteTheme-timeline-item-marker-box-shadow-color: black;
+
+    --whiteTheme-header-box-shadow-color: #303030;
+
+    // DARK THEME
+    --darkTheme-primary-section-background-color: #202020;
+    --darkTheme-secondary-section-background-color: #262626;
+
+    --darkTheme-primary-text-color: white;
+    --darkTheme-secondary-text-color: black;
+    --darkTheme-sidebar-text-color: #262626;
+
+    --darkTheme-sidebar-background-color: #262626;
+    --darkTheme-sidebar-border-color: #202020;
+
+    --darkTheme-timeline-border: white;
+    --darkTheme-timeline-item-marker-background-color: #e9e9e9;
+    --darkTheme-timeline-item-marker-box-shadow-color: white;
+
+    --darkTheme-header-box-shadow-color: #0f0f0f;
+
+    // DEFAULT THEME (WHITE)
+    --primary-section-background-color: var(--whiteTheme-primary-section-background-color);
+    --secondary-section-background-color: var(--whiteTheme-secondary-section-background-color);
+    
+    --primary-text-color: var(--whiteTheme-primary-text-color);
+    --secondary-text-color: var(--whiteTheme-secondary-text-color);
+    --sidebar-text-color: var(--whiteTheme-sidebar-text-color);
+    
+    --sidebar-background-color: var(--whiteTheme-sidebar-background-color);
+    --sidebar-border-color: var(--whiteTheme-sidebar-border-color);
+    
+    --timeline-border: var(--whiteTheme-timeline-border);
+    --timeline-item-marker-background-color: var(--whiteTheme-timeline-item-marker-background-color);
+    --timeline-item-marker-box-shadow-color: var(--whiteTheme-timeline-item-marker-box-shadow-color);
+
+    --header-box-shadow-color: var(--whiteTheme-header-box-shadow-color);
+    
+    --header-background-color: #050E1F;
+    --header-text-color: white;
+}

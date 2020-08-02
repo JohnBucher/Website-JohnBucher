@@ -1,7 +1,10 @@
+
+@import '../../styles/variables';
+
 .timeline-container {
     padding: 15px 0px;
     margin: 15px 0px 15px 25px;
-    border-left: 4px solid grey;
+    border-left: 4px solid var(--timeline-border);
 }
 
 .timeline-item {
@@ -9,8 +12,8 @@
 }
 .timeline-item-marker {
     border-radius: 9999px;
-    background-color: lightgray;
-    box-shadow: 0px 0px 5px black;
+    background-color: var(--timeline-item-marker-background-color);
+    box-shadow: 0px 0px 5px var(--timeline-item-marker-box-shadow-color);
     width: 12px;
     height: 12px;
     position: absolute;
@@ -27,7 +30,7 @@
 }
 .timeline-item-descriptors {
     font-size: 0.75rem;
-    color: grey;
+    color: var(--timeline-border);
     transition: all 2s ease-in-out;
     margin: 2px 0px;
 }

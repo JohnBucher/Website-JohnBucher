@@ -3,7 +3,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
 @Component({
   selector: 'app-research',
   templateUrl: './research.component.html',
-  styleUrls: ['./research.component.css', '../app.component.css'],
+  styleUrls: ['./research.component.scss', '../app.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
 export class ResearchComponent {
