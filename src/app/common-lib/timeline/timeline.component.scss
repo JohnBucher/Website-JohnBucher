@@ -13,27 +13,36 @@
 .timeline-item-marker {
     border-radius: 9999px;
     background-color: var(--timeline-item-marker-background-color);
-    box-shadow: 0px 0px 5px var(--timeline-item-marker-box-shadow-color);
+    box-shadow: 0px 0px 5px 1px var(--timeline-item-marker-box-shadow-color);
     width: 12px;
     height: 12px;
     position: absolute;
-    margin: 22px 0px 0px -8px;
+    margin: 30px 0px 0px -8px;
 }
 .timeline-item-name {
     font-weight: bold;
+    color: var(--timeline-text-color);
+}
+.timeline-item-title {
+    color: var(--timeline-text-secondary-color);
 }
 .timeline-item-dates {
     font-size: 0.8rem;
+    color: var(--timeline-text-secondary-color);
+}
+.timeline-item-button {
+    color: var(--timeline-text-color);
+    border-color: var(--timeline-text-color) !important;
 }
 .timeline-item-descriptor-container {
     overflow: hidden;
 }
 .timeline-item-descriptors {
     font-size: 0.75rem;
-    color: var(--timeline-border);
+    color: var(--primary-text-color);
     transition: all 2s ease-in-out;
     margin: 2px 0px;
 }
 .timeline-item-image {
-    height: 32px;
+    height: 40px;
 }

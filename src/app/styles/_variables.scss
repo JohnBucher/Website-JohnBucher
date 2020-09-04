@@ -9,7 +9,7 @@
 
     --whiteTheme-primary-text-color: black;
     --whiteTheme-secondary-text-color: white;
-    --whiteTheme-sidebar-text-color: #262626;
+    --whiteTheme-sidebar-text-color: white;
 
     --whiteTheme-sidebar-background-color: #262626;
     --whiteTheme-sidebar-border-color: #202020;
@@ -17,6 +17,8 @@
     --whiteTheme-timeline-border: grey;
     --whiteTheme-timeline-item-marker-background-color: lightgray;
     --whiteTheme-timeline-item-marker-box-shadow-color: black;
+    --whiteTheme-timeline-text-color: black;
+    --whiteTheme-timeline-text-secondary-color: black;
 
     --whiteTheme-header-box-shadow-color: #303030;
 
@@ -28,12 +30,14 @@
     --darkTheme-secondary-text-color: black;
     --darkTheme-sidebar-text-color: #262626;
 
-    --darkTheme-sidebar-background-color: #262626;
+    --darkTheme-sidebar-background-color: #e6e6e6;
     --darkTheme-sidebar-border-color: #202020;
 
-    --darkTheme-timeline-border: white;
-    --darkTheme-timeline-item-marker-background-color: #e9e9e9;
-    --darkTheme-timeline-item-marker-box-shadow-color: white;
+    --darkTheme-timeline-border: grey;
+    --darkTheme-timeline-item-marker-background-color: lightgray;
+    --darkTheme-timeline-item-marker-box-shadow-color: black;
+    --darkTheme-timeline-text-color: lightseagreen;
+    --darkTheme-timeline-text-secondary-color: rgb(64, 218, 210);
 
     --darkTheme-header-box-shadow-color: #0f0f0f;
 
@@ -51,9 +55,12 @@
     --timeline-border: var(--whiteTheme-timeline-border);
     --timeline-item-marker-background-color: var(--whiteTheme-timeline-item-marker-background-color);
     --timeline-item-marker-box-shadow-color: var(--whiteTheme-timeline-item-marker-box-shadow-color);
+    --timeline-text-color: var(--whiteTheme-timeline-text-color);
+    --timeline-text-secondary-color: var(--whiteTheme-timeline-text-secondary-color);
 
     --header-box-shadow-color: var(--whiteTheme-header-box-shadow-color);
     
     --header-background-color: #050E1F;
     --header-text-color: white;
+    --header-text-secondary-color: black;
 }

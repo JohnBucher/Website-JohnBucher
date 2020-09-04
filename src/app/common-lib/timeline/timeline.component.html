@@ -8,14 +8,14 @@
             <div class="timeline-item-name">
                 {{ item.name }}
             </div>
-            <div>
+            <div class="timeline-item-title">
                 {{ item.title }}
             </div>
             <div class="timeline-item-dates">
                 ({{ item.dates }})
             </div>
 
-            <button mat-stroked-button color="primary" (click)="toggleVisibility(item)" style="margin: 10px 0px;">
+            <button class="timeline-item-button" mat-stroked-button (click)="toggleVisibility(item)" style="margin: 10px 0px;">
                 {{ getDescriptorButtonText(item) }}
             </button>
 

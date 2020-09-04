@@ -8,6 +8,8 @@
   
   <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
     <div class="sidebar-container">
+      <p-selectButton [options]="themeOptions" [(ngModel)]="theme" (click)="changeTheme()"></p-selectButton>
+
       <!-- Section Links -->
       <div class="menu-item" (click)="scrollToSection('home'); display = false">        Home </div>
       <div class="menu-item" (click)="scrollToSection('background'); display = false">  Background </div>

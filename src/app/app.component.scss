@@ -70,7 +70,7 @@
     float: right;
   }
   .toolbar-menu {
-    color: var(--secondary-text-color); 
+    color: var(--header-text-color); 
     display: inline-block; 
     vertical-align: middle; 
     line-height: 50px; 
@@ -78,7 +78,7 @@
     margin-right: 5px;
   }
   .toolbar-menu-icon {
-    color: var(--secondary-text-color); 
+    color: var(--header-text-color); 
     display: inline-block; 
     vertical-align: middle; 
     line-height: 50px; 
@@ -109,7 +109,7 @@
   }
   
   body .ui-sidebar .ui-sidebar-close:hover {
-    color: var(--primary-text-color);
+    color: var(--sidebar-text-color);
   }
   
   .ui-sidebar-right {
@@ -149,7 +149,7 @@
   .sub-section-title {
     font-size: 1.5rem;
     font-weight: bold;
-    color: var(--header-background-color);
+    color: var(--timeline-text-color);
     padding-left: 10px;
   }
   .sub-section-small-icon-padding {

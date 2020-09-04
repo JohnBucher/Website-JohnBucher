@@ -22,6 +22,7 @@ import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
 import { DialogModule } from 'primeng/dialog';
 import { TooltipModule } from 'primeng/tooltip';
+import { SelectButtonModule } from 'primeng/selectbutton';
 
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
@@ -50,6 +51,7 @@ import { ThemeUtilityService } from './services/theme-utility-service';
     SidebarModule,
     DialogModule,
     TooltipModule,
+    SelectButtonModule,
     MatProgressBarModule,
     MatButtonModule,
     ThemeUtilityService

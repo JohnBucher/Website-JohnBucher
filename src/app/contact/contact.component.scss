@@ -18,9 +18,9 @@
     font-weight: bold;
     font-size: 36px;
     font-family: 'Roboto Slab', serif;
-    color: var(--secondary-text-color);
+    color: var(--header-text-color);
     border-bottom: solid;
-    border-bottom-color: var(--secondary-text-color);
+    border-bottom-color: var(--header-text-color);
     border-bottom-width: 2px;
     width: 50%;
     margin: 0 auto;
@@ -30,7 +30,7 @@
     text-align: center;
     font-size: 18px;
     font-family: 'Roboto Slab', serif;
-    color: var(--secondary-text-color);
+    color: var(--header-text-color);
     width: 66%;
     margin: 0 auto;
     margin-top: 20px;
@@ -48,6 +48,12 @@
   }
   .icon {
     margin-right: 20px;
+    color: var(--header-text-color);
+  }
+  .icon:hover {
+    background: var(--header-text-color);
+    color: var(--header-text-secondary-color);
+    border-color: var(--header-text-color);
   }
   
   .full-width-container {
