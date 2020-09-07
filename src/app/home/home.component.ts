@@ -70,12 +70,14 @@ export class HomeComponent implements OnInit {
   jbFullLogoState = 'visible';
   isMobile = false;
 
-  themeOptions: SelectItem[] = [{label: 'Dark', value: 'dark'}, {label: 'White', value: 'white'}];
-  theme = 'white';
+  themeOptions: SelectItem[] = [{label: 'Dark', value: 'DARK'}, {label: 'White', value: 'WHITE'}];
+  theme = 'DARK';
 
   constructor(private readonly themeUtilitySvc: ThemeUtilityService) {
     // Detect if the device is mobile to determine what animations to play
     this.isMobile = window.matchMedia('only screen and (max-width: 760px)').matches;
+
+    this.changeTheme();
   }
 
   ngOnInit() {
@@ -165,7 +167,7 @@ export class HomeComponent implements OnInit {
   }
 
   changeTheme() {
-    if (this.theme === 'dark') {
+    if (this.theme === 'DARK') {
       this.themeUtilitySvc.changeToDarkTheme();
     } else {
       this.themeUtilitySvc.changeToWhiteTheme();
