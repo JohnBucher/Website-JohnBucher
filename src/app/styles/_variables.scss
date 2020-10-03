@@ -6,13 +6,8 @@
     // WHITE THEME
     --whiteTheme-primary-section-background-color: white;
     --whiteTheme-secondary-section-background-color: #f1f1f1;
-
     --whiteTheme-primary-text-color: black;
-    --whiteTheme-secondary-text-color: white;
-    --whiteTheme-sidebar-text-color: white;
-
-    --whiteTheme-sidebar-background-color: #262626;
-    --whiteTheme-sidebar-border-color: #202020;
+    --whiteTheme-header-box-shadow-color: #303030;
 
     --whiteTheme-timeline-border: grey;
     --whiteTheme-timeline-item-marker-background-color: lightgray;
@@ -20,18 +15,11 @@
     --whiteTheme-timeline-text-color: black;
     --whiteTheme-timeline-text-secondary-color: black;
 
-    --whiteTheme-header-box-shadow-color: #303030;
-
     // DARK THEME
     --darkTheme-primary-section-background-color: #202020;
     --darkTheme-secondary-section-background-color: #262626;
-
     --darkTheme-primary-text-color: white;
-    --darkTheme-secondary-text-color: black;
-    --darkTheme-sidebar-text-color: #262626;
-
-    --darkTheme-sidebar-background-color: #e6e6e6;
-    --darkTheme-sidebar-border-color: #202020;
+    --darkTheme-header-box-shadow-color: #0f0f0f;
 
     --darkTheme-timeline-border: grey;
     --darkTheme-timeline-item-marker-background-color: lightgray;
@@ -39,11 +27,14 @@
     --darkTheme-timeline-text-color: lightseagreen;
     --darkTheme-timeline-text-secondary-color: rgb(64, 218, 210);
 
-    --darkTheme-header-box-shadow-color: #0f0f0f;
-
     // DEFAULT THEME    
     --header-background-color: #050E1F;
     --header-text-color: white;
     --header-text-secondary-color: black;
     --logo-color: #0F2B5D;
+
+    --sidebar-background-color: #262626;
+    --sidebar-border-color: #202020;
+    --sidebar-text-color: white;
+    --sidebar-secondary-text-color: black;
 }

@@ -14,14 +14,6 @@ export class ThemeUtilityService {
             window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-secondary-section-background-color`));
         document.documentElement.style.setProperty(`--primary-text-color`,
             window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-primary-text-color`));
-        document.documentElement.style.setProperty(`--secondary-text-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-secondary-text-color`));
-        document.documentElement.style.setProperty(`--sidebar-text-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-sidebar-text-color`));
-        document.documentElement.style.setProperty(`--sidebar-background-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-sidebar-background-color`));
-        document.documentElement.style.setProperty(`--sidebar-border-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-sidebar-border-color`));
         document.documentElement.style.setProperty(`--timeline-border`,
             window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-timeline-border`));
         document.documentElement.style.setProperty(`--timeline-item-marker-background-color`,
@@ -43,14 +35,6 @@ export class ThemeUtilityService {
             window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-secondary-section-background-color`));
         document.documentElement.style.setProperty(`--primary-text-color`,
             window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-primary-text-color`));
-        document.documentElement.style.setProperty(`--secondary-text-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-secondary-text-color`));
-        document.documentElement.style.setProperty(`--sidebar-text-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-sidebar-text-color`));
-        document.documentElement.style.setProperty(`--sidebar-background-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-sidebar-background-color`));
-        document.documentElement.style.setProperty(`--sidebar-border-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-sidebar-border-color`));
         document.documentElement.style.setProperty(`--timeline-border`,
             window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-timeline-border`));
         document.documentElement.style.setProperty(`--timeline-item-marker-background-color`,

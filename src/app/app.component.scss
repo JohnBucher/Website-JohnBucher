@@ -122,9 +122,9 @@
   }
   
   .fa:hover {
-    background: var(--secondary-text-color);
-    color: var(--primary-text-color);
-    border-color: var(--secondary-text-color);
+    background: var(--sidebar-text-color);
+    color: var(--sidebar-secondary-text-color);
+    border-color: var(--sidebar-text-color);
     cursor: pointer;
   }
   .fa {
