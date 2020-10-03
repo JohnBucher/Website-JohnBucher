@@ -21,12 +21,11 @@ export class ExperienceComponent implements OnInit {
           { name: 'Asc Software Engineer', dates: 'July 2018 - August 2020' }
         ],
         descriptors: [
-          `Engineer, develop, and maintain web-based applications used by various agencies of the US Government`,
-          `Coordinate and collaborate with numerous teams and inviduals across
-            Lockheed Martin, the US Government, and various Subcontractors`,
-          `Perform continuous-learning on current and future technologies to
-             both shore up team areas of expertise as well as keeping an eye on technologies to improve the program`,
-          `Particular focuses include: Angular, Spring, and Java among others`
+          `Design, develop, and maintain web-based applications used by various agencies of the US Government.`,
+          `Effectively coordinate and collaborate with numerous teams and individuals
+             across Lockheed Martin, subcontractors, and the US Government.`,
+          `Perform continuous learning to shore up program areas of expertise.`,
+          `Focuses include: Angular, Typescript, Spring, and Java among others`
         ]
       },
       {
