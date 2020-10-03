@@ -21,6 +21,7 @@
 }
 .timeline-item-name {
     font-weight: bold;
+    font-size: 1.2rem;
     color: var(--timeline-text-color);
 }
 .timeline-item-title {
@@ -38,7 +39,7 @@
     overflow: hidden;
 }
 .timeline-item-descriptors {
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     color: var(--primary-text-color);
     transition: all 2s ease-in-out;
     margin: 2px 0px;

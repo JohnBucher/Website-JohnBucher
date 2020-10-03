@@ -1,9 +1,13 @@
 export class TimelineItem {
     image: string;
-    dates: string;
     name: string;
-    title: string;
+    titles: TitleItem[];
     descriptors: string[];
 
     showDescriptors ? = false;
+}
+
+export class TitleItem {
+    name: string;
+    dates: string;
 }

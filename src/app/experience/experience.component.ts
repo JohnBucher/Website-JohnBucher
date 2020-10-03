@@ -15,9 +15,11 @@ export class ExperienceComponent implements OnInit {
     this.jobs = [
       {
         name: 'Lockheed Martin',
-        title: 'Asc Software Engineer',
-        dates: 'July 2018 - Present',
         image: 'assets/Experience/LM-Logo.png',
+        titles: [
+          { name: 'Software Engineer', dates: 'August 2020 - Present' },
+          { name: 'Asc Software Engineer', dates: 'July 2018 - August 2020' }
+        ],
         descriptors: [
           `Engineer, develop, and maintain web-based applications used by various agencies of the US Government`,
           `Coordinate and collaborate with numerous teams and inviduals across
@@ -29,9 +31,10 @@ export class ExperienceComponent implements OnInit {
       },
       {
         name: 'Computer Aid, Inc',
-        title: 'Software Development Intern',
-        dates: 'June 2017 - August 2017',
         image: 'assets/Experience/CAI-Logo.png',
+        titles: [
+          { name: 'Software Development Intern', dates: 'June 2017 - August 2017' }
+        ],
         descriptors: [
           `Created and maintained relational databases and web-based applications such as E-commerce websites`,
           `Inspected and documented professional Computer Aid, Inc. applications to ensure smoother knowledge transfer in the future`,

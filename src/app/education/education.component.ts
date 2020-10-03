@@ -14,9 +14,10 @@ export class EducationComponent implements OnInit {
     this.schools = [
       {
         name: 'Shippensburg University',
-        title: 'Computer Science',
-        dates: 'August 2014 - June 2018',
         image: 'assets/Education/Ship-Logo.png',
+        titles: [
+          { name: 'Bachelor of Computer Science', dates: 'August 2014 - June 2018' }
+        ],
         descriptors: [
           'Shippensburg Honors Program',
           'Computer Programming Team',
@@ -26,9 +27,10 @@ export class EducationComponent implements OnInit {
       },
       {
         name: 'Elizabethtown Area High School',
-        title: 'High School Diploma',
-        dates: 'August 2012 - June 2014',
         image: 'assets/Education/EAHS-Logo.png',
+        titles: [
+          { name: 'High School Diploma', dates: 'August 2012 - June 2014' }
+        ],
         descriptors: [
           'National Honor Society',
           'Bronze and Silver Duke of Edinburgh (Awards for Community Service)',
