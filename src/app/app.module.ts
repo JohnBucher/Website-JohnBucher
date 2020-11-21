@@ -6,17 +6,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 
-import { HomeComponent } from './home/home.component';
-import { BackgroundComponent } from './background/background.component';
-import { SkillsComponent } from './skills/skills.component';
-import { ExperienceComponent } from './experience/experience.component';
-import { EducationComponent } from './education/education.component';
-import { ProjectsComponent } from './projects/projects.component';
-import { ResearchComponent } from './research/research.component';
-import { ContactComponent } from './contact/contact.component';
+import { HomeComponent } from './components/home/home.component';
+import { BackgroundComponent } from './components/background/background.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { EducationComponent } from './components/education/education.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { ResearchComponent } from './components/research/research.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 // COMMON-LIB
-import { TimelineComponent } from './common-lib/timeline/timeline.component';
+import { TimelineComponent } from './components/common-lib/timeline/timeline.component';
 
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
