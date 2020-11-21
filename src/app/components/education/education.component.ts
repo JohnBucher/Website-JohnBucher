@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit } from '@angular/core';
-import { TimelineItem } from '../models/timeline-model';
+import { TimelineItem } from '../../models/timeline-model';
 
 @Component({
   selector: 'app-education',

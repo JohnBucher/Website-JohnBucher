@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
-import { ThemeUtilityService } from '../services/theme-utility-service';
+import { ThemeUtilityService } from '../../services/theme-utility-service';
 import { SelectItem } from 'primeng/api';
 
 @Component({
