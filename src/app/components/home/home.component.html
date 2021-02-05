@@ -1,9 +1,9 @@
 <div class="background-container">
   
   <div class="mask" [@maskAnimate]="'in'"></div>
-  <img src="assets/JB Logo/B-Logo-White.png" [@logoBAnimate]="logoBFragmentState" class="jb-logo"
+  <img src="/assets/JB Logo/B-Logo-White.png" [@logoBAnimate]="logoBFragmentState" class="jb-logo"
     (@logoBAnimate.done)="onBLogoAnimationEvent($event)" width="150" height="150">
-  <img src="assets/JB Logo/J-Logo-White.png" [@logoJAnimate]="logoJFragmentState" class="jb-logo"
+  <img src="/assets/JB Logo/J-Logo-White.png" [@logoJAnimate]="logoJFragmentState" class="jb-logo"
     (@logoJAnimate.done)="onJLogoAnimationEvent($event)" width="150" height="150">
   
   <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
@@ -22,7 +22,7 @@
       <!-- Resume Icon -->
       <div class="sidebar-icon-group sidebar-resume">   Resume: </div>
       <div class="sidebar-icon-group sidebar-pdf-icon">
-        <span><a href="assets/Resume/Resume - John Bucher.pdf" class="fa fa-file-pdf-o fa-2x" download></a></span>
+        <span><a href="/assets/Resume/Resume - John Bucher.pdf" class="fa fa-file-pdf-o fa-2x" download></a></span>
       </div>
 
       <!-- Social Icons -->
@@ -36,7 +36,7 @@
   <!-- Toolbar -->
   <div class="toolbar" #toolbar>
     <div class="hover">
-      <img src="assets/JB Logo/JB-Logo-White.png" class="logo" width="36" height="36" (click)="scrollToSection('home');"
+      <img src="/assets/JB Logo/JB-Logo-White.png" class="logo" width="36" height="36" (click)="scrollToSection('home');"
         [@JBLogoAnimate]="jbFullLogoState" (@JBLogoAnimate.done)="onJBLogoAnimate($event)">
     </div>
     <div class="toolbar-menu-container hover" (click)="display = true">
@@ -51,7 +51,7 @@
       <div class="title-block">
         <div class="row">
           <div class="col-lg-0 col-md-12 headshot-container">
-            <img src="assets/Headshots/HeadShot-Circle.png" class="headshot-title">
+            <img src="/assets/Headshots/HeadShot-Circle.png" class="headshot-title">
           </div>
           <div class="col-md-12">
             <div class="border-top"></div>
