@@ -15,7 +15,7 @@ export class ExperienceComponent implements OnInit {
     this.jobs = [
       {
         name: 'Lockheed Martin',
-        image: '/assets/Experience/LM-Logo.png',
+        image: './assets/Experience/LM-Logo.png',
         titles: [
           { name: 'Software Engineer', dates: 'August 2020 - Present' },
           { name: 'Asc Software Engineer', dates: 'July 2018 - August 2020' }
@@ -30,7 +30,7 @@ export class ExperienceComponent implements OnInit {
       },
       {
         name: 'Computer Aid, Inc',
-        image: '/assets/Experience/CAI-Logo.png',
+        image: './assets/Experience/CAI-Logo.png',
         titles: [
           { name: 'Software Development Intern', dates: 'June 2017 - August 2017' }
         ],
