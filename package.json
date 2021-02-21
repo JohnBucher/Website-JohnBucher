@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --base-href /Website-JohnBucher/ --proxy-config proxyconfig.json",
+    "start": "ng serve --base-href /Website-JohnBucher/ --deploy-url /Website-JohnBucher/ --proxy-config proxyconfig.json",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
