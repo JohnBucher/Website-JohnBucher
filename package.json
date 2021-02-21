@@ -3,8 +3,8 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --base-href 'https://johnbucher.github.io/Website-JohnBucher/' --proxy-config proxyconfig.json",
-    "build": "ng build --prod --base-href 'https://johnbucher.github.io/Website-JohnBucher/'",
+    "start": "ng serve --base-href '/Website-JohnBucher/' --proxy-config proxyconfig.json",
+    "build": "ng build --prod --base-href '/Website-JohnBucher/'",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
