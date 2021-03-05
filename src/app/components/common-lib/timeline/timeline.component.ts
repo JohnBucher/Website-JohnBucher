@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, OnInit, Input } from '@angular/core';
-import { TimelineItem } from 'src/app/models/timeline-model';
+import { TimelineItem } from '../../../models/timeline-model';
 import { state, style, transition, animate, trigger } from '@angular/animations';
 
 @Component({
