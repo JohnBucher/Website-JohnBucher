@@ -1,6 +1,6 @@
 {
     "/assets": {
-        "target": "http://localhost:1234",
+        "target": "http://johnbucher.net",
         "secure": false,
         "changeOrigin": true
     }
