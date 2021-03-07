@@ -14,7 +14,7 @@ import { SelectItem } from 'primeng/api';
       state('visible', style({ opacity: 1 })),
       state('invisible', style({ opacity: 0 })),
       transition('invisible => visible', [
-        animate('1ms 3.75s')
+        animate('500ms 3.15s')
       ]),
     ]),
   // -------------------------------------------------------------------------------------------
@@ -32,7 +32,7 @@ import { SelectItem } from 'primeng/api';
     state('resize', style({ opacity: 1, transform: 'scale(0.24, 0.24)', 'transform-origin': 'left top',
                             'margin-top': '7px', 'margin-left': '20px' })),
     state('mobile-fade-out', style({ opacity: 0 })),
-    state('disappear', style({ display: 'none' })),
+    state('disappear', style({ opacity: 0, display: 'none' })),
 
     transition('out => in', animate('1s 500ms ease-in-out')),
     transition('in => mobile-fade-out', animate('0.5s 0.5s')),
@@ -46,7 +46,7 @@ import { SelectItem } from 'primeng/api';
     state('resize', style({ opacity: 1, transform: 'scale(0.24, 0.24)', 'transform-origin': 'left top',
                             'margin-top': '7px', 'margin-left': '20px' })),
     state('mobile-fade-out', style({ opacity: 0 })),
-    state('disappear', style({ display: 'none' })),
+    state('disappear', style({ opacity: 0, display: 'none' })),
 
     transition('out => in', animate('1s 500ms ease-in-out')),
     transition('in => mobile-fade-out', animate('0.5s 0.5s')),

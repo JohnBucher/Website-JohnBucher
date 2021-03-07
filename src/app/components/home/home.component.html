@@ -1,9 +1,9 @@
 <div class="background-container">
   
   <div class="mask" [@maskAnimate]="'in'"></div>
-  <img src="./assets/JB Logo/B-Logo-White.png" [@logoBAnimate]="logoBFragmentState" class="jb-logo"
+  <img src="./assets/JB Logo/B-Logo-White.png" [@logoBAnimate]="logoBFragmentState" class="jb-logo drop-shadow"
     (@logoBAnimate.done)="onBLogoAnimationEvent($event)" width="150" height="150">
-  <img src="./assets/JB Logo/J-Logo-White.png" [@logoJAnimate]="logoJFragmentState" class="jb-logo"
+  <img src="./assets/JB Logo/J-Logo-White.png" [@logoJAnimate]="logoJFragmentState" class="jb-logo drop-shadow"
     (@logoJAnimate.done)="onJLogoAnimationEvent($event)" width="150" height="150">
   
   <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
@@ -34,7 +34,7 @@
   </p-sidebar>
 
   <!-- Toolbar -->
-  <div class="toolbar" #toolbar>
+  <div class="toolbar drop-shadow" #toolbar>
     <div class="hover">
       <img src="./assets/JB Logo/JB-Logo-White.png" class="logo" width="36" height="36" (click)="scrollToSection('home');"
         [@JBLogoAnimate]="jbFullLogoState" (@JBLogoAnimate.done)="onJBLogoAnimate($event)">
@@ -47,7 +47,7 @@
 
   <!-- Home Page Content -->
   <div class="front-page-div" id="home">
-    <div class="background-container-content">
+    <div class="background-container-content drop-shadow">
       <div class="title-block">
         <div class="row">
           <div class="col-lg-0 col-md-12 headshot-container">

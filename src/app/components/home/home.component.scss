@@ -3,7 +3,9 @@
 
 .background-container {
     /* The image used */
-    background-image: url('~/assets/Home/EarthBackground.jpg');
+    background: #00000088;
+    background-image: url('~/assets/Home/Homepage.png'); /* Fallback */
+    background-image: linear-gradient(0deg, #00000088, #ffffff44 100%), url('~/assets/Home/Homepage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -20,7 +22,7 @@
   /*-------- Mobile Phones --------*/
   @media only screen and (max-device-width : 1024px) {
     .background-container {
-      background-image: -webkit-linear-gradient(top, rgba(0,0,0,0.1), rgba(0,0,0,0.1)), url('~/assets/Home/EarthBackground.jpg');
+      background-image: linear-gradient(0deg, #00000088, #ffffff44 100%), url('~/assets/Home/Mobile-Homepage.png');
       background-size: auto;
       background-attachment: initial;
     }
@@ -144,12 +146,15 @@
     top: 0px;
     left: 0px;
     margin-bottom: 5vh;
-    -webkit-filter: drop-shadow(5px 5px 5px rgb(0, 0, 0));
-    filter:         drop-shadow(5px 5px 5px rgb(0, 0, 0)); 
   }
   .headshot-container {
     max-width: 500px !important;
     margin: 0px auto !important;
+  }
+
+  .drop-shadow {
+    -webkit-filter: drop-shadow(3px 3px 5px black);
+    filter:         drop-shadow(3px 3px 5px black); 
   }
   
   @media(min-width: 960px) {
