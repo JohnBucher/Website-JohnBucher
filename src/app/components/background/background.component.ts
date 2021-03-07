@@ -10,11 +10,12 @@ export class BackgroundComponent {
   backgroundBlurb = `My name is John Bucher and I am a Software Engineer specializing in Full Stack Web Development and Web Service
    technologies. This website was created to serve as a consolidation and showcase of my projects, skills, education,
    and experience!<br /><br />
-   I graduated from Shippensburg University in the Spring of 2018 with a Bachelor of Science in Computer Science.
-   I graduated Cum Laude and as a member of the Shippensburg Honor’s Program. I plan to continue my education in Computer
-   Science with a master’s degree in the very near future.<br /><br />
+   I graduated from Shippensburg University of Pennsylvania in the Spring of 2018 with a Bachelor of Science in Computer Science.
+   I graduated Cum Laude and as a member of the Shippensburg Honor’s Program. I am currently attending the University of Colorado
+   Boulder pursuing a Master of Engineering degree in Engineering Management.<br /><br />
    I am currently working for Lockheed Martin as a Software Engineer in the Space Department. My main duties involve
-   developing and maintaining web-based applications using frameworks and languages such as Angular, Spring, and SQL among others.
+   designing, developing, and maintaining web-based applications using frameworks and languages such as Angular, Spring/Java, and 
+   SQL among others. 
   `;
 
   constructor() {
