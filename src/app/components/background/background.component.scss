@@ -25,20 +25,18 @@
   }
   
   .background-picture {
-    width: 250px; 
-    height: 250px;
+    width: 350px; 
+    height: 300px;
     display: block;
     margin-left: auto;
     margin-right: 15px;
     padding-right: 45px;
+    -webkit-filter: drop-shadow(3px 3px 5px black);
+    filter:         drop-shadow(3px 3px 5px black);
   }
   .auto-align {
     margin-top: auto;
     margin-bottom: auto;
-  }
-
-  .logo-container {
-    border-right: 2px solid var(--logo-color);
   }
 
   @media(max-width: 991px) {
@@ -46,7 +44,7 @@
     .background-picture {
       margin-right: auto;
       padding-right: 0px;
-      margin-bottom: 15px;
+      margin-bottom: 25px;
     }
     .logo-container {
       border-right: none;
