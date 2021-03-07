@@ -26,7 +26,8 @@ export class ExperienceComponent implements OnInit {
              across Lockheed Martin, subcontractors, and the US Government.`,
           `Perform continuous learning to shore up program areas of expertise.`,
           `Focuses include: Angular, Typescript, Spring, and Java among others`
-        ]
+        ],
+        dates: 'July 2018 - Present'
       },
       {
         name: 'Computer Aid, Inc',
@@ -40,7 +41,8 @@ export class ExperienceComponent implements OnInit {
           `Gained experience in professional communication and coordination by interacting with
             multiple teams and interns in service of completing my assignments`,
           `Gained experience in C#, ASP.NET, Javascript, CSS, Bootstrap, HTML, jQuery, WinForms, and SQLServer`
-        ]
+        ],
+        dates: 'June 2017 - August 2017'
       }
     ];
   }

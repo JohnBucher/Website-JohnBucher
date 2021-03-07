@@ -3,6 +3,7 @@ export class TimelineItem {
     name: string;
     titles: TitleItem[];
     descriptors: string[];
+    dates: string;
 
     showDescriptors ? = false;
 }

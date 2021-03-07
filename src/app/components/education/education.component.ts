@@ -13,6 +13,17 @@ export class EducationComponent implements OnInit {
   constructor() {
     this.schools = [
       {
+        name: 'University of Colorado Boulder',
+        image: './assets/Education/CUBoulder-Logo.png',
+        titles: [
+          { name: 'Master of Engineering in Engineering Management', dates: 'January 2021 - Present' }
+        ],
+        descriptors: [
+          'N/A'
+        ],
+        dates: 'January 2021 - Present'
+      },
+      {
         name: 'Shippensburg University',
         image: './assets/Education/Ship-Logo.png',
         titles: [
@@ -23,7 +34,8 @@ export class EducationComponent implements OnInit {
           'Computer Programming Team',
           `Participant in the 2018 Minds at Work Conference presenting the research project:
             \"The Prevalence and Impact of the \'QWERTY Effect\' on the Russian Language\"`
-        ]
+        ],
+        dates: 'August 2014 - June 2018'
       },
       {
         name: 'Elizabethtown Area High School',
@@ -35,7 +47,8 @@ export class EducationComponent implements OnInit {
           'National Honor Society',
           'Bronze and Silver Duke of Edinburgh (Awards for Community Service)',
           'Lancaster Lebanon Scholar Athlete Award'
-        ]
+        ],
+        dates: 'August 2012 - June 2014'
       }
     ];
   }
