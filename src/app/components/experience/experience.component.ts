@@ -17,8 +17,7 @@ export class ExperienceComponent implements OnInit {
         name: 'Lockheed Martin',
         image: './assets/Experience/LM-Logo.png',
         titles: [
-          { name: 'Software Engineer', dates: 'August 2020 - Present' },
-          { name: 'Asc Software Engineer', dates: 'July 2018 - August 2020' }
+          { name: 'Software Engineer', dates: 'July 2018 - Present' }
         ],
         descriptors: [
           `Design, develop, and maintain web-based applications used by various agencies of the US Government.`,

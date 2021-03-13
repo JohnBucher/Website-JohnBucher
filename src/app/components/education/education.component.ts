@@ -19,15 +19,17 @@ export class EducationComponent implements OnInit {
           { name: 'Master of Engineering in Engineering Management', dates: 'January 2021 - Present' }
         ],
         descriptors: [
-          'N/A'
+          'Current Class(es): Engineering Communication',
+          `Learning valuable management skills such as communication, managing teams, 
+          quality management, and fostering creative thought among many others`
         ],
         dates: 'January 2021 - Present'
       },
       {
-        name: 'Shippensburg University',
+        name: 'Shippensburg University of Pennsylvania',
         image: './assets/Education/Ship-Logo.png',
         titles: [
-          { name: 'Bachelor of Computer Science', dates: 'August 2014 - June 2018' }
+          { name: 'Bachelor of Science in Computer Science', dates: 'August 2014 - June 2018' }
         ],
         descriptors: [
           'Shippensburg Honors Program',
