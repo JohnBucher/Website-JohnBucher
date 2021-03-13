@@ -1,0 +1,24 @@
+.skill-container {
+    display: flex;
+    align-items: center;
+    margin: 5px 0px;
+    padding: 10px;
+    border: 1px solid var(--component-text-color);
+    border-radius: 5px;
+}
+.icon-col {
+    float: left;
+    margin-right: 15px;
+    font-size: 2em;
+}
+.content-col {
+    float: left;
+    width: 100%;
+}
+.group {
+    font-weight: bold;
+    font-size: 1.25em;
+}
+.skills {
+    font-size: 1em;
+}

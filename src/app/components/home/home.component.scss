@@ -151,11 +151,6 @@
     max-width: 500px !important;
     margin: 0px auto !important;
   }
-
-  .drop-shadow {
-    -webkit-filter: drop-shadow(3px 3px 5px black);
-    filter:         drop-shadow(3px 3px 5px black); 
-  }
   
   @media(min-width: 960px) {
     /* -- ON SCREEN SIZES LARGER THAN 960 -- */

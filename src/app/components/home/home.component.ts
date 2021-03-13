@@ -86,9 +86,6 @@ export class HomeComponent implements OnInit {
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 
-    // Set initial values for skill-column colorings
-    this.checkSkillColumnColors();
-
     // Keep track of the current scroll position for CSS
     window.addEventListener('scroll', () => {
       const scrolled = window.scrollY;
@@ -101,30 +98,10 @@ export class HomeComponent implements OnInit {
       }
     });
 
-    // Keep track of the current screen width for CSS purposes
-    window.addEventListener('resize', () => {
-      this.checkSkillColumnColors();
-    });
-
     if (!this.isMobile) {
       // IF the device is not mobile, then set the main logo to the first animation state
       // which will enable the rest of the animation steps
       this.jbFullLogoState = 'invisible';
-    }
-  }
-
-  checkSkillColumnColors() {
-    const width = window.innerWidth;
-    const skillBar = document.getElementsByClassName('skill-industry')[0];
-    const otherBar = document.getElementsByClassName('skill-other')[0];
-
-    // If the skill sections collapse into one column account for that by getting the 3rd and 4th section and alter the color ordering
-    if (width >= 767) {
-      skillBar.setAttribute('style', 'min-height: 175px; color: white; background-color: #495568;');
-      otherBar.setAttribute('style', 'min-height: 175px; color: white; background-color: #404a5b;');
-    } else if (width <= 767) {
-      skillBar.setAttribute('style', 'min-height: 175px; color: white; background-color: #404a5b;');
-      otherBar.setAttribute('style', 'min-height: 175px; color: white; background-color: #495568;');
     }
   }
 

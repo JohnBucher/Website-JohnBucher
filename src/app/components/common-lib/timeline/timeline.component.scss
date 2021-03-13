@@ -4,7 +4,7 @@
 .timeline-container {
     padding: 15px 0px;
     margin: 15px 0px 15px 25px;
-    border-left: 4px solid var(--timeline-border);
+    border-left: 4px solid grey;
 }
 
 .timeline-item {
@@ -12,8 +12,8 @@
 }
 .timeline-item-marker {
     border-radius: 9999px;
-    background-color: var(--timeline-item-marker-background-color);
-    box-shadow: 0px 0px 5px 1px var(--timeline-item-marker-box-shadow-color);
+    background-color: lightgrey;
+    box-shadow: 0px 0px 5px 1px black;
     width: 12px;
     height: 12px;
     position: absolute;
@@ -22,18 +22,18 @@
 .timeline-item-name {
     font-weight: bold;
     font-size: 1.2rem;
-    color: var(--timeline-text-color);
+    color: var(--component-text-color);
 }
 .timeline-item-title {
-    color: var(--timeline-text-secondary-color);
+    color: var(--component-text-secondary-color);
 }
 .timeline-item-dates {
     font-size: 0.8rem;
-    color: var(--timeline-text-secondary-color);
+    color: var(--component-text-secondary-color);
 }
 .timeline-item-button {
-    color: var(--timeline-text-color);
-    border-color: var(--timeline-text-color) !important;
+    color: var(--component-text-color);
+    border-color: var(--component-text-color) !important;
 }
 .timeline-item-descriptor-container {
     overflow: hidden;

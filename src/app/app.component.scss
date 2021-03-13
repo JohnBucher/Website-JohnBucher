@@ -149,10 +149,15 @@
   .sub-section-title {
     font-size: 2rem;
     font-weight: bold;
-    color: var(--timeline-text-color);
+    color: var(--component-text-color);
     padding-left: 10px;
   }
   .sub-section-small-icon-padding {
     padding-left: 15px;
+  }
+
+  .drop-shadow {
+    -webkit-filter: drop-shadow(3px 3px 5px black);
+    filter:         drop-shadow(3px 3px 5px black); 
   }
   

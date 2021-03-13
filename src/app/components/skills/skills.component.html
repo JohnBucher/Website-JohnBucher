@@ -1,140 +1,14 @@
-<p-dialog header="Front End Skills" [(visible)]="frontEndDialog" position="center center" [style]="{width: '90%'}"
-          [modal]="true" [closeOnEscape]="true" [dismissableMask]="true" (onShow)="populateFrontEndDialog()">
-  <div class="skill-dialog-container">
-    <div> <i class="pi pi-star skill-year-star"></i> = Years Experience </div>
-    <div class="row">
-      <div class="col-6 star-col" id="Angular"></div>
-      <div class="col-6 star-col" id="AngularJS"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 star-col" id="HTML"></div>
-      <div class="col-6 star-col" id="CSS"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 star-col" id="Typescript"></div>
-      <div class="col-6 star-col" id="Javascript"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 star-col" id="Bootstrap"></div>
-      <div class="col-6 star-col" id="jQuery"></div>
-    </div>
-  </div>
-</p-dialog>
-
-<p-dialog header="Back End Skills / Other Languages" [(visible)]="backEndDialog" position="center center" [style]="{width: '90%'}"
-          [modal]="true" [closeOnEscape]="true" [dismissableMask]="true" (onShow)="populateBackEndDialog()">
-  <div class="skill-dialog-container">
-    <div> <i class="pi pi-star skill-year-star"></i> = Years Experience </div>
-    <div class="row">
-      <div class="col-6 star-col" id="C#"></div>
-      <div class="col-6 star-col" id="Java"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 star-col" id="C"></div>
-      <div class="col-6 star-col" id="SQL"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 star-col" id="ASP.NET"></div>
-      <div class="col-6 star-col" id="Ruby On Rails"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 star-col" id="Python"></div>
-      <div class="col-6 star-col" id="Kotlin"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 star-col" id="Spring"></div>
-    </div>
-  </div>
-</p-dialog>
-
-<p-dialog header="Industry Standards" [(visible)]="industryStandardsDialog" position="center center" [style]="{width: '90%'}"
-          [modal]="true" [closeOnEscape]="true" [dismissableMask]="true" (onShow)="populateIndustryDialog()">
-  <div class="skill-dialog-container">
-    <div> <i class="pi pi-star skill-year-star"></i> = Years Experience </div>
-    <div class="row">
-      <div class="col-6 star-col" id="Agile"></div>
-      <div class="col-6 star-col" id="Git"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 star-col" id="VSCode"></div>
-      <div class="col-6 star-col" id="IntelliJ"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 star-col" id="Visual Studio"></div>
-      <div class="col-6 star-col" id="Eclipse"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 star-col" id="JSON"></div>
-      <div class="col-6 star-col" id="XML"></div>
-    </div>
-    <div class="row">
-      <div class="col-6 star-col" id="Relational Databases"></div>
-      <div class="col-6 star-col" id="SQL Server"></div>
-    </div>
-  </div>
-</p-dialog>
-
 
 <div class="skills-page-div">
   <div class="section-title"> Skills </div>
   <div class="clearfix"></div> <br />
   <div class="skill-content">
+
     <div class="row">
-
-      <!-- Front End Section -->
-      <div class="col-md-6 skill-col skill-on-col hover-col" (click)="showFrontEndDialog();">
-        <!-- Hover Overlay -->
-        <div class="overlay"></div> <img class="skill-button" src="./assets/Skills/skill-hover.png">
-        <div>
-          <div class="col-title-text">
-            <label style="padding-right: 10px;">{{frontEndSymbol}}</label>
-            <label>{{frontEndText}}</label>
-          </div>
-          <div class="clearfix"></div> <br />
-          <div id="frontEndSkillList"></div>
-        </div>
+      <div *ngFor="let skillGroup of skillData" class="col-xl-3 col-lg-4 col-sm-6">
+        <app-skill-group [skillGroupData]="skillGroup" class="skills-background-color"></app-skill-group>
       </div>
-
-      <!-- Back End Section -->
-      <div class="col-md-6 skill-col skill-off-col hover-col" (click)="showBackEndDialog();">
-        <!-- Hover Overlay -->
-        <div class="overlay"></div> <img class="skill-button" src="./assets/Skills/skill-hover.png">
-        <div>
-          <div class="col-title-text">
-            <label style="padding-right: 10px;">{{backEndSymbol}}</label>
-            <label>{{backEndText}}</label>
-          </div>
-          <div class="clearfix"></div> <br />
-          <div id="backEndSkillList"></div>
-        </div>
-      </div>
-
-      <!-- Industry Tools/Standards Section -->
-      <div class="col-md-6 skill-col skill-off-col skill-industry hover-col" (click)="showIndustryStandardsDialog();">
-        <!-- Hover Overlay -->
-        <div class="overlay"></div> <img class="skill-button" src="./assets/Skills/skill-hover.png">
-        <div>
-          <div class="col-title-text">
-            <label style="padding-right: 10px; display: flex; align-items: center;"><i class="pi pi-cloud"></i></label>
-            <label>Industry Tools / Standards</label>
-          </div>
-          <div class="clearfix"></div> <br />
-          <div id="industrySkillList"></div>
-        </div>
-      </div>
-
-      <!-- Other Skills Section -->
-      <div class="col-md-6 skill-col skill-on-col skill-other" (click)="showOtherSkillsDialog();">
-        <div>
-          <div class="col-title-text">
-            <label style="padding-right: 10px; display: flex; align-items: center;"><i class="pi pi-briefcase"></i></label>
-            <label>Other Skills</label>
-          </div>
-          <div class="clearfix"></div> <br />
-          <div id="otherSkillList"></div>
-        </div>
-      </div>
-
     </div>
+
   </div>
 </div>

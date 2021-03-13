@@ -101,10 +101,12 @@
   }
   
   .skill-content {
-    height: 80%;
-    width: 80%;
-    background-color: white;
-    box-shadow: 1px 1px 35px 1px var(--header-box-shadow-color);
-    max-width: 1000px;
+    height: 90%;
+    width: 90%;
+    color: var(--component-text-color);
+  }
+
+  .skills-background-color {
+    background-color: var(--secondary-section-background-color);
   }
   
