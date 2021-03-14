@@ -1,0 +1,34 @@
+# Action Workflow to implement CI/CD to my website
+
+name: Lint, Test, Build, and Deploy
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm ci
+        
+      - name: Lint
+        run: npm run lint
+
+      - name: Test
+        run: npm run test:ci
+
+      - name: Build
+        run: npm run build:ci
+        
+      - name: Deploy
+        run: npm run deploy:ci
