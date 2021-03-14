@@ -17,6 +17,9 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        with:
+          deploy_branch: gh-pages
+          angular_dist_build_folder: dist/Website-JohnBucher
 
       - name: Install Dependencies
         run: npm ci
@@ -30,5 +33,8 @@ jobs:
       - name: Build
         run: npm run build:ci
         
-      - name: Deploy
-        run: npm run deploy:ci
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@4.1.0
+        with:
+          branch: gh-pages # The branch the action should deploy to.
+          folder: dist/Website-JohnBucher # The folder the action should deploy.
