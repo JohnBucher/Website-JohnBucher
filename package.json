@@ -9,8 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
-    "build:ci": "ng build --prod --base-href https://johnbucher.dev/",
-    "deploy:ci": "ngh --dir dist/Website-JohnBucher"
+    "build:ci": "ng build --prod --base-href https://johnbucher.dev/"
   },
   "private": true,
   "dependencies": {
@@ -25,7 +24,6 @@
     "@angular/platform-browser-dynamic": "^9.1.13",
     "@angular/router": "^9.1.13",
     "@fortawesome/fontawesome-free": "^5.15.2",
-    "angular-cli-ghpages": "^1.0.0-rc.1",
     "bootstrap": "^4.6.0",
     "core-js": "^2.6.12",
     "font-awesome": "^4.7.0",
