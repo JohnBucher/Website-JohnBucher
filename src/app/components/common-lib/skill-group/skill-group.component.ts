@@ -11,7 +11,7 @@ export class SkillGroupComponent implements OnInit {
     @Input() skillGroupData: SkillGroup;
     @Input() class: any;
 
-    public skillsString: string = '';
+    public skillsString = '';
 
     constructor() {
     }

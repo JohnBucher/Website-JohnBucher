@@ -1,4 +1,4 @@
-import { SkillGroup } from "../models/skill-group-model";
+import { SkillGroup } from '../models/skill-group-model';
 
 export const skillList = [
     {

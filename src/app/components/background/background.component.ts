@@ -14,8 +14,8 @@ export class BackgroundComponent {
    I graduated Cum Laude and as a member of the Shippensburg Honor’s Program. I am currently attending the University of Colorado
    Boulder pursuing a Master of Engineering degree in Engineering Management.<br /><br />
    I am currently working for Lockheed Martin as a Software Engineer in the Space Department. My main duties involve
-   designing, developing, and maintaining web-based applications using frameworks and languages such as Angular, Spring/Java, and 
-   SQL among others. 
+   designing, developing, and maintaining web-based applications using frameworks and languages such as Angular, Spring/Java, and
+   SQL among others.
   `;
 
   constructor() {

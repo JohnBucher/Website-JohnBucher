@@ -20,7 +20,7 @@ export class EducationComponent implements OnInit {
         ],
         descriptors: [
           'Current Class(es): Engineering Communication',
-          `Learning valuable management skills such as communication, managing teams, 
+          `Learning valuable management skills such as communication, managing teams,
           quality management, and fostering creative thought among many others`
         ],
         dates: 'January 2021 - Present'
