@@ -160,4 +160,9 @@
     -webkit-filter: drop-shadow(3px 3px 5px black);
     filter:         drop-shadow(3px 3px 5px black); 
   }
+
+  .centered-container {
+    display: flex;
+    align-items: center;
+  }
   
