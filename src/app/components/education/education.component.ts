@@ -32,7 +32,7 @@ export class EducationComponent implements OnInit {
           { name: 'Bachelor of Science in Computer Science', dates: 'August 2014 - June 2018' }
         ],
         descriptors: [
-          'Shippensburg Honors Program',
+          'Wood Honors College at Shippensburg University',
           'Computer Programming Team',
           `Participant in the 2018 Minds at Work Conference presenting the research project:
             \"The Prevalence and Impact of the \'QWERTY Effect\' on the Russian Language\"`
