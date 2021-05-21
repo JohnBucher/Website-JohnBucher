@@ -19,9 +19,9 @@ export class EducationComponent implements OnInit {
           { name: 'Master of Engineering in Engineering Management', dates: 'January 2021 - Present' }
         ],
         descriptors: [
-          'Current Class(es): Engineering Communication',
-          `Learning valuable management skills such as communication, managing teams,
-          quality management, and fostering creative thought among many others`
+          'Current GPA: 4.0',
+          `Learning valuable management skills such as communication, managing teams, leadership,
+          project and quality management, and fostering creative thought among many others`
         ],
         dates: 'January 2021 - Present'
       },
