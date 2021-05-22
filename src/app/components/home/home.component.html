@@ -6,9 +6,10 @@
   <img src="./assets/JB Logo/J-Logo-White.png" [@logoJAnimate]="logoJFragmentState" class="jb-logo drop-shadow"
     (@logoJAnimate.done)="onJLogoAnimationEvent($event)" width="150" height="150">
   
+  <!-- Sidebar -->
   <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
     <div class="sidebar-container">
-      <p-selectButton [options]="themeOptions" [(ngModel)]="theme" (click)="changeTheme()"></p-selectButton>
+      <p-selectButton [options]="themeOptions" [style]="{'margin':'10px 0px'}" [(ngModel)]="theme" (click)="changeTheme()"></p-selectButton>
 
       <!-- Section Links -->
       <div class="menu-item" (click)="scrollToSection('home'); display = false">        Home </div>
@@ -19,17 +20,15 @@
       <div class="menu-item" (click)="scrollToSection('research'); display = false">    Research </div>
       <div class="menu-item" (click)="scrollToSection('contact'); display = false">     Contact Me </div>
 
-      <!-- Resume Icon -->
-      <div class="sidebar-icon-group sidebar-resume">   Resume: </div>
-      <div class="sidebar-icon-group sidebar-pdf-icon">
-        <span><a href="./assets/Resume/Resume - John Bucher.pdf" class="fa fa-file-pdf-o fa-2x" download></a></span>
-      </div>
+      <img src="./assets/Home/Sidebar-Banner.png" class="sidebar-logo">
 
       <!-- Social Icons -->
       <div class="sidebar-icon-group">
-        <span><a href="https://www.linkedin.com/in/johnbuchercs/" class="fa fa-linkedin fa-2x sidebar-icon" target="_blank"></a></span>
-        <span><a href="https://github.com/JohnBucher" class="fa fa-github fa-2x" target="_blank"></a></span>
+        <span><a href="./assets/Resume/Resume - John Bucher.pdf" class="fa fa-file-pdf-o sidebar-icon" download></a></span>
+        <span><a href="https://www.linkedin.com/in/johnbuchercs/" class="fa fa-linkedin sidebar-icon" target="_blank"></a></span>
+        <span><a href="https://github.com/JohnBucher" class="fa fa-github" target="_blank"></a></span>
       </div>
+      <div class="sidebar-resume">Resume</div>
     </div>
   </p-sidebar>
 
