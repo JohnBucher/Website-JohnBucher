@@ -72,7 +72,7 @@ export class HomeComponent implements OnInit {
 
   themeOptions: SelectItem[] = [{label: 'Dark', value: 'DARK'}, {label: 'White', value: 'WHITE'}];
 
-  constructor(private readonly themeUtilitySvc: ThemeUtilityService) {
+  constructor(public readonly themeUtilitySvc: ThemeUtilityService) {
     // Detect if the device is mobile to determine what animations to play
     this.isMobile = window.matchMedia('only screen and (max-width: 760px)').matches;
   }
