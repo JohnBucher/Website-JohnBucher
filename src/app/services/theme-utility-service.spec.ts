@@ -55,7 +55,6 @@ describe('ThemeUtilityService', () => {
     it('switching themes should update CSS variables', () => {
         service.changeToWhiteTheme();
 
-        expect(service.selectedTheme).toEqual('WHITE');
         expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--primary-section-background-color`))
             .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-primary-section-background-color`));
         expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--secondary-section-background-color`))
@@ -71,7 +70,6 @@ describe('ThemeUtilityService', () => {
 
         service.changeToDarkTheme();
 
-        expect(service.selectedTheme).toEqual('DARK');
         expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--primary-section-background-color`))
             .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-primary-section-background-color`));
         expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--secondary-section-background-color`))
