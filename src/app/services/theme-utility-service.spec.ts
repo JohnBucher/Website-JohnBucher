@@ -17,7 +17,7 @@ function setPropertyVariables() {
     document.documentElement.style.setProperty(`--darkTheme-component-text-secondary-color`, 'rgb(64, 218, 210)');
     document.documentElement.style.setProperty(`--darkTheme-header-box-shadow-color`, '#0f0f0f');
 
-    // DEFAULT THEME 
+    // DEFAULT THEME
     document.documentElement.style.setProperty(`--header-background-color`, '#050E1F');
     document.documentElement.style.setProperty(`--header-text-color`, 'white');
     document.documentElement.style.setProperty(`--header-text-secondary-color`, 'black');
@@ -29,7 +29,7 @@ function setPropertyVariables() {
 }
 
 describe('ThemeUtilityService', () => {
-    let service: ThemeUtilityService
+    let service: ThemeUtilityService;
     beforeEach(() => {
         setPropertyVariables();
         service = new ThemeUtilityService();
