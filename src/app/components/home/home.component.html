@@ -9,7 +9,7 @@
   <!-- Sidebar -->
   <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
     <div class="sidebar-container">
-      <p-selectButton [options]="themeOptions" [style]="{'margin':'10px 0px'}" [(ngModel)]="theme" (click)="changeTheme()"></p-selectButton>
+      <p-selectButton [options]="themeOptions" [style]="{'margin':'10px 0px'}" [(ngModel)]="themeUtilitySvc.selectedTheme" (click)="changeTheme()"></p-selectButton>
 
       <!-- Section Links -->
       <div class="menu-item" (click)="scrollToSection('home'); display = false">        Home </div>

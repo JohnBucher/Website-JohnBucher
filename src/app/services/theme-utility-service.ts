@@ -2,9 +2,14 @@ import { NgModule } from '@angular/core';
 
 @NgModule({})
 export class ThemeUtilityService {
-    public selectedTheme = 'dark';
+    public selectedTheme = 'DARK';
 
     constructor() {
+        if (this.selectedTheme === 'DARK') {
+            this.changeToDarkTheme();
+          } else {
+            this.changeToWhiteTheme();
+          }
     }
 
     public changeToDarkTheme() {
