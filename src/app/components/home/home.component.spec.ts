@@ -110,7 +110,7 @@ describe('HomeComponent', () => {
 
     it('should call changeTheme()', () => {
         spyOn(component.themeUtilitySvc, 'changeToDarkTheme');
-        spyOn(component.themeUtilitySvc, 'changeToWhiteTheme');
+        spyOn(component.themeUtilitySvc, 'changeToLightTheme');
 
         // CHANGE TO DARK THEME
         expect(component.themeUtilitySvc.selectedTheme).toEqual('DARK');
@@ -118,8 +118,8 @@ describe('HomeComponent', () => {
         expect(component.themeUtilitySvc.changeToDarkTheme).toHaveBeenCalled();
 
         // CHANGE TO LIGHT THEME
-        component.themeUtilitySvc.selectedTheme = 'WHITE';
+        component.themeUtilitySvc.selectedTheme = 'LIGHT';
         component.changeTheme();
-        expect(component.themeUtilitySvc.changeToWhiteTheme).toHaveBeenCalled();
+        expect(component.themeUtilitySvc.changeToLightTheme).toHaveBeenCalled();
     });
 });

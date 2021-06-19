@@ -8,7 +8,7 @@ export class ThemeUtilityService {
         if (this.selectedTheme === 'DARK') {
             this.changeToDarkTheme();
           } else {
-            this.changeToWhiteTheme();
+            this.changeToLightTheme();
           }
     }
 
@@ -27,19 +27,19 @@ export class ThemeUtilityService {
             window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-header-box-shadow-color`));
     }
 
-    public changeToWhiteTheme() {
+    public changeToLightTheme() {
         document.documentElement.style.setProperty(`--primary-section-background-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-primary-section-background-color`));
+            window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-primary-section-background-color`));
         document.documentElement.style.setProperty(`--secondary-section-background-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-secondary-section-background-color`));
+            window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-secondary-section-background-color`));
         document.documentElement.style.setProperty(`--primary-text-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-primary-text-color`));
+            window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-primary-text-color`));
         document.documentElement.style.setProperty(`--component-text-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-component-text-color`));
+            window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-component-text-color`));
         document.documentElement.style.setProperty(`--component-text-secondary-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-component-text-secondary-color`));
+            window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-component-text-secondary-color`));
         document.documentElement.style.setProperty(`--header-box-shadow-color`,
-            window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-header-box-shadow-color`));
+            window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-header-box-shadow-color`));
     }
 
 }

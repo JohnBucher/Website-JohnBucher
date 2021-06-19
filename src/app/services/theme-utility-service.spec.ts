@@ -1,13 +1,13 @@
 import { ThemeUtilityService } from './theme-utility-service';
 
 function setPropertyVariables() {
-    // WHITE THEME
-    document.documentElement.style.setProperty(`--whiteTheme-primary-section-background-color`, 'white');
-    document.documentElement.style.setProperty(`--whiteTheme-secondary-section-background-color`, '#f1f1f1');
-    document.documentElement.style.setProperty(`--whiteTheme-primary-text-color`, 'black');
-    document.documentElement.style.setProperty(`--whiteTheme-component-text-color`, 'black');
-    document.documentElement.style.setProperty(`--whiteTheme-component-text-secondary-color`, 'black');
-    document.documentElement.style.setProperty(`--whiteTheme-header-box-shadow-color`, '#303030');
+    // LIGHT THEME
+    document.documentElement.style.setProperty(`--lightTheme-primary-section-background-color`, 'white');
+    document.documentElement.style.setProperty(`--lightTheme-secondary-section-background-color`, '#f1f1f1');
+    document.documentElement.style.setProperty(`--lightTheme-primary-text-color`, 'black');
+    document.documentElement.style.setProperty(`--lightTheme-component-text-color`, 'black');
+    document.documentElement.style.setProperty(`--lightTheme-component-text-secondary-color`, 'black');
+    document.documentElement.style.setProperty(`--lightTheme-header-box-shadow-color`, '#303030');
 
     // DARK THEME
     document.documentElement.style.setProperty(`--darkTheme-primary-section-background-color`, '#202020');
@@ -53,20 +53,20 @@ describe('ThemeUtilityService', () => {
     });
 
     it('switching themes should update CSS variables', () => {
-        service.changeToWhiteTheme();
+        service.changeToLightTheme();
 
         expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--primary-section-background-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-primary-section-background-color`));
+            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-primary-section-background-color`));
         expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--secondary-section-background-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-secondary-section-background-color`));
+            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-secondary-section-background-color`));
         expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--primary-text-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-primary-text-color`));
+            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-primary-text-color`));
         expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--component-text-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-component-text-color`));
+            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-component-text-color`));
         expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--component-text-secondary-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-component-text-secondary-color`));
+            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-component-text-secondary-color`));
         expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--header-box-shadow-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--whiteTheme-header-box-shadow-color`));
+            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-header-box-shadow-color`));
 
         service.changeToDarkTheme();
 
