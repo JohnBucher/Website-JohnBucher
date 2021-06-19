@@ -78,7 +78,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    // First we get the viewport height and we multiple it by 1% to get a value for a vh unit
+    // First we get the viewport height and we multiply it by 1% to get a value for a vh unit
     // Then we set the value in the --vh custom property to the root of the document
     const vh = window.innerHeight * 0.01;
     document.documentElement.style.setProperty('--vh', `${vh}px`);
@@ -112,7 +112,7 @@ export class HomeComponent implements OnInit {
     window.scrollBy({ top: scrollAmount, left: 0, behavior: 'smooth' });
   }
 
-  onJLogoAnimationEvent( event: AnimationEvent ) {
+  onJLogoAnimationEvent() {
     if (this.logoJFragmentState === 'out') {
       this.logoJFragmentState = 'in';
     } else if (this.isMobile && this.logoJFragmentState === 'in') {
@@ -123,7 +123,7 @@ export class HomeComponent implements OnInit {
       this.logoJFragmentState = 'disappear';
     }
   }
-  onBLogoAnimationEvent( event: AnimationEvent ) {
+  onBLogoAnimationEvent() {
     if (this.logoBFragmentState === 'out') {
       this.logoBFragmentState = 'in';
     } else if (this.isMobile && this.logoBFragmentState === 'in') {
@@ -134,7 +134,7 @@ export class HomeComponent implements OnInit {
       this.logoBFragmentState = 'disappear';
     }
   }
-  onJBLogoAnimate( event: AnimationEvent ) {
+  onJBLogoAnimate() {
     if (this.jbFullLogoState === 'invisible') {
       this.jbFullLogoState = 'visible';
     }
