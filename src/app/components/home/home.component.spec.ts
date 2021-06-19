@@ -29,7 +29,7 @@ describe('HomeComponent', () => {
         fixture = TestBed.createComponent(HomeComponent);
         component = fixture.debugElement.componentInstance;
         component.ngOnInit();
-    })
+    });
 
     it('should create the component', () => {
         expect(component).toBeTruthy();
@@ -109,8 +109,8 @@ describe('HomeComponent', () => {
     });
 
     it('should call changeTheme()', () => {
-        spyOn(component.themeUtilitySvc, "changeToDarkTheme");
-        spyOn(component.themeUtilitySvc, "changeToWhiteTheme");
+        spyOn(component.themeUtilitySvc, 'changeToDarkTheme');
+        spyOn(component.themeUtilitySvc, 'changeToWhiteTheme');
 
         // CHANGE TO DARK THEME
         expect(component.themeUtilitySvc.selectedTheme).toEqual('DARK');
