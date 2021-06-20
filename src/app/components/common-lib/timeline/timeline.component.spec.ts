@@ -25,7 +25,8 @@ describe('HomeComponent', () => {
         fixture = TestBed.createComponent(TimelineComponent);
         component = fixture.debugElement.componentInstance;
 
-        component.timelineData = [{name: 'testName', dates: '2000 - 2010', descriptors: [], image: 'testImage', titles: [], showDescriptors: true}];
+        component.timelineData = [{name: 'testName', dates: '2000 - 2010', descriptors: [], image: 'testImage',
+            titles: [], showDescriptors: true}];
         component.descriptorLabel = 'Test';
     });
 
@@ -34,7 +35,7 @@ describe('HomeComponent', () => {
     });
 
     it('should call toggleVisibility()', () => {
-        component.toggleVisibility(component.timelineData[0])
+        component.toggleVisibility(component.timelineData[0]);
         expect(component.timelineData[0].showDescriptors).toBeFalsy();
     });
 
