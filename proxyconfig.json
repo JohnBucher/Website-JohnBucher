@@ -1,6 +1,6 @@
 {
     "/assets": {
-        "target": "http://johnbucher.dev",
+        "target": "http://johnbucher.me",
         "secure": false,
         "changeOrigin": true
     }

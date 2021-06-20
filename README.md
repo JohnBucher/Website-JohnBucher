@@ -1,6 +1,6 @@
 # Personal Website - John Bucher
 
-Live at: [johnbucher.dev](https://johnbucher.dev)
+Live at: [johnbucher.me](https://johnbucher.me)
 
 ## About
 My name is John Bucher and I am a Software Engineer specializing in Full Stack Web Development and Web Service technologies. This website was created to serve as a consolidation and showcase of my projects, skills, education, and experience!

@@ -3,13 +3,13 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --base-href='https://johnbucher.dev/' --proxy-config proxyconfig.json",
-    "build": "ng build --prod --base-href='https://johnbucher.dev/'",
+    "start": "ng serve --base-href='https://johnbucher.me/' --proxy-config proxyconfig.json",
+    "build": "ng build --prod --base-href='https://johnbucher.me/'",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
-    "build:ci": "ng build --prod --base-href https://johnbucher.dev/"
+    "build:ci": "ng build --prod --base-href https://johnbucher.me/"
   },
   "private": true,
   "dependencies": {
