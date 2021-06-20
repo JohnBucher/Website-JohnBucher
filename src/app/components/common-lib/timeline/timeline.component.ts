@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, OnInit, Input } from '@angular/core';
+import { Component, ViewEncapsulation, Input } from '@angular/core';
 import { TimelineItem } from '../../../models/timeline-model';
 import { state, style, transition, animate, trigger } from '@angular/animations';
 
@@ -20,14 +20,11 @@ import { state, style, transition, animate, trigger } from '@angular/animations'
     ])
   ]
 })
-export class TimelineComponent implements OnInit {
+export class TimelineComponent {
     @Input() timelineData: TimelineItem[];
     @Input() descriptorLabel: string;
 
   constructor() {
-  }
-
-  ngOnInit() {
   }
 
   public toggleVisibility(item: TimelineItem) {

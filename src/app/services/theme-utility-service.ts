@@ -1,15 +1,18 @@
-import { NgModule } from '@angular/core';
+import { NgModule, OnInit } from '@angular/core';
 
 @NgModule({})
-export class ThemeUtilityService {
+export class ThemeUtilityService implements OnInit {
     public selectedTheme = 'DARK';
 
     constructor() {
+    }
+
+    ngOnInit() {
         if (this.selectedTheme === 'DARK') {
             this.changeToDarkTheme();
-          } else {
+        } else {
             this.changeToLightTheme();
-          }
+        }
     }
 
     public changeToDarkTheme() {

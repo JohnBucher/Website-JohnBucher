@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { TimelineItem } from '../../models/timeline-model';
 
 @Component({
@@ -7,7 +7,7 @@ import { TimelineItem } from '../../models/timeline-model';
   styleUrls: ['./experience.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ExperienceComponent implements OnInit {
+export class ExperienceComponent {
   jobs: TimelineItem[];
 
   constructor() {
@@ -44,8 +44,5 @@ export class ExperienceComponent implements OnInit {
         dates: 'June 2017 - August 2017'
       }
     ];
-  }
-
-  ngOnInit() {
   }
 }

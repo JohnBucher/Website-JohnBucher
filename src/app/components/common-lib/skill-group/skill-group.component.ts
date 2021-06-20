@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, OnInit, Input } from '@angular/core';
+import { Component, ViewEncapsulation, Input } from '@angular/core';
 import { SkillGroup } from 'src/app/models/skill-group-model';
 
 @Component({
@@ -7,16 +7,14 @@ import { SkillGroup } from 'src/app/models/skill-group-model';
     styleUrls: ['./skill-group.component.scss'],
     encapsulation: ViewEncapsulation.None,
 })
-export class SkillGroupComponent implements OnInit {
+export class SkillGroupComponent {
     @Input() skillGroupData: SkillGroup;
     @Input() class: any;
-
-    public skillsString = '';
 
     constructor() {
     }
 
-    ngOnInit() {
-        this.skillsString = this.skillGroupData.skills.join(', ');
+    get skillsString() {
+        return this.skillGroupData.skills.join(', ');
     }
 }

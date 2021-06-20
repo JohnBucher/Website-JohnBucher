@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, OnInit } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { TimelineItem } from '../../models/timeline-model';
 
 @Component({
@@ -7,7 +7,7 @@ import { TimelineItem } from '../../models/timeline-model';
   styleUrls: ['./education.component.scss'],
   encapsulation: ViewEncapsulation.None,
 })
-export class EducationComponent implements OnInit {
+export class EducationComponent {
   schools: TimelineItem[];
 
   constructor() {
@@ -53,8 +53,5 @@ export class EducationComponent implements OnInit {
         dates: 'August 2012 - June 2014'
       }
     ];
-  }
-
-  ngOnInit() {
   }
 }

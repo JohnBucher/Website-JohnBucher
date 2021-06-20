@@ -35,23 +35,6 @@ describe('ThemeUtilityService', () => {
         service = new ThemeUtilityService();
     });
 
-    it('dark theme should be enabled by default', () => {
-        expect(service.selectedTheme).toEqual('DARK');
-
-        expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--primary-section-background-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-primary-section-background-color`));
-        expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--secondary-section-background-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-secondary-section-background-color`));
-        expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--primary-text-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-primary-text-color`));
-        expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--component-text-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-component-text-color`));
-        expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--component-text-secondary-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-component-text-secondary-color`));
-        expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--header-box-shadow-color`))
-            .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-header-box-shadow-color`));
-    });
-
     it('switching themes should update CSS variables', () => {
         service.changeToLightTheme();
 
@@ -82,6 +65,54 @@ describe('ThemeUtilityService', () => {
             .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-component-text-secondary-color`));
         expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--header-box-shadow-color`))
             .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-header-box-shadow-color`));
+    });
+
+    describe('Dark Theme', () => {
+        beforeEach(() => {
+            service.ngOnInit();
+        });
+
+        it('dark theme should be enabled by default', () => {
+            expect(service.selectedTheme).toEqual('DARK');
+    
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--primary-section-background-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-primary-section-background-color`));
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--secondary-section-background-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-secondary-section-background-color`));
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--primary-text-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-primary-text-color`));
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--component-text-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-component-text-color`));
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--component-text-secondary-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-component-text-secondary-color`));
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--header-box-shadow-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--darkTheme-header-box-shadow-color`));
+        });
+
+    });
+
+    describe('Light Theme', () => {
+        beforeEach(() => {
+            service.selectedTheme = 'LIGHT';
+            service.ngOnInit();
+        });
+
+        it('light theme should be set in constructor if selectedTheme is changed from default', () => {
+            expect(service.selectedTheme).toEqual('LIGHT');
+    
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--primary-section-background-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-primary-section-background-color`));
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--secondary-section-background-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-secondary-section-background-color`));
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--primary-text-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-primary-text-color`));
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--component-text-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-component-text-color`));
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--component-text-secondary-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-component-text-secondary-color`));
+            expect(window.getComputedStyle(document.documentElement).getPropertyValue(`--header-box-shadow-color`))
+                .toEqual(window.getComputedStyle(document.documentElement).getPropertyValue(`--lightTheme-header-box-shadow-color`));
+        });
     });
 });
 
