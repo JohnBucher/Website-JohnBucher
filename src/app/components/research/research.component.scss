@@ -79,7 +79,6 @@
     display: block !important;
     margin: 0 auto;
     text-align: center;
-    width: 75px;
     position: absolute;
     top: -25px;
     right: -25px;
@@ -96,13 +95,17 @@
     color: white;
   }
 
-  @media(max-width: 991px) {
-    /* -- ON SCREEN SIZES SMALLER THAN 992 (Bootstrap lg grid column) -- */
+  @media(max-width: 767px) {
+    /* -- ON SCREEN SIZES SMALLER THAN 768px (Bootstrap md grid column) -- */
     .download-pdf-link {
       position: relative;
       margin-top: 15px;
       top: 0px;
       right: 0px;
+    }
+    .download-pdf-icon {
+      font-size: 1.75em;
+      padding-top: 12px;
     }
   }
   
