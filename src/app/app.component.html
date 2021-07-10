@@ -10,18 +10,28 @@
     <app-home></app-home>
 
     <!-- Additional Sections -->
-    <div id="background"> <app-background></app-background> </div>
-    <div id="skills">     <app-skills></app-skills>         </div>
-    <div class="row">
-      <div class="col-md-6 col-sm-12" id="experience">
-        <app-experience></app-experience>
-      </div>
-      <div class="col-md-6 col-sm-12" id="education">
-        <app-education></app-education>
+    <div id="background" class="primary-section">
+      <app-background></app-background>
+    </div>
+    <div id="skills" class="secondary-section">    
+      <app-skills></app-skills>
+    </div>
+    <div class="container primary-section" style="max-width: none;">
+      <div class="row">
+        <div class="col-md-6 col-sm-12" id="experience">
+          <app-experience></app-experience>
+        </div>
+        <div class="col-md-6 col-sm-12" id="education">
+          <app-education></app-education>
+        </div>
       </div>
     </div>
-    <div id="research">   <app-research></app-research>     </div>
-    <div id="contact">    <app-contact></app-contact>       </div>
+    <div id="research" class="secondary-section">  
+      <app-research></app-research>
+    </div>
+    <div id="contact" class="header-section">
+      <app-contact></app-contact>
+    </div>
     
     <!-- Footer -->
     <div class="footer">

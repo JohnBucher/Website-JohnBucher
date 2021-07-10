@@ -151,6 +151,18 @@
     text-align: center;
   }
   
+  .section-title {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 60px;
+    font-weight: bold;
+    background-color: var(--header-background-color);
+    color: var(--header-text-color);
+    margin-bottom: 50px;
+    box-shadow: 1px 1px 30px 1px var(--header-box-shadow-color);
+  }
   .sub-section-title {
     font-size: 2rem;
     font-weight: bold;
@@ -167,7 +179,42 @@
   }
 
   .centered-container {
+    width: 100%;
     display: flex;
     align-items: center;
+  }
+
+  .section-div {
+    width: 100%;
+    justify-content: center;
+    overflow: hidden;
+    float: none;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    position: relative;
+  }
+  .primary-section {
+    @extend .section-div;
+    background-color: var(--primary-section-background-color);
+  }
+  .secondary-section {
+    @extend .section-div;
+    background-color: var(--secondary-section-background-color);
+  }
+  .header-section {
+    @extend .section-div;
+    background-color: var(--header-background-color);
+  }
+  .timeline-section {
+    margin-left: 10%;
+    float: none;
+  }
+
+  @media(max-width: 991px) {
+    /* -- ON SCREEN SIZES SMALLER THAN 992 (Bootstrap lg grid column) -- */
+    .section-title {
+      font-size: 50px;
+    }
   }
   

@@ -1,67 +1,36 @@
 
 @import '../../styles/variables';
-
-.research-page-div {
-    background-color: var(--secondary-section-background-color);
-    width: 100%;
-    justify-content: center;
-    float: none;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    flex-wrap: wrap;
-  }
   
   .research-container {
     color: var(--primary-text-color);
     width: 95%;
     margin: 0 auto;
   }
-  .research-title {
+  .research-text {
     text-align: center;
+    font-family: 'Roboto Slab', serif;
+  }
+  .research-title {
+    @extend .research-text;
     font-weight: bold;
     font-size: 24px;
-    font-family: 'Roboto Slab', serif;
   }
   .research-description {
-    text-align: center;
+    @extend .research-text;
     font-size: 14px;
-    font-family: 'Roboto Slab', serif;
     width: 70%;
-    margin: 0 auto;
-    margin-top: 5px;
+    margin: 5px auto 0px auto;
   }
   .research-awards-header {
-    text-align: center;
+    @extend .research-text;
     font-size: 20px;
     font-weight: bold;
-    font-family: 'Roboto Slab', serif;
-    margin: 0 auto;
-    margin-top: 25px;
+    margin: 25px auto 0px auto;
   }
-  .research-awards-container {
-    text-align: center;
-    font-size: 16px;
-    font-family: 'Roboto Slab', serif;
-    width: 70%;
-    margin: 0 auto;
-    margin-top: 5px;
-  }
-  .research-awards-item {
-    text-align: center;
-    font-size: 14px;
-    font-family: 'Roboto Slab', serif;
-  }
-  .research-project-picture-container {
-    padding-top: 30px;
-    height: auto;
-    width: 100%;
-    display: block !important;
-    margin: 0 auto;
-  }
-  .research-project-margin {
+  .research-project-container {
     position: relative;
     display: block !important;
-    margin: 0 auto;
+    margin: 30px auto 0px auto;
     width: 100%;
     height: 100%;
     max-height: 900px;
@@ -75,6 +44,8 @@
     box-shadow: 5px 5px 30px var(--header-box-shadow-color);
   }
   
+  /* PDF DOWNLOAD */
+  /* ----------------------------- */
   .download-pdf-link {
     display: block !important;
     margin: 0 auto;
@@ -94,6 +65,7 @@
     background-color: #a32f33;
     color: white;
   }
+  /* ----------------------------- */
 
   @media(max-width: 767px) {
     /* -- ON SCREEN SIZES SMALLER THAN 768px (Bootstrap md grid column) -- */

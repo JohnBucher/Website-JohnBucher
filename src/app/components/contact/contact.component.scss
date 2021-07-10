@@ -1,36 +1,24 @@
 
 @import '../../styles/variables';
 
-.contact-page-div {
-    background-color: var(--header-background-color);
-    width: 100%;
-    justify-content: center;
-    float: none;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    flex-wrap: wrap;
-  }
-  
-  .contact-me-title {
+  .contact-text {
     text-align: center;
-    font-weight: bold;
-    font-size: 36px;
     font-family: 'Roboto Slab', serif;
     color: var(--header-text-color);
-    border-bottom: solid;
-    border-bottom-color: var(--header-text-color);
-    border-bottom-width: 2px;
-    width: 50%;
     margin: 0 auto;
+  }
+  .contact-me-title {
+    @extend .contact-text;
+    font-weight: bold;
+    font-size: 36px;
+    border-bottom: 2px solid var(--header-text-color);
+    width: 50%;
   }
   
   .contact-me-info {
-    text-align: center;
+    @extend .contact-text;
     font-size: 18px;
-    font-family: 'Roboto Slab', serif;
-    color: var(--header-text-color);
     width: 66%;
-    margin: 0 auto;
     margin-top: 20px;
   }
   
@@ -52,10 +40,6 @@
     background: var(--header-text-color);
     color: var(--header-text-secondary-color);
     border-color: var(--header-text-color);
-  }
-  
-  .full-width-container {
-    width: 100%;
   }
   
   @media(max-width: 800px) {

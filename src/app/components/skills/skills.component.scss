@@ -1,26 +1,5 @@
 
 @import '../../styles/variables';
-
-.skills-page-div {
-    background-color: var(--secondary-section-background-color);
-    width: 100%;
-    justify-content: center;
-    float: none;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    flex-wrap: wrap;
-    position: relative;
-  }
-  
-  .skills-section-title {
-    width: 80%;
-    justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 60px;
-    font-weight: bold;
-    border-bottom: solid;
-    margin-bottom: 60px;
-  }
   
   .skill-content {
     height: 90%;
