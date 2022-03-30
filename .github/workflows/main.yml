@@ -25,10 +25,10 @@ jobs:
         run: npm run lint
 
       - name: Test
-        run: npm run test -- --watch=false --browsers=ChromeHeadless
+        run: npm run test:ci
 
       - name: Build
-        run: npm run build
+        run: npm run build:ci
         
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@4.1.0
