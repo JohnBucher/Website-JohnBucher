@@ -13,10 +13,20 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    
+    strategy:
+      matrix:
+        node-version: [14.x]
+        # New karma version does not work with Node v15
 
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      # Checks-out repository under $GITHUB_WORKSPACE, so job can access it
       - uses: actions/checkout@v2
+      
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+            node-version: ${{ matrix.node-version }}
 
       - name: Install Dependencies
         run: npm ci
