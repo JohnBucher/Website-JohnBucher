@@ -11,7 +11,7 @@
   .sideBarStyle {
     background-color: var(--sidebar-background-color);
     border: 1px solid var(--sidebar-background-color);
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
   }
   
   .menu-item {
@@ -21,7 +21,7 @@
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     font-weight: normal;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
   }
   .menu-item:hover {
    cursor: pointer;
@@ -36,12 +36,11 @@
     text-align: center;
     margin-top: 15px;
   }
-  .sidebar-resume {
-    margin-left: 8px;
+  .resume-label {
     font-family: 'Roboto Slab', serif;
     font-size: 1.25em;
     font-weight: normal;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
   }
   .sidebar-pdf-icon {
     border-bottom: 3px solid var(--sidebar-border-color);
@@ -139,7 +138,7 @@
     height: 2em;
     text-align: center;
     padding-top: 10px;
-    color: var(--secondary-text-color);
+    color: var(--primary-text-color);
   }
   
   .footer {

@@ -17,16 +17,18 @@ export class ExperienceComponent {
         name: 'Lockheed Martin',
         image: './assets/Experience/LM-Logo.png',
         titles: [
-          { name: 'Software Engineer', dates: 'July 2018 - Present' }
+          { name: 'Senior Software Engineer', dates: 'July 2022 - Present' },
+          { name: 'Software Engineer', dates: 'August 2020 - July 2022' },
+          { name: 'Associate Software Engineer', dates: 'July 2018 - August 2020' }
         ],
         descriptors: [
           `Design, develop, and maintain web-based applications used by various agencies of the US Government.`,
-          `Stack mainly consists of Angular/Typescript and Spring/Java among other various languages.`,
+          `Act as Scrum Master to facilitate developers towards task completion, coordinate with other teams, and communicate with stakeholders.`,
           `Effectively coordinate and collaborate with numerous teams, individuals, and specializations across
             Lockheed Martin, subcontractors, and the US Government.`,
          ` Lead, perform, and communicate important baseline upgrades to ensure transition ease and effectiveness.`,
-          `Act as an intermittent scrum master and tech lead to coordinate developers towards task completion.`,
-          `Perform continuous learning on needed technologies and systems.`
+          `Perform continuous learning on needed technologies and systems.`,
+          `Stack mainly consists of Angular/Typescript and Spring/Java among other various languages.`,
         ],
         dates: 'July 2018 - Present'
       },
