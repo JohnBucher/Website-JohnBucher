@@ -23,7 +23,8 @@ export class ExperienceComponent {
         ],
         descriptors: [
           `Design, develop, and maintain web-based applications used by various agencies of the US Government.`,
-          `Act as Scrum Master to facilitate developers towards task completion, coordinate with other teams, and communicate with stakeholders.`,
+          `Act as Scrum Master to facilitate developers towards task completion, coordinate with other teams, and
+            communicate with stakeholders.`,
           `Effectively coordinate and collaborate with numerous teams, individuals, and specializations across
             Lockheed Martin, subcontractors, and the US Government.`,
          ` Lead, perform, and communicate important baseline upgrades to ensure transition ease and effectiveness.`,
