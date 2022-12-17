@@ -9,5 +9,6 @@ import { skillList } from 'src/app/data/skills';
 })
 export class SkillsComponent {
   public readonly skillData = skillList;
+  public activeCertifications = false;
 
 }
