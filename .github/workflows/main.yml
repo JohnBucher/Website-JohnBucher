@@ -16,8 +16,7 @@ jobs:
     
     strategy:
       matrix:
-        node-version: [14.x]
-        # New karma version does not work with Node v15
+        node-version: [18.x]
 
     steps:
       # Checks-out repository under $GITHUB_WORKSPACE, so job can access it
