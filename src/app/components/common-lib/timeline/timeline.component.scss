@@ -48,3 +48,10 @@
 .timeline-item-image {
     height: 40px;
 }
+
+@media(max-width: 991px) {
+    /* -- ON SCREEN SIZES SMALLER THAN 992 (Bootstrap lg grid column) -- */
+    .timeline-container {
+        margin: 15px 0px;
+    }
+}
