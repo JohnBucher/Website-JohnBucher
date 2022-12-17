@@ -3,11 +3,11 @@
 Live at: [johnbucher.me](https://johnbucher.me)
 
 ## About
-My name is John Bucher and I am a Software Engineer specializing in Full Stack Web Development and Web Service technologies. This website was created to serve as a consolidation and showcase of my projects, skills, education, and experience!
+My name is John Bucher and I am a Software Engineer specializing in Full Stack Web Development and Web Service technologies. This website was created to serve as a consolidation and showcase of my projects, skills, education, experience, and more!
 
 ## Project Details
-- Built on Angular 9  
-- Deployed through GitHub-Pages  
-- Routed to my personal custom domain
-- Utilizes Karma Unit Tests
-- Implements Continuous Integration/Continuous Deployment through GitHub Actions  
+- Running on Angular 15
+- Implements a Continuous Integration/Continuous Deployment Pipeline through GitHub Actions
+- Deployed to and served on GitHub-Pages
+- Routed to my personal custom domain: [ [johnbucher.me](https://johnbucher.me) ]
+- Utilizes Jasmine and Karma for Unit Testing
