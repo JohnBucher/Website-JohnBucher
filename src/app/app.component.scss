@@ -20,7 +20,7 @@
     font-family: 'Roboto Slab', serif;
     font-size: 20px;
     font-weight: normal;
-    color: var(--primary-text-color);
+    color: var(--sidebar-text-color);
   }
   .menu-item:hover {
    cursor: pointer;
@@ -35,7 +35,7 @@
     font-family: 'Roboto Slab', serif;
     font-size: 1.25em;
     font-weight: normal;
-    color: var(--primary-text-color);
+    color: var(--sidebar-text-color);
   }
   .sidebar-pdf-icon {
     border-bottom: 3px solid var(--sidebar-border-color);
@@ -96,14 +96,14 @@
     margin-left: 0px !important;
   }
   
-  body .ui-sidebar {
+  body .p-sidebar {
     background-color: var(--sidebar-background-color);
     border: 1px solid var(--sidebar-border-color);
     color: var(--sidebar-text-color);
     font-weight: bold;
   }
   
-  body .ui-sidebar .ui-sidebar-close:hover {
+  body .p-sidebar .p-sidebar-close:hover {
     color: var(--sidebar-text-color);
   }
   
@@ -125,9 +125,9 @@
   }
   
   .circle-icon-button:hover {
-    background: var(--sidebar-text-color);
-    color: var(--sidebar-secondary-text-color);
-    border-color: var(--sidebar-text-color);
+    background: white;
+    color: black;
+    border-color: white;
     cursor: pointer;
   }
   .circle-icon-button {
@@ -138,7 +138,7 @@
     height: 2em;
     text-align: center;
     padding-top: 10px;
-    color: var(--primary-text-color);
+    color: white;
   }
   
   .footer {
