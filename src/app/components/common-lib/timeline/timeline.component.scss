@@ -32,7 +32,8 @@
     color: var(--component-text-secondary-color);
 }
 .timeline-item-button {
-    color: var(--component-text-color);
+    font-size: 14px;
+    color: var(--component-text-color) !important;
     border-color: var(--component-text-color) !important;
 }
 .timeline-item-descriptor-container {

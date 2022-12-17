@@ -4,8 +4,8 @@
 .background-container {
     /* The image used */
     background: #00000088;
-    background-image: url('~/assets/Home/Homepage.png'); /* Fallback */
-    background-image: linear-gradient(0deg, #00000088, #ffffff44 100%), url('~/assets/Home/Homepage.png');
+    background-image: url('../../../assets/Home/Homepage.png'); /* Fallback */
+    background-image: linear-gradient(0deg, #00000088, #ffffff44 100%), url('../../../assets/Home/Homepage.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -22,7 +22,7 @@
   /*-------- Mobile Phones --------*/
   @media only screen and (max-device-width : 1024px) {
     .background-container {
-      background-image: linear-gradient(0deg, #00000088, #ffffff44 100%), url('~/assets/Home/Mobile-Homepage.png');
+      background-image: linear-gradient(0deg, #00000088, #ffffff44 100%), url('../../../assets/Home/Mobile-Homepage.png');
       background-size: auto;
       background-attachment: initial;
     }
