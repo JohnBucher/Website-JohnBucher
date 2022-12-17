@@ -9,10 +9,7 @@ import { SkillGroup } from 'src/app/models/skill-group-model';
 })
 export class SkillGroupComponent {
     @Input() skillGroupData: SkillGroup;
-    @Input() class: any;
-
-    constructor() {
-    }
+    @Input() class;
 
     get skillsString() {
         return this.skillGroupData.skills.join(', ');

@@ -8,6 +8,4 @@ import { Component, ViewEncapsulation } from '@angular/core';
 })
 export class ProjectsComponent {
 
-  constructor() {
-  }
 }

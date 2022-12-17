@@ -21,11 +21,8 @@ import { state, style, transition, animate, trigger } from '@angular/animations'
   ]
 })
 export class TimelineComponent {
-    @Input() timelineData: TimelineItem[];
-    @Input() descriptorLabel: string;
-
-  constructor() {
-  }
+  @Input() timelineData: TimelineItem[];
+  @Input() descriptorLabel: string;
 
   public toggleVisibility(item: TimelineItem) {
       item.showDescriptors = !item.showDescriptors;

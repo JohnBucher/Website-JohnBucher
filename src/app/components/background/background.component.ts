@@ -17,7 +17,5 @@ export class BackgroundComponent {
    designing, developing, and maintaining web-based applications using frameworks and languages such as Angular, Spring/Java, and
    SQL among others.
   `;
-
-  constructor() {
-  }
+  
 }

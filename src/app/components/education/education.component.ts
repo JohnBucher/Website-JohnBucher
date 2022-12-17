@@ -36,7 +36,7 @@ export class EducationComponent {
           'Wood Honors College at Shippensburg University',
           'Computer Programming Team',
           `Participant in the 2018 Minds at Work Conference presenting the research project:
-            \"The Prevalence and Impact of the \'QWERTY Effect\' on the Russian Language\"`
+            "The Prevalence and Impact of the 'QWERTY Effect' on the Russian Language"`
         ],
         dates: 'August 2014 - June 2018'
       },

@@ -8,9 +8,6 @@ import { skillList } from 'src/app/data/skills';
   encapsulation: ViewEncapsulation.None,
 })
 export class SkillsComponent {
-
   public readonly skillData = skillList;
 
-  constructor() {
-  }
 }
