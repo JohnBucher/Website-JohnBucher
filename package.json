@@ -9,7 +9,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "test:ci": "ng test --watch=false --browsers=ChromeHeadless",
-    "build:ci": "ng build --prod --base-href https://johnbucher.me/"
+    "build:ci": "ng build --configuration production --base-href https://johnbucher.me/"
   },
   "private": true,
   "dependencies": {
