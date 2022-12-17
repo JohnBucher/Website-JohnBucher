@@ -19,7 +19,7 @@ export class EducationComponent {
           { name: 'Master of Engineering in Engineering Management', dates: 'January 2021 - Present' }
         ],
         descriptors: [
-          'Current GPA: 4.0 (5/10 classes completed)',
+          'Current GPA: 4.0 (7/10 classes completed)',
           'Expected graduation date: December 2023',
           `Learning valuable management skills such as: communication, managing teams, leadership, project and quality management,
             statistics, project finance, and fostering creative thought among many other concepts and skills.`
