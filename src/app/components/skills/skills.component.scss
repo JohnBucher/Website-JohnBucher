@@ -1,23 +1,27 @@
 
 @import '../../styles/variables';
   
-  .skill-content {
-    height: 90%;
-    width: 90%;
-    color: var(--component-text-color);
-  }
+.skill-content {
+  height: 90%;
+  width: 90%;
+  color: var(--component-text-color);
+}
 
-  .skills-background-color {
-    background-color: var(--secondary-section-background-color);
-  }
+.skills-background-color {
+  background-color: var(--secondary-section-background-color);
+}
 
-  .certification-piece {
-    float: left;
-    margin: 0px 25px;
-  }
+.certification-piece {
+  float: left;
+  margin: 0px 15px;
+}
 
-  .certification-image {
-    height: 100px;
-    width: 100px;
-  }
+.certification-image {
+  height: 100px;
+  width: 100px;
+}
+
+.expiration {
+  padding-left: 145px;
+}
   
