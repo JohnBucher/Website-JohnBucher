@@ -23,13 +23,13 @@ export class ExperienceComponent {
         ],
         descriptors: [
           `Design, develop, and maintain web-based applications used by various agencies of the US Government.`,
-          `Act as Scrum Master to facilitate developers towards task completion, coordinate with other teams, and
-            communicate with stakeholders.`,
-          `Effectively coordinate and collaborate with numerous teams, individuals, and specializations across
+          `Act as Scrum Master of a development team. As an SM: help to schedule and coordinate tasks, facilitate
+            developers towards task completion, and collaborate with various cross-functional stakeholders across
             Lockheed Martin, subcontractors, and the US Government.`,
-         ` Lead, perform, and communicate important baseline upgrades to ensure transition ease and effectiveness.`,
-          `Perform continuous learning on needed technologies and systems.`,
-          `Stack mainly consists of Angular/Typescript and Spring/Java among other various languages.`,
+          `Work across the applications' Full-Stack to implement fixes and features, utilizing a variety of technologies
+            and frameworks such as Angular, React, Java, Spring, SQL, Elasticsearch, and AWS among others.`,
+          `Lead, perform, and communicate important dependency and baseline upgrades to ensure transition ease and effectiveness.`,
+          `Perform continuous learning on technologies and systems as needs arise.`,
         ],
         dates: 'July 2018 - Present'
       },
@@ -40,7 +40,8 @@ export class ExperienceComponent {
           { name: 'Software Development Intern', dates: 'June 2017 - August 2017' }
         ],
         descriptors: [
-          `Created and maintained relational databases and web-based applications such as E-commerce websites.`,
+          `Created and maintained relational databases and web-based applications such as E-commerce websites,
+            utilizing ASP.NET and C#.`,
           `Inspected, documented, and aided in the knowledge transfer process of professional Computer Aid, Inc.
             applications through interviews and collaborations with the developer teams.`,
           `Gained experience in C#, ASP.NET, Javascript, CSS, Bootstrap, HTML, jQuery, WinForms, and SQLServer.`

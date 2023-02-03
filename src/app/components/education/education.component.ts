@@ -21,8 +21,8 @@ export class EducationComponent {
         descriptors: [
           'Current GPA: 4.0 (7/10 classes completed)',
           'Expected graduation date: December 2023',
-          `Learning valuable management skills such as: communication, managing teams, leadership, project and quality management,
-            statistics, project finance, and fostering creative thought among many other concepts and skills.`
+          `Learning valuable project management and leadership skills such as: effective communication, stakeholder management,
+          enabling self-starting teams, project and quality management, statistics and metrics, and project finance among others.`
         ],
         dates: 'January 2021 - Present'
       },
