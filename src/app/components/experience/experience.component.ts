@@ -8,7 +8,7 @@ import { TimelineItem } from '../../models/timeline-model';
   encapsulation: ViewEncapsulation.None,
 })
 export class ExperienceComponent {
-  jobs: TimelineItem[];
+  public jobs: TimelineItem[];
 
   constructor() {
 

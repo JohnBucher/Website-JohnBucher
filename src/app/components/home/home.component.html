@@ -8,17 +8,23 @@
   
   <!-- Sidebar -->
   <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
-    <div class="sidebar-container">
-      <p-selectButton [options]="themeOptions" [style]="{'margin':'10px 0px'}" [(ngModel)]="themeUtilitySvc.selectedTheme" (click)="changeTheme()"></p-selectButton>
+    <ng-template pTemplate="header">
+      <div class="theme-picker">
+        <span class="fas fa-sun" style="margin-top: 5px;"></span>
+        <mat-slide-toggle [checked]="themeUtilitySvc.selectedTheme === 'DARK'" (toggleChange)="changeTheme()"></mat-slide-toggle>
+        <span class="far fa-moon" style="margin-top: 5px;"></span>
+      </div>
+    </ng-template>
 
+    <div class="sidebar-container">
       <!-- Section Links -->
-      <div class="menu-item" (click)="scrollToSection('home'); display = false">        Home </div>
-      <div class="menu-item" (click)="scrollToSection('background'); display = false">  Background </div>
-      <div class="menu-item" (click)="scrollToSection('skills'); display = false">      Skills </div>
-      <div class="menu-item" (click)="scrollToSection('experience/education'); display = false">    Work Experience </div>
-      <div class="menu-item" (click)="scrollToSection('experience/education'); display = false">    Education </div>
-      <div class="menu-item" (click)="scrollToSection('research'); display = false">    Research </div>
-      <div class="menu-item" (click)="scrollToSection('contact'); display = false">     Contact Me </div>
+      <div class="menu-item" (click)="scrollToSection('home')">        Home </div>
+      <div class="menu-item" (click)="scrollToSection('background')">  Background </div>
+      <div class="menu-item" (click)="scrollToSection('skills')">      Skills </div>
+      <div class="menu-item" (click)="scrollToSection('experience/education')">    Work Experience </div>
+      <div class="menu-item" (click)="scrollToSection('experience/education')">    Education </div>
+      <div class="menu-item" (click)="scrollToSection('research')">    Research </div>
+      <div class="menu-item" (click)="scrollToSection('contact')">     Contact Me </div>
 
       <!-- Social Icons -->
       <div class="sidebar-icon-group">
@@ -27,9 +33,6 @@
         <span><a href="https://github.com/JohnBucher" class="fa-brands fa-github circle-icon-button" target="_blank"></a></span>
       </div>
       <div class="resume-label" style="margin-left: 8px;">Resume</div>
-
-      <!-- JB Logo -->
-      <img src="./assets/Home/Sidebar-Banner.png" class="sidebar-logo">
 
     </div>
   </p-sidebar>

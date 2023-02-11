@@ -79,7 +79,7 @@
   .hover:hover {
     cursor: pointer;
   }
-  
+
   .learn-more-arrow {
     position: absolute; 
     width: 30vw; 
@@ -119,6 +119,26 @@
   .headshot-container {
     max-width: 500px !important;
     margin: 0px auto !important;
+  }
+
+  .theme-picker {
+    display: flex;
+    height: 30px;
+    margin-left: 1.25rem;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+  }
+
+  .sidebar-container {
+    margin-top: 15px;
+  }
+  .p-sidebar-footer {
+    display: none;
+  }
+
+  .mdc-switch__icon {
+    display: none;
   }
   
   @media(min-width: 960px) {

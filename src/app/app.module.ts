@@ -27,6 +27,7 @@ import { SelectButtonModule } from 'primeng/selectbutton';
 
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { ThemeUtilityService } from './services/theme-utility-service';
 
 
@@ -56,7 +57,8 @@ import { ThemeUtilityService } from './services/theme-utility-service';
     SelectButtonModule,
     MatProgressBarModule,
     MatButtonModule,
-    ThemeUtilityService
+    ThemeUtilityService,
+    MatSlideToggleModule
   ],
   exports: [
     MatProgressBarModule

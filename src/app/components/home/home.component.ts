@@ -18,13 +18,13 @@ import { SelectItem } from 'primeng/api';
       ]),
     ]),
   // -------------------------------------------------------------------------------------------
-      trigger('LearnMoreAnimation', [
-        state('in', style({ opacity: 1, transform: 'translateY(0%)' })),
-        transition(':enter', [
-          style({ opacity: 0, transform: 'translateY(30%)' }),
-          animate('0.75s 4s ease-in')
-        ]),
+    trigger('LearnMoreAnimation', [
+      state('in', style({ opacity: 1, transform: 'translateY(0%)' })),
+      transition(':enter', [
+        style({ opacity: 0, transform: 'translateY(30%)' }),
+        animate('0.75s 4s ease-in')
       ]),
+    ]),
   // -------------------------------------------------------------------------------------------
   trigger('logoBAnimate', [
     state('out', style({ opacity: 0, transform: 'translateY(-30%)' })),
@@ -110,6 +110,8 @@ export class HomeComponent implements OnInit {
     // Get the amount you need to scroll to reach the desired section
     const scrollAmount = section.offsetTop - window.pageYOffset - headerHeight;
     window.scrollBy({ top: scrollAmount, left: 0, behavior: 'smooth' });
+
+    this.display = false;
   }
 
   onJLogoAnimationEvent() {
@@ -141,6 +143,9 @@ export class HomeComponent implements OnInit {
   }
 
   changeTheme() {
+    // INVERT theme upon toggleChange
+    this.themeUtilitySvc.selectedTheme = this.themeUtilitySvc.selectedTheme === 'DARK' ? 'LIGHT' : 'DARK';
+
     if (this.themeUtilitySvc.selectedTheme === 'DARK') {
       this.themeUtilitySvc.changeToDarkTheme();
     } else {
