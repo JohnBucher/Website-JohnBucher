@@ -112,14 +112,16 @@ describe('HomeComponent', () => {
         spyOn(component.themeUtilitySvc, 'changeToDarkTheme');
         spyOn(component.themeUtilitySvc, 'changeToLightTheme');
 
+        // Should INVERT the selectedTheme that begins the changeTheme() method
+
         // CHANGE TO DARK THEME
         expect(component.themeUtilitySvc.selectedTheme).toEqual('DARK');
         component.changeTheme();
-        expect(component.themeUtilitySvc.changeToDarkTheme).toHaveBeenCalled();
+        expect(component.themeUtilitySvc.changeToLightTheme).toHaveBeenCalled();
 
         // CHANGE TO LIGHT THEME
         component.themeUtilitySvc.selectedTheme = 'LIGHT';
         component.changeTheme();
-        expect(component.themeUtilitySvc.changeToLightTheme).toHaveBeenCalled();
+        expect(component.themeUtilitySvc.changeToDarkTheme).toHaveBeenCalled();
     });
 });
