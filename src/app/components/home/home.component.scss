@@ -23,7 +23,6 @@
   @media only screen and (max-device-width : 1024px) {
     .background-container {
       background-image: linear-gradient(0deg, #00000088, #ffffff44 100%), url('../../../assets/Home/Mobile-Homepage.png');
-      background-size: auto;
       background-attachment: initial;
     }
   }
@@ -80,7 +79,7 @@
     cursor: pointer;
   }
 
-  .learn-more-arrow {
+  .learn-more {
     position: absolute; 
     width: 30vw; 
     bottom: 5vh; 
@@ -119,6 +118,13 @@
   .headshot-container {
     max-width: 500px !important;
     margin: 0px auto !important;
+  }
+
+  @media only screen and (max-height : 650px) {
+    .learn-more,
+    .learn-more-text {
+      display: none;
+    }
   }
 
   .theme-picker {

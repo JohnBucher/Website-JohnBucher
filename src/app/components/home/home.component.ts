@@ -1,7 +1,6 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { ThemeUtilityService } from '../../services/theme-utility-service';
-import { SelectItem } from 'primeng/api';
 
 @Component({
   selector: 'app-home',
@@ -69,8 +68,6 @@ export class HomeComponent implements OnInit {
   logoJFragmentState = 'out';
   jbFullLogoState = 'visible';
   isMobile = false;
-
-  themeOptions: SelectItem[] = [{label: 'Dark', value: 'DARK'}, {label: 'Light', value: 'LIGHT'}];
 
   constructor(public readonly themeUtilitySvc: ThemeUtilityService) {
     // Detect if the device is mobile to determine what animations to play
