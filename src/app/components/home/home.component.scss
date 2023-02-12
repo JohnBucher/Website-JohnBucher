@@ -12,7 +12,7 @@
     background-attachment: fixed;
     top: 0px;
     bottom: 0px;
-    height: 100vh;
+    height: calc(var(--vh, 1vh) * 100);
     z-index: -10;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -35,12 +35,12 @@
   }
   .background-container-content {
     text-align: center;
-    height: 80vh;
+    height: calc(var(--vh, 1vh) * 80);
     width: 75vw;
     max-width: 800px;
     display: table;
     top: 0px;
-    margin-top: -10vh;
+    margin-top: calc(var(--vh, 1vh) * -10);
   }
   
   .title-block {
@@ -82,7 +82,7 @@
   .learn-more {
     position: absolute; 
     width: 30vw; 
-    bottom: 5vh; 
+    bottom: calc(var(--vh, 1vh) * 5); 
     left: 35vw;
   }
   .learn-more-text {
@@ -113,7 +113,7 @@
     height: auto;
     z-index: 998;
     inset: 0px;
-    margin-bottom: 5vh;
+    margin-bottom: calc(var(--vh, 1vh) * 5);
   }
   .headshot-container {
     max-width: 500px !important;
@@ -187,7 +187,7 @@
   @media only screen and (max-width: 575px) {
     /* -- FOR MOBILE DEVICES WITH SCREEN SIZES SMALLER THAN 576 (Bootstrap xs col) -- */
     .title-block {
-      top: -7vh;
+      top: calc(var(--vh, 1vh) * -7);
     }
   }
   

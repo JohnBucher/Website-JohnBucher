@@ -75,11 +75,17 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    // First we get the viewport height and we multiply it by 1% to get a value for a vh unit
-    // Then we set the value in the --vh custom property to the root of the document
-    const vh = window.innerHeight * 0.01;
-    document.documentElement.style.setProperty('--vh', `${vh}px`);
+    this.calculateViewHeight();
+    this.addScrollListener();
 
+    if (!this.isMobile) {
+      // IF the device is not mobile, then set the main logo to the first animation state
+      // which will enable the rest of the animation steps
+      this.jbFullLogoState = 'invisible';
+    }
+  }
+
+  private addScrollListener() {
     // Keep track of the current scroll position for CSS
     window.addEventListener('scroll', () => {
       const scrolled = window.scrollY;
@@ -91,12 +97,17 @@ export class HomeComponent implements OnInit {
         toolbar.setAttribute('style', 'position: initial;');
       }
     });
+  }
 
-    if (!this.isMobile) {
-      // IF the device is not mobile, then set the main logo to the first animation state
-      // which will enable the rest of the animation steps
-      this.jbFullLogoState = 'invisible';
-    }
+  private calculateViewHeight() {
+    // First we get the viewport height and we multiply it by 1% to get a value for a vh unit
+    // Then we set the value in the --vh custom property to the root of the document
+    this.setViewHeight();
+    window.addEventListener('resize', () => this.setViewHeight());
+  }
+  
+  private setViewHeight() {
+    document.documentElement.style.setProperty('--vh', `${window.innerHeight * 0.01}px`);
   }
 
   scrollToSection(el: string) {
