@@ -1,0 +1,27 @@
+
+<div class="project-container">
+    <img [src]="project.image" class="project-image drop-shadow">
+    <div class="project-information-card drop-shadow">
+        <div class="title-container">
+            <!-- TITLE -->
+            <div class="project-information-title"> {{ project.name }} </div>
+            <!-- LINKS -->
+            <div>
+                <span *ngFor="let link of project.links" class="project-link">
+                    <a class="{{ link.icon }}" [title]="link.tooltip" href="{{ link.url }}" target="_blank"></a>
+                </span>
+            </div>
+        </div>
+        <!-- TAGS -->
+        <div class="tag-container">
+            <div class="tag" *ngFor="let tag of project.tags" [style.border-color]="tag.color">
+                <div style="display: inline-block; padding: 3px;" [style.background-color]="tag.color">
+                    <div style="width: 20px; text-align: center;"> <span class="{{ tag.icon }}"></span> </div>
+                </div>
+                <div style="padding: 0px 5px;">{{ tag.name }}</div>
+            </div>
+        </div>
+        <!-- DESCRIPTION -->
+        <div [innerHTML]="project.description"></div>
+    </div>
+</div>

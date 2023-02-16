@@ -18,6 +18,7 @@ import { ContactComponent } from './components/contact/contact.component';
 // COMMON-LIB
 import { TimelineComponent } from './components/common-lib/timeline/timeline.component';
 import { SkillGroupComponent } from './components/common-lib/skill-group/skill-group.component';
+import { ProjectCardComponent } from './components/common-lib/project-card/project-card.component';
 
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
@@ -43,7 +44,8 @@ import { ThemeUtilityService } from './services/theme-utility-service';
     ResearchComponent,
     ContactComponent,
     TimelineComponent,
-    SkillGroupComponent
+    SkillGroupComponent,
+    ProjectCardComponent
   ],
   imports: [
     BrowserModule,

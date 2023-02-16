@@ -1,4 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { Project } from 'src/app/models/project-model';
+import { projects } from '../../data/projects';
 
 @Component({
   selector: 'app-projects',
@@ -7,5 +9,5 @@ import { Component, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class ProjectsComponent {
-
+  projectList = projects as Project[];
 }
