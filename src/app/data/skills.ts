@@ -14,12 +14,12 @@ export const skillList = [
     {
         icon: 'fas fa-desktop',
         name: 'Web Development',
-        skills: ['Ruby on Rails', 'HTML', 'CSS', 'SCSS', 'JSON', 'XML']
+        skills: ['HTML', 'CSS', 'SCSS', 'Jasmine', 'Karma', 'Ruby on Rails']
     },
     {
         icon: 'fas fa-gears',
         name: 'DevSecOps',
-        skills: ['AWS', 'logstash', 'GitHub Pages', 'GitHub Actions (CI/CD)']
+        skills: ['Amazon Web Services (AWS)', 'ELK Stack (Elasticsearch, Logstash, Beats, Kibana)', 'GitHub Actions (CI/CD)']
     },
     {
         icon: 'fas fa-database',

@@ -9,7 +9,7 @@ export const education = [
       ],
       descriptors: [
         'Current GPA: 4.0 (7/10 classes completed)',
-        'Expected graduation date: December 2023',
+        'Expected graduation date: Spring 2024',
         `Learning valuable project management and leadership skills such as: effective communication, stakeholder management,
         enabling self-starting teams, project and quality management, statistics and metrics, and project finance among others.`
       ],
