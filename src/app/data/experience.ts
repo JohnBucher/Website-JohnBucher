@@ -10,18 +10,21 @@ export const experience = [
           { name: 'Associate Software Engineer', dates: 'July 2018 - August 2020' }
         ],
         descriptors: [
-          `Design, develop, and maintain web-applications used by agencies of the US Government.`,
-          `Work across the applications' Full-Stack to implement features, utilizing a variety of technologies, including Angular,
-            React, Typescript, Java, Spring, Elasticsearch (ELK Stack), and Amazon Web Services (AWS).`,
-          `Act as a program technical lead on many Front-End technologies, such as Angular and React, to create new applications,
-            participate in design sessions, and set coding standards.`,
-          `Lead, perform, and communicate important dependency and baseline upgrades across a multitude of independent
-            applications to ensure transition completion and ease. For example, upgrading the baseline's major version of Angular
-            and identifying and fixing the resulting issues.`,
-          `Serve as Scrum Master of a development team: help to coordinate features and fixes, facilitate developers
-            towards task completion, and collaborate with various cross-functional stakeholders across Lockheed Martin,
-            subcontractors, and the US Government.`,
-          `Continuously learn new technologies and systems as needs arise.`,
+          `Design and develop Full-Stack web-applications used by agencies of the US Government.`,
+          `Serve as Scrum Master of a development team: help to coordinate features and fixes, facilitate developers towards task
+            completion, and collaborate with various cross-functional stakeholders across Lockheed Martin, subcontractors, and the
+            US Government.`,
+          `Built, maintained, and upgraded multiple Angular applications to deliver improved and reliable capabilities to end-users.
+            Worked closely with stakeholders to identify issues and improve user experience in an agile fashion.`,
+          `Implemented and configured the services needed to deploy a new Full-Stack application through Amazon Web Services (AWS),
+            such as EC2, Lambda, and OpenSearch. Ensured a scalable and maintainable environment as well as a smooth transition of app
+            hosting.`,
+          `Created a consolidated monitoring and analytics tool using Elasticsearch (ELK Stack) that collects logs from the system's
+            servers and makes the data explorable in Kibana, thus making the entire system easier to maintain and monitor without deep
+            technical knowledge.`,
+          `Constructed an external-API for system data using Java and Spring, as well as a rate-limiter and proper logging to ensure that
+            previous system performance was not impacted. Allowed for the additional capability of outside entities querying and utilizing
+            our system's data.`,
         ],
         dates: 'July 2018 - Present'
     },
