@@ -8,6 +8,7 @@ My name is John Bucher and I am a Software Engineer specializing in Full Stack W
 ## Project Details
 - Running on Angular 15
 - Implements a Continuous Integration/Continuous Deployment Pipeline through GitHub Actions
-- Deployed to and served on GitHub-Pages
+  - Lints code quality utilizing: ESLint
+  - Runs Unit Tests utilizing: Jasmine and Karma
+  - Deployed to and served on GitHub-Pages
 - Routed to my personal custom domain: [ [johnbucher.me](https://johnbucher.me) ]
-- Utilizes Jasmine and Karma for Unit Testing
