@@ -3,8 +3,8 @@ import { SkillGroup } from '../models/skill-group-model';
 export const skillList = [
     {
         icon: 'fab fa-angular',
-        name: 'Front End Technologies',
-        skills: ['Angular', 'React', 'AngularJS', 'ASP.NET', 'Bootstrap']
+        name: 'Web Development Frameworks',
+        skills: ['Angular', 'React', 'Next.js', 'AngularJS', 'ASP.NET', 'Ruby on Rails']
     },
     {
         icon: 'fab fa-node-js',
@@ -14,7 +14,7 @@ export const skillList = [
     {
         icon: 'fas fa-desktop',
         name: 'Web Development',
-        skills: ['HTML', 'CSS', 'SCSS', 'Jasmine', 'Karma', 'Ruby on Rails']
+        skills: ['HTML', 'CSS', 'SCSS', 'Jasmine', 'Karma', 'Bootstrap']
     },
     {
         icon: 'fas fa-gears',

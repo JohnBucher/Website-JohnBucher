@@ -14,8 +14,8 @@ export const experience = [
           `Serve as Scrum Master of a development team: help to coordinate features and fixes, facilitate developers towards task
             completion, and collaborate with various cross-functional stakeholders across Lockheed Martin, subcontractors, and the
             US Government.`,
-          `Built, maintained, and upgraded multiple Angular applications to deliver improved and reliable capabilities to end-users.
-            Worked closely with stakeholders to identify issues and improve user experience in an agile fashion.`,
+          `Built, maintained, and upgraded multiple Angular and React applications to deliver improved and reliable capabilities to
+            end-users. Worked closely with stakeholders to identify issues and improve user experience in an agile fashion.`,
           `Implemented and configured the services needed to deploy a new Full-Stack application through Amazon Web Services (AWS),
             such as EC2, Lambda, and OpenSearch. Ensured a scalable and maintainable environment as well as a smooth transition of app
             hosting.`,
