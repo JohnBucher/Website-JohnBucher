@@ -49,6 +49,11 @@
     height: 40px;
 }
 
+.p-tooltip {
+    max-width: 50%;
+    white-space: nowrap;
+}
+
 @media(max-width: 991px) {
     /* -- ON SCREEN SIZES SMALLER THAN 992 (Bootstrap lg grid column) -- */
     .timeline-container {
