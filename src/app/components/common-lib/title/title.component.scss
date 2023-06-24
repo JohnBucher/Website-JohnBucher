@@ -1,0 +1,27 @@
+.title-container {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 60px;
+    font-weight: bold;
+    color: var(--component-text-color);
+}
+
+.left, .right {
+    border-top:1px solid var(--component-text-color);
+} .left {
+    margin-left: 30px;
+} .right {
+    margin-right: 30px;
+}
+
+@media(max-width: 991px) {
+    /* -- ON SCREEN SIZES SMALLER THAN 992 (Bootstrap lg grid column) -- */
+    .section-title {
+      font-size: 50px;
+    }
+}

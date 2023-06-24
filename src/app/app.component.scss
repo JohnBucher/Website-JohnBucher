@@ -146,18 +146,6 @@ body .p-sidebar .p-sidebar-close:hover {
   text-align: center;
 }
 
-.section-title {
-  width: 100%;
-  text-align: center;
-  justify-content: center;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 60px;
-  font-weight: bold;
-  background-color: var(--header-background-color);
-  color: var(--header-text-color);
-  margin-bottom: 50px;
-  box-shadow: 1px 1px 30px 1px var(--header-box-shadow-color);
-}
 .sub-section-title {
   font-size: 2rem;
   font-weight: bold;
@@ -208,10 +196,6 @@ body .p-sidebar .p-sidebar-close:hover {
 
 @media(max-width: 991px) {
   /* -- ON SCREEN SIZES SMALLER THAN 992 (Bootstrap lg grid column) -- */
-  .section-title {
-    font-size: 50px;
-  }
-
   .timeline-section {
     margin-left: 0px;
   }
