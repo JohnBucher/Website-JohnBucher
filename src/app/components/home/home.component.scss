@@ -81,9 +81,12 @@
 
   .learn-more {
     position: absolute; 
-    width: 30vw; 
-    bottom: calc(var(--vh, 1vh) * 5); 
-    left: 35vw;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    width: 100%;
+    bottom: calc(var(--vh, 1vh) * 5);
+    color: white;
   }
   .learn-more-text {
     font-size: 18px; 
