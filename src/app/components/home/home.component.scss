@@ -121,6 +121,16 @@
   .headshot-container {
     max-width: 500px !important;
     margin: 0px auto !important;
+    position: relative;
+  }
+
+  @media only screen and (max-width : 600px) {
+    /* On many handheld devices, bottom nav bar impacts screen sizing
+        Area is used for section height BUT is not used in absolute positioning for Learn-More arrow
+        => move content up to make room for Learn-More arrow */
+    .background-container-content {
+      height: calc(var(--vh, 1vh) * 70);
+    }
   }
 
   @media only screen and (max-height : 650px) {
