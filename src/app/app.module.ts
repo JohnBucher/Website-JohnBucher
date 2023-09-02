@@ -20,6 +20,7 @@ import { TimelineComponent } from './components/common-lib/timeline/timeline.com
 import { SkillGroupComponent } from './components/common-lib/skill-group/skill-group.component';
 import { ProjectCardComponent } from './components/common-lib/project-card/project-card.component';
 import { TitleComponent } from './components/common-lib/title/title.component';
+import { CertificateComponent } from './components/common-lib/certificate/certificate.component';
 
 import { ButtonModule } from 'primeng/button';
 import { SidebarModule } from 'primeng/sidebar';
@@ -47,7 +48,8 @@ import { ThemeUtilityService } from './services/theme-utility-service';
     TimelineComponent,
     SkillGroupComponent,
     ProjectCardComponent,
-    TitleComponent
+    TitleComponent,
+    CertificateComponent
   ],
   imports: [
     BrowserModule,

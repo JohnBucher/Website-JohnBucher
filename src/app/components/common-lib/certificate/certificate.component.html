@@ -1,0 +1,15 @@
+
+<div class="row align-items-center">
+    <div class="col-xl-1 col-lg-2 col-md-2 col-5">
+        <a [href]="certificate.verificationUrl" target="_blank"><img [src]="certificate.image" class="certification-image"></a>
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 col-7">
+        {{ certificate.name }}
+    </div>
+    <div class="col-xl-3 col-lg-3 col-md-4 col-5">
+        {{ certificate.issuedBy }}
+    </div>
+    <div class="col-xl-2 col-lg-2 col-md-2 col-7">
+        <span style="font-weight: bold;">Awarded On: </span>{{ certificate.awardedOn }}
+    </div>
+</div>

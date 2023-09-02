@@ -1,5 +1,6 @@
 import { Component, ViewEncapsulation } from '@angular/core';
 import { skillList } from 'src/app/data/skills';
+import { certificates } from '../../data/certificates';
 
 @Component({
   selector: 'app-skills',
@@ -9,5 +10,6 @@ import { skillList } from 'src/app/data/skills';
 })
 export class SkillsComponent {
   public readonly skillData = skillList;
+  public certificateList = certificates;
 
 }

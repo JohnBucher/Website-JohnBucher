@@ -10,14 +10,15 @@
       </div>
     </div>
 
+    <!-- Certificates -->
     <div class="sub-section-title" style="margin-top: 50px;">Certifications</div>
-    <!-- SAFe Scrum Master -->
-    <div class="centered-container">
-      <div class="certification-piece"><img src="./assets/Skills/cert_mark_SSM_small_150px.png" class="certification-image"></div>
-      <div class="certification-piece">SSM</div>
-      <div class="certification-piece">Certified SAFe® 5 Scrum Master</div>
+    <div style="padding-left: 10px; font-size: small;">
+      *Click on a certificate logo to access the associated verification link
     </div>
-    <div class="awarded-on"><span style="font-weight: bold;">Awarded On: </span>Febuary 22, 2021</div>
+    <br />
+    <div *ngFor="let certificate of certificateList" style="padding-bottom: 30px;">
+      <app-certificate [certificate]="certificate"></app-certificate>
+    </div>
 
   </div>
 
