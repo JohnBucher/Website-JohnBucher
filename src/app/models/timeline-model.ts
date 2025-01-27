@@ -1,14 +1,14 @@
 export class TimelineItem {
     image: string;
     name: string;
-    titles: TitleItem[];
+    positions: Position[];
+    dates: string;
+}
+
+export class Position {
+    title: string;
     descriptors: string[];
     dates: string;
 
     showDescriptors ? = false;
-}
-
-export class TitleItem {
-    name: string;
-    dates: string;
 }

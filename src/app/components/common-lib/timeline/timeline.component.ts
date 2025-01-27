@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation, Input } from '@angular/core';
-import { TimelineItem } from '../../../models/timeline-model';
+import { Position, TimelineItem } from '../../../models/timeline-model';
 import { state, style, transition, animate, trigger } from '@angular/animations';
 
 @Component({
@@ -24,10 +24,10 @@ export class TimelineComponent {
   @Input() timelineData: TimelineItem[];
   @Input() descriptorLabel: string;
 
-  public toggleVisibility(item: TimelineItem) {
+  public toggleVisibility(item: Position) {
       item.showDescriptors = !item.showDescriptors;
   }
-  public getDescriptorButtonText(item: TimelineItem): string {
+  public getDescriptorButtonText(item: Position): string {
     return (item.showDescriptors ? 'Hide ' : 'View ') + this.descriptorLabel;
   }
 }

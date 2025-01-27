@@ -9,23 +9,27 @@
                 {{ item.name }}
             </div>
             <div style="margin: 10px 0px;">
-                <div *ngFor="let title of item.titles" style="margin-bottom: 5px;;">
+                <div *ngFor="let position of item.positions" style="margin-bottom: 5px;">
                     <div class="timeline-item-title">
-                        {{ title.name }}
+                        {{ position.title }}
                     </div>
                     <div class="timeline-item-dates">
-                        {{ title.dates }}
+                        {{ position.dates }}
                     </div>
-                </div>
-            </div>
 
-            <button class="timeline-item-button" mat-stroked-button (click)="toggleVisibility(item)" style="margin: 5px 0px 10px 0px;">
-                {{ getDescriptorButtonText(item) }}
-            </button>
+                    <!-- View additional descriptors IF present -->
+                    <div *ngIf="position.descriptors && position.descriptors.length >= 1">
+                        <button class="timeline-item-button" mat-stroked-button (click)="toggleVisibility(position)" style="margin: 5px 0px 10px 0px;">
+                            {{ getDescriptorButtonText(position) }}
+                        </button>
+            
+                        <div [@openClose]="position.showDescriptors ? 'open' : 'closed'" class="timeline-item-descriptor-container">
+                            <div *ngFor="let descriptor of position.descriptors" class="timeline-item-descriptors">
+                                - {{ descriptor }}
+                            </div>
+                        </div>
+                    </div>
 
-            <div [@openClose]="item.showDescriptors ? 'open' : 'closed'" class="timeline-item-descriptor-container">
-                <div *ngFor="let descriptor of item.descriptors" class="timeline-item-descriptors">
-                    - {{ descriptor }}
                 </div>
             </div>
         </div>
