@@ -25,8 +25,8 @@ describe('HomeComponent', () => {
         fixture = TestBed.createComponent(TimelineComponent);
         component = fixture.debugElement.componentInstance;
 
-        component.timelineData = [{name: 'testName', dates: '2000 - 2010', descriptors: [], image: 'testImage',
-            titles: [], showDescriptors: true}];
+        component.timelineData = [{name: 'testName', dates: '2000 - 2010', image: 'testImage',
+            positions:[{title: 'testPosition', dates: '2000 - 2010', descriptors:[], showDescriptors: true}]}];
         component.descriptorLabel = 'Test';
     });
 
@@ -35,13 +35,13 @@ describe('HomeComponent', () => {
     });
 
     it('should call toggleVisibility()', () => {
-        component.toggleVisibility(component.timelineData[0]);
-        expect(component.timelineData[0].showDescriptors).toBeFalsy();
+        component.toggleVisibility(component.timelineData[0].positions[0]);
+        expect(component.timelineData[0].positions[0].showDescriptors).toBeFalsy();
     });
 
     it('should call getDescriptorButtonText()', () => {
-        expect(component.getDescriptorButtonText(component.timelineData[0])).toEqual(`Hide ${component.descriptorLabel}`);
-        component.timelineData[0].showDescriptors = false;
-        expect(component.getDescriptorButtonText(component.timelineData[0])).toEqual(`View ${component.descriptorLabel}`);
+        expect(component.getDescriptorButtonText(component.timelineData[0].positions[0])).toEqual(`Hide ${component.descriptorLabel}`);
+        component.timelineData[0].positions[0].showDescriptors = false;
+        expect(component.getDescriptorButtonText(component.timelineData[0].positions[0])).toEqual(`View ${component.descriptorLabel}`);
     });
 });
