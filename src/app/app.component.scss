@@ -14,8 +14,7 @@
 }
 
 .menu-item {
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding: 10px 0 10px 10px;
   border-bottom: 3px solid var(--sidebar-border-color);
   font-family: 'Roboto Slab', serif;
   font-size: 20px;
@@ -36,6 +35,8 @@
   font-size: 1.25em;
   font-weight: normal;
   color: var(--sidebar-text-color);
+  text-align: center;
+  margin-right: calc(6em + 20px);
 }
 .sidebar-pdf-icon {
   border-bottom: 3px solid var(--sidebar-border-color);
@@ -99,8 +100,15 @@ body .p-sidebar {
   font-weight: bold;
 }
 
+body .p-sidebar .p-sidebar-close {
+  margin: 5px 5px 0 auto;
+}
+
 body .p-sidebar .p-sidebar-close:hover {
   color: var(--sidebar-text-color);
+  background: none;
+  border-radius: 25px;
+  border: 1px solid white;
 }
 
 .p-sidebar-right {
