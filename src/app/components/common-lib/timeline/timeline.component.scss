@@ -35,9 +35,11 @@
     font-size: 14px;
     color: var(--component-text-color) !important;
     border-color: var(--component-text-color) !important;
+    margin: 5px 0px;
 }
 .timeline-item-descriptor-container {
     overflow: hidden;
+    padding-left: 10px;
 }
 .timeline-item-descriptors {
     font-size: 0.85rem;
@@ -47,6 +49,12 @@
 }
 .timeline-item-image {
     height: 40px;
+}
+
+.timeline-position-item {
+    padding: 5px 0px 10px 10px;
+    margin-bottom: 15px;
+    border-left: 1px solid var(--component-text-color);
 }
 
 .p-tooltip {

@@ -9,7 +9,7 @@
                 {{ item.name }}
             </div>
             <div style="margin: 10px 0px;">
-                <div *ngFor="let position of item.positions" style="margin-bottom: 5px;">
+                <div class="timeline-position-item" *ngFor="let position of item.positions">
                     <div class="timeline-item-title">
                         {{ position.title }}
                     </div>
@@ -19,7 +19,7 @@
 
                     <!-- View additional descriptors IF present -->
                     <div *ngIf="position.descriptors && position.descriptors.length >= 1">
-                        <button class="timeline-item-button" mat-stroked-button (click)="toggleVisibility(position)" style="margin: 5px 0px 10px 0px;">
+                        <button class="timeline-item-button" mat-stroked-button (click)="toggleVisibility(position)">
                             {{ getDescriptorButtonText(position) }}
                         </button>
             
@@ -29,7 +29,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
