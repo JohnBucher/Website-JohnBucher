@@ -6,7 +6,7 @@ export const projects = [
       id: '1',
       image: './assets/Projects/Projects-John_Website.PNG',
       tags: [
-        { name: 'Angular (17)', icon: 'fab fa-angular', color: '#c3002f' },
+        { name: 'Angular (18)', icon: 'fab fa-angular', color: '#c3002f' },
         { name: 'Typescript', icon: 'fas fa-code', color: '#2f74c0' },
         { name: 'SASS', icon: 'fas fa-paintbrush', color: '#bf4080' },
         { name: 'Bootstrap', icon: 'fas fa-paintbrush', color: '#702cf6' },
