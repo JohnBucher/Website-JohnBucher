@@ -7,7 +7,7 @@
     (@logoJAnimate.done)="onJLogoAnimationEvent()" width="150" height="150">
   
   <!-- Sidebar -->
-  <p-sidebar [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
+  <p-drawer [(visible)]="display" position="right" [styleClass]="'sideBarStyle'">
     <ng-template pTemplate="header">
       <div class="theme-picker">
         <span class="fas fa-sun" style="margin-top: 5px;"></span>
@@ -36,7 +36,7 @@
       <div class="resume-label" style="margin-left: 8px;">Resume</div>
 
     </div>
-  </p-sidebar>
+  </p-drawer>
 
   <!-- Toolbar -->
   <div class="toolbar drop-shadow" #toolbar>
