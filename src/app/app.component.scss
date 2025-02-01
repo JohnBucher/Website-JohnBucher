@@ -93,25 +93,29 @@ body {
   margin-left: 0px !important;
 }
 
-body .p-sidebar {
+body .p-drawer {
   background-color: var(--sidebar-background-color);
   border: 1px solid var(--sidebar-border-color);
   color: var(--sidebar-text-color);
   font-weight: bold;
 }
 
-body .p-sidebar .p-sidebar-close {
+body .p-drawer-header .closeButton {
   margin: 5px 5px 0 auto;
 }
 
-body .p-sidebar .p-sidebar-close:hover {
-  color: var(--sidebar-text-color);
+body .p-drawer-header .closeButton:hover {
   background: none;
   border-radius: 25px;
-  border: 1px solid white;
+  border: 2px solid white;
+  margin: 3px 3px -2px auto; // Readjust margin to avoid "flickering" due to border's added 2px
 }
 
-.p-sidebar-right {
+body .p-drawer-header .closeButton:hover .p-button-text {
+  color: var(--sidebar-text-color);
+}
+
+.p-drawer-right {
   width: 17rem !important;
 }
 
@@ -120,7 +124,7 @@ body .p-sidebar .p-sidebar-close:hover {
   clear: both;
 }
 
-.p-sidebar .p-sidebar-header {
+.p-drawer .p-drawer-header {
   padding: 0px;
 }
 

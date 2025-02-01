@@ -23,10 +23,12 @@ import { TitleComponent } from './components/common-lib/title/title.component';
 import { CertificateComponent } from './components/common-lib/certificate/certificate.component';
 
 import { ButtonModule } from 'primeng/button';
-import { SidebarModule } from 'primeng/sidebar';
+import { DrawerModule } from 'primeng/drawer';
 import { DialogModule } from 'primeng/dialog';
 import { TooltipModule } from 'primeng/tooltip';
 import { SelectButtonModule } from 'primeng/selectbutton';
+import { providePrimeNG } from 'primeng/config';
+import Aura from '@primeng/themes/aura';
 
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatButtonModule } from '@angular/material/button';
@@ -57,7 +59,7 @@ import { ThemeUtilityService } from './services/theme-utility-service';
     BrowserAnimationsModule,
     FormsModule,
     ButtonModule,
-    SidebarModule,
+    DrawerModule,
     DialogModule,
     TooltipModule,
     SelectButtonModule,
@@ -69,7 +71,13 @@ import { ThemeUtilityService } from './services/theme-utility-service';
   exports: [
     MatProgressBarModule
   ],
-  providers: [],
+  providers: [
+    providePrimeNG({
+      theme: {
+          preset: Aura
+      }
+    })
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
