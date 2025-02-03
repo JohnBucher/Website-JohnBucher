@@ -80,19 +80,35 @@
   }
 
   .learn-more {
-    position: absolute; 
     display: flex;
     flex-flow: column;
     align-items: center;
     width: 100%;
-    bottom: calc(var(--vh, 1vh) * 5);
     color: white;
+    margin-top: calc(var(--vh, 1vh) * 20);
   }
   .learn-more-text {
     font-size: 18px; 
     font-family: 'Titillium Web', sans-serif; 
     font-weight: normal; 
     margin-bottom: 5px;
+  }
+
+  @media only screen and (max-height : 700px) {
+    .learn-more,
+    .learn-more-text {
+      display: none;
+    }
+  }
+  @media only screen and (max-height : 800px) {
+    .learn-more {
+      margin-top: 0px;
+    }
+  }
+  @media only screen and (max-height : 1000px) {
+    .learn-more {
+      margin-top: calc(var(--vh, 1vh) * 10);
+    }
   }
   
   .jb-logo {
@@ -130,13 +146,6 @@
         => move content up to make room for Learn-More arrow */
     .background-container-content {
       height: calc(var(--vh, 1vh) * 70);
-    }
-  }
-
-  @media only screen and (max-height : 700px) {
-    .learn-more,
-    .learn-more-text {
-      display: none;
     }
   }
 
