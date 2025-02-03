@@ -85,7 +85,7 @@
     align-items: center;
     width: 100%;
     color: white;
-    margin-top: calc(var(--vh, 1vh) * 20);
+    margin-top: calc(var(--vh, 1vh) * 10);
   }
   .learn-more-text {
     font-size: 18px; 
@@ -94,20 +94,25 @@
     margin-bottom: 5px;
   }
 
-  @media only screen and (max-height : 700px) {
+  @media only screen and (max-height : 600px) {
+    /* If the screensize is too small vertically => don't even try displaying due to risk of overlapping */
     .learn-more,
     .learn-more-text {
       display: none;
     }
   }
-  @media only screen and (max-height : 800px) {
+  @media only screen and (max-width:600px)  {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    /* smartphones, Android phones, landscape iPhone */
     .learn-more {
       margin-top: 0px;
     }
   }
-  @media only screen and (max-height : 1000px) {
+  @media only screen and (max-height:800px)  {
+    /* smartphones, portrait iPhone, portrait 480x320 phones (Android) */
+    /* smartphones, Android phones, landscape iPhone */
     .learn-more {
-      margin-top: calc(var(--vh, 1vh) * 10);
+      margin-top: calc(var(--vh, 1vh) * 5);
     }
   }
   
