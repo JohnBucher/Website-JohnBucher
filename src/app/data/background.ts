@@ -4,10 +4,9 @@ export const background =
 learning new things and continuously growing and evolving! This website was created to serve as a consolidation and showcase of my
 projects, skills, education, and experience!<br /><br />
 I graduated from Shippensburg University of Pennsylvania in the Spring of 2018 with a Bachelor of Science in Computer Science. I
-graduated Cum Laude and as a member of the Shippensburg Honor's Program. I am currently attending the University of Colorado Boulder
-pursuing a Master of Engineering degree in Engineering Management.<br /><br />
-I am currently working for Lockheed Martin as a Senior Software Engineer in the Space Department. My main duties involve designing,
-developing, and maintaining web-based applications using frameworks and languages such as Angular, React, Typescript, Java, Spring, SQL,
-Elasticsearch (ELK Stack), and Amazon Web Services (AWS) among others. I also act as Scrum Master of my development team
-where I help to coordinate features and fixes, facilitate developers towards task completion, coordinate with other development teams,
-and interface with a variety of cross-functional stakeholders.`;
+graduated Cum Laude and as a member of the Shippensburg Honor's Program. I continued my education by attending the University of
+Colorado Boulder and received a Master of Engineering degree in Engineering Management with a 4.0 GPA.<br /><br />
+I currently work for Lockheed Martin as a Software Engineer Staff in the Enterprise Operations Department. My main duties
+involve designing, developing, and maintaining web-based applications and tools for use by Lockheed Martin employees and programs.
+On a daily basis, I utilize frameworks and languages such as Angular, Java, Spring, AWS, SQL, Elasticsearch, Docker, and Kubernetes
+among others.`;
