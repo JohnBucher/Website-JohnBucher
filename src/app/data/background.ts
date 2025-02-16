@@ -1,8 +1,8 @@
 
 export const background =
-`My name is John Bucher and I am a Software Engineer specializing in Full Stack Web Development with a passion for
-learning new things and continuously growing and evolving! This website was created to serve as a consolidation and showcase of my
-projects, skills, education, and experience!<br /><br />
+`My name is John Bucher and I am a Software Engineer specializing in Full Stack Web Development and Cloud Infrastructure.
+I am currently living and working in Boulder, Colorado. I have with a passion for learning new things and continuously growing
+and evolving! This website was created to serve as a consolidation and showcase of my projects, skills, education, and experience!<br /><br />
 I graduated from Shippensburg University of Pennsylvania in the Spring of 2018 with a Bachelor of Science in Computer Science. I
 graduated Cum Laude and as a member of the Shippensburg Honor's Program. I continued my education by attending the University of
 Colorado Boulder and received a Master of Engineering degree in Engineering Management with a 4.0 GPA.<br /><br />
