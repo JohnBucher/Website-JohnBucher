@@ -19,7 +19,7 @@ export const skillList = [
     {
         icon: 'fas fa-gears',
         name: 'DevSecOps',
-        skills: ['Amazon Web Services (AWS)', 'ELK Stack (Elasticsearch, Logstash, Beats, Kibana)', 'GitHub Actions (CI/CD)']
+        skills: ['Amazon Web Services (AWS)', 'ELK Stack (Elasticsearch, Logstash, Beats, Kibana)', 'GitHub Actions (CI/CD)', 'ArgoCD']
     },
     {
         icon: 'fas fa-database',
@@ -29,7 +29,7 @@ export const skillList = [
     {
         icon: 'fas fa-code',
         name: 'Languages',
-        skills: ['Typescript', 'Javascript', 'Java', 'C#', 'C', 'Ruby', 'PHP']
+        skills: ['Typescript', 'Javascript', 'Java', 'Golang (Go)', 'C#', 'C', 'Ruby', 'PHP']
     },
     {
         icon: 'fas fa-tools',
