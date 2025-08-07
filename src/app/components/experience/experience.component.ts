@@ -3,10 +3,11 @@ import { experience } from 'src/app/data/experience';
 import { TimelineItem } from '../../models/timeline-model';
 
 @Component({
-  selector: 'app-experience',
-  templateUrl: './experience.component.html',
-  styleUrls: ['./experience.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+    selector: 'app-experience',
+    templateUrl: './experience.component.html',
+    styleUrls: ['./experience.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class ExperienceComponent {
   public jobs: TimelineItem[] = experience;

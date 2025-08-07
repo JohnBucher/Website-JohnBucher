@@ -3,64 +3,64 @@ import { trigger, state, style, animate, transition } from '@angular/animations'
 import { ThemeUtilityService } from '../../services/theme-utility-service';
 
 @Component({
-  selector: 'app-home',
-  templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss', '../../app.component.scss'],
-  encapsulation: ViewEncapsulation.None,
-  animations: [
-  // -------------------------------------------------------------------------------------------
-    trigger('JBLogoAnimate', [
-      state('visible', style({ opacity: 1 })),
-      state('invisible', style({ opacity: 0 })),
-      transition('invisible => visible', [
-        animate('500ms 3.15s')
-      ]),
-    ]),
-  // -------------------------------------------------------------------------------------------
-    trigger('LearnMoreAnimation', [
-      state('in', style({ opacity: 1, transform: 'translateY(0%)' })),
-      transition(':enter', [
-        style({ opacity: 0, transform: 'translateY(30%)' }),
-        animate('0.75s 4s ease-in')
-      ]),
-    ]),
-  // -------------------------------------------------------------------------------------------
-  trigger('logoBAnimate', [
-    state('out', style({ opacity: 0, transform: 'translateY(-30%)' })),
-    state('in', style({ opacity: 1, transform: 'translateY(0%)' })),
-    state('resize', style({ opacity: 1, transform: 'scale(0.24, 0.24)', 'transform-origin': 'left top',
-                            'margin-top': '7px', 'margin-left': '20px' })),
-    state('mobile-fade-out', style({ opacity: 0 })),
-    state('disappear', style({ opacity: 0, display: 'none' })),
-
-    transition('out => in', animate('1s 500ms ease-in-out')),
-    transition('in => mobile-fade-out', animate('0.5s 0.5s')),
-    transition('in => resize', animate('0.75s 1s ease-in-out')),
-    transition('resize => disappear', animate('0.5s 0s')),
-  ]),
-  // -------------------------------------------------------------------------------------------
-  trigger('logoJAnimate', [
-    state('out', style({ opacity: 0, transform: 'translateX(-30%)' })),
-    state('in', style({ opacity: 1, transform: 'translateX(0%)' })),
-    state('resize', style({ opacity: 1, transform: 'scale(0.24, 0.24)', 'transform-origin': 'left top',
-                            'margin-top': '7px', 'margin-left': '20px' })),
-    state('mobile-fade-out', style({ opacity: 0 })),
-    state('disappear', style({ opacity: 0, display: 'none' })),
-
-    transition('out => in', animate('1s 500ms ease-in-out')),
-    transition('in => mobile-fade-out', animate('0.5s 0.5s')),
-    transition('in => resize', animate('0.75s 1s ease-in-out')),
-    transition('resize => disappear', animate('0.5s 0s')),
-  ]),
-  // -------------------------------------------------------------------------------------------
-  trigger('maskAnimate', [
-    state('in', style({ opacity: 0, display: 'none' })),
-    transition(':enter', [
-      style({ opacity: 1 }),
-      animate('1s 2.5s ease-in-out')
-    ]),
-  ]),
-]})
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrls: ['./home.component.scss', '../../app.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    animations: [
+        // -------------------------------------------------------------------------------------------
+        trigger('JBLogoAnimate', [
+            state('visible', style({ opacity: 1 })),
+            state('invisible', style({ opacity: 0 })),
+            transition('invisible => visible', [
+                animate('500ms 3.15s')
+            ]),
+        ]),
+        // -------------------------------------------------------------------------------------------
+        trigger('LearnMoreAnimation', [
+            state('in', style({ opacity: 1, transform: 'translateY(0%)' })),
+            transition(':enter', [
+                style({ opacity: 0, transform: 'translateY(30%)' }),
+                animate('0.75s 4s ease-in')
+            ]),
+        ]),
+        // -------------------------------------------------------------------------------------------
+        trigger('logoBAnimate', [
+            state('out', style({ opacity: 0, transform: 'translateY(-30%)' })),
+            state('in', style({ opacity: 1, transform: 'translateY(0%)' })),
+            state('resize', style({ opacity: 1, transform: 'scale(0.24, 0.24)', 'transform-origin': 'left top',
+                'margin-top': '7px', 'margin-left': '20px' })),
+            state('mobile-fade-out', style({ opacity: 0 })),
+            state('disappear', style({ opacity: 0, display: 'none' })),
+            transition('out => in', animate('1s 500ms ease-in-out')),
+            transition('in => mobile-fade-out', animate('0.5s 0.5s')),
+            transition('in => resize', animate('0.75s 1s ease-in-out')),
+            transition('resize => disappear', animate('0.5s 0s')),
+        ]),
+        // -------------------------------------------------------------------------------------------
+        trigger('logoJAnimate', [
+            state('out', style({ opacity: 0, transform: 'translateX(-30%)' })),
+            state('in', style({ opacity: 1, transform: 'translateX(0%)' })),
+            state('resize', style({ opacity: 1, transform: 'scale(0.24, 0.24)', 'transform-origin': 'left top',
+                'margin-top': '7px', 'margin-left': '20px' })),
+            state('mobile-fade-out', style({ opacity: 0 })),
+            state('disappear', style({ opacity: 0, display: 'none' })),
+            transition('out => in', animate('1s 500ms ease-in-out')),
+            transition('in => mobile-fade-out', animate('0.5s 0.5s')),
+            transition('in => resize', animate('0.75s 1s ease-in-out')),
+            transition('resize => disappear', animate('0.5s 0s')),
+        ]),
+        // -------------------------------------------------------------------------------------------
+        trigger('maskAnimate', [
+            state('in', style({ opacity: 0, display: 'none' })),
+            transition(':enter', [
+                style({ opacity: 1 }),
+                animate('1s 2.5s ease-in-out')
+            ]),
+        ]),
+    ],
+    standalone: false
+})
 export class HomeComponent implements OnInit {
   display: boolean;
 

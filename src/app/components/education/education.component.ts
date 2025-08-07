@@ -3,10 +3,11 @@ import { education } from 'src/app/data/education';
 import { TimelineItem } from '../../models/timeline-model';
 
 @Component({
-  selector: 'app-education',
-  templateUrl: './education.component.html',
-  styleUrls: ['./education.component.scss'],
-  encapsulation: ViewEncapsulation.None,
+    selector: 'app-education',
+    templateUrl: './education.component.html',
+    styleUrls: ['./education.component.scss'],
+    encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class EducationComponent {
   schools: TimelineItem[] = education;
