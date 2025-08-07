@@ -5,7 +5,7 @@ import { Component, ViewEncapsulation, Input, AfterViewInit, ChangeDetectorRef }
     templateUrl: './title.component.html',
     styleUrls: ['./title.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    standalone: false
+    standalone: true
 })
 export class TitleComponent implements AfterViewInit {
     @Input() title: string;

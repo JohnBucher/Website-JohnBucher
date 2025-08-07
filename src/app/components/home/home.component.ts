@@ -59,7 +59,7 @@ import { ThemeUtilityService } from '../../services/theme-utility-service';
             ]),
         ]),
     ],
-    standalone: false
+    standalone: true
 })
 export class HomeComponent implements OnInit {
   display: boolean;
