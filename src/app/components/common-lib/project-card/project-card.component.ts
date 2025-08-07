@@ -6,6 +6,7 @@ import { Project } from 'src/app/models/project-model';
     templateUrl: './project-card.component.html',
     styleUrls: ['./project-card.component.scss'],
     encapsulation: ViewEncapsulation.None,
+    standalone: false
 })
 export class ProjectCardComponent {
     @Input() project: Project;
