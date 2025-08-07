@@ -47,6 +47,7 @@ describe('HomeComponent', () => {
 
     it('should call onJLogoAnimationEvent()', () => {
         // DESKTOP
+        component.isMobile = false;
         expect(component.logoJFragmentState).toEqual('out');
         component.onJLogoAnimationEvent();
         expect(component.logoJFragmentState).toEqual('in');
@@ -71,6 +72,7 @@ describe('HomeComponent', () => {
 
     it('should call onBLogoAnimationEvent()', () => {
         // DESKTOP
+        component.isMobile = false;
         expect(component.logoBFragmentState).toEqual('out');
         component.onBLogoAnimationEvent();
         expect(component.logoBFragmentState).toEqual('in');
@@ -91,7 +93,6 @@ describe('HomeComponent', () => {
         component.logoBFragmentState = 'null';
         component.onBLogoAnimationEvent();
         expect(component.logoBFragmentState).toEqual('null');
-
     });
 
     it('should call onJBLogoAnimate()', () => {
