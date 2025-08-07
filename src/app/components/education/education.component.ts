@@ -7,7 +7,7 @@ import { TimelineItem } from '../../models/timeline-model';
     templateUrl: './education.component.html',
     styleUrls: ['./education.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    standalone: false
+    standalone: true
 })
 export class EducationComponent {
   schools: TimelineItem[] = education;

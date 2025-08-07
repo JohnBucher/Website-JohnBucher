@@ -7,7 +7,7 @@ import { TimelineItem } from '../../models/timeline-model';
     templateUrl: './experience.component.html',
     styleUrls: ['./experience.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    standalone: false
+    standalone: true
 })
 export class ExperienceComponent {
   public jobs: TimelineItem[] = experience;

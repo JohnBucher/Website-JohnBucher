@@ -7,7 +7,7 @@ import { certificates } from '../../data/certificates';
     templateUrl: './skills.component.html',
     styleUrls: ['./skills.component.scss', '../../app.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    standalone: false
+    standalone: true
 })
 export class SkillsComponent {
   public readonly skillData = skillList;

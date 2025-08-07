@@ -7,7 +7,7 @@ import { projects } from '../../data/projects';
     templateUrl: './projects.component.html',
     styleUrls: ['./projects.component.scss', '../../app.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    standalone: false
+    standalone: true
 })
 export class ProjectsComponent {
   projectList = projects as Project[];
