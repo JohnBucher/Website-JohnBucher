@@ -14,6 +14,9 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "aot": true,
+            "allowedCommonJsDependencies": [
+              "hammerjs"
+            ],
             "outputPath": {
               "base": "dist/Website-JohnBucher"
             },

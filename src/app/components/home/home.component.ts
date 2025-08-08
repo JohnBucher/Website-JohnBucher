@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, inject, OnInit, ViewEncapsulation } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { ThemeUtilityService } from '../../services/theme-utility-service';
 import { Drawer } from 'primeng/drawer';
@@ -65,14 +65,15 @@ import { MatSlideToggle } from '@angular/material/slide-toggle';
     imports: [Drawer, PrimeTemplate, MatSlideToggle]
 })
 export class HomeComponent implements OnInit {
-  display: boolean;
+  public readonly themeUtilitySvc: ThemeUtilityService = inject(ThemeUtilityService);
 
+  display: boolean;
   logoBFragmentState = 'out';
   logoJFragmentState = 'out';
   jbFullLogoState = 'visible';
   isMobile = false;
 
-  constructor(public readonly themeUtilitySvc: ThemeUtilityService) {
+  constructor() {
     // Detect if the device is mobile to determine what animations to play
     this.isMobile = window.matchMedia('only screen and (max-width: 760px)').matches;
   }
