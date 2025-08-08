@@ -2,7 +2,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { skillList } from 'src/app/data/skills';
 import { certificates } from '../../data/certificates';
 import { TitleComponent } from '../common-lib/title/title.component';
-import { NgFor } from '@angular/common';
 import { SkillGroupComponent } from '../common-lib/skill-group/skill-group.component';
 import { CertificateComponent } from '../common-lib/certificate/certificate.component';
 
@@ -11,7 +10,7 @@ import { CertificateComponent } from '../common-lib/certificate/certificate.comp
     templateUrl: './skills.component.html',
     styleUrls: ['./skills.component.scss', '../../app.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    imports: [TitleComponent, NgFor, SkillGroupComponent, CertificateComponent]
+    imports: [TitleComponent, SkillGroupComponent, CertificateComponent]
 })
 export class SkillsComponent {
   public readonly skillData = skillList;
