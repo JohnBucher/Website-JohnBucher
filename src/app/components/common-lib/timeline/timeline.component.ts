@@ -19,7 +19,7 @@ import { state, style, transition, animate, trigger } from '@angular/animations'
             ])
         ])
     ],
-    standalone: true
+    standalone: false
 })
 export class TimelineComponent {
   @Input() timelineData: TimelineItem[];

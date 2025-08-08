@@ -5,7 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     templateUrl: './research.component.html',
     styleUrls: ['./research.component.scss', '../../app.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    standalone: true
+    standalone: false
 })
 export class ResearchComponent {
   title = '';

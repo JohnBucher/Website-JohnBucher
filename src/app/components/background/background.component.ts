@@ -6,7 +6,7 @@ import { background } from 'src/app/data/background';
     templateUrl: './background.component.html',
     styleUrls: ['./background.component.scss', '../../app.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    standalone: true
+    standalone: false
 })
 export class BackgroundComponent {
   backgroundBlurb = background;
