@@ -37,47 +37,45 @@ import { ThemeUtilityService } from './services/theme-utility-service';
 
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    BackgroundComponent,
-    SkillsComponent,
-    ExperienceComponent,
-    EducationComponent,
-    ProjectsComponent,
-    ResearchComponent,
-    ContactComponent,
-    TimelineComponent,
-    SkillGroupComponent,
-    ProjectCardComponent,
-    TitleComponent,
-    CertificateComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
-    FormsModule,
-    ButtonModule,
-    DrawerModule,
-    DialogModule,
-    TooltipModule,
-    SelectButtonModule,
-    MatProgressBarModule,
-    MatButtonModule,
-    ThemeUtilityService,
-    MatSlideToggleModule
-  ],
-  exports: [
-    MatProgressBarModule
-  ],
-  providers: [
-    providePrimeNG({
-      theme: {
-          preset: Aura
-      }
-    })
-  ],
-  bootstrap: [AppComponent]
+    declarations: [AppComponent],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        BrowserAnimationsModule,
+        FormsModule,
+        ButtonModule,
+        DrawerModule,
+        DialogModule,
+        TooltipModule,
+        SelectButtonModule,
+        MatProgressBarModule,
+        MatButtonModule,
+        ThemeUtilityService,
+        MatSlideToggleModule,
+        HomeComponent,
+        BackgroundComponent,
+        SkillsComponent,
+        ExperienceComponent,
+        EducationComponent,
+        ProjectsComponent,
+        ResearchComponent,
+        ContactComponent,
+        TimelineComponent,
+        SkillGroupComponent,
+        ProjectCardComponent,
+        TitleComponent,
+        CertificateComponent
+    ],
+    exports: [
+        MatProgressBarModule
+    ],
+    providers: [
+        providePrimeNG({
+            theme: {
+                preset: Aura
+            }
+        })
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }

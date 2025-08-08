@@ -8,13 +8,11 @@ describe('HomeComponent', () => {
 
     beforeEach(fakeAsync(() => {
         TestBed.configureTestingModule({
-            declarations: [
-                BackgroundComponent
-            ],
-            schemas: [
-                CUSTOM_ELEMENTS_SCHEMA
-            ]
-        }).compileComponents();
+    imports: [BackgroundComponent],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+    ]
+}).compileComponents();
     }));
 
     beforeEach(() => {
