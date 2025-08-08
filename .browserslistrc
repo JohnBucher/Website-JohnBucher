@@ -4,11 +4,11 @@
 #
 # For IE 9-11 support, please remove 'not' from the last line of the file and adjust as needed
 
-Chrome >= 99
-Firefox >= 99
-Edge >= 79
-Safari >= 13
-iOS >= 13
+Chrome >= 107
+Firefox >= 104
+Edge >= 107
+Safari >= 15.7
+iOS >= 15.9
 
 Firefox ESR
 not dead

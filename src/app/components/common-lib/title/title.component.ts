@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, Input, AfterViewInit, ChangeDetectorRef } from '@angular/core';
+import { Component, ViewEncapsulation, Input, AfterViewInit, ChangeDetectorRef, inject } from '@angular/core';
 
 @Component({
     selector: 'app-title',
@@ -8,12 +8,10 @@ import { Component, ViewEncapsulation, Input, AfterViewInit, ChangeDetectorRef }
 })
 export class TitleComponent implements AfterViewInit {
     @Input() title: string;
+    private readonly cdr: ChangeDetectorRef = inject(ChangeDetectorRef)
 
     public left: string;
     public right: string;
-
-    constructor(private readonly cdr: ChangeDetectorRef) {
-    }
 
     ngAfterViewInit() {
         this.left = `left-${this.title}`;
