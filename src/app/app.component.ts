@@ -4,7 +4,7 @@ import { Component } from '@angular/core';
     selector: 'app-root',
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
-    standalone: true
+    standalone: false
 })
 export class AppComponent {
   title = 'Website-JohnBucher';

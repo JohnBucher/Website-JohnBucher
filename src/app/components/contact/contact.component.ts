@@ -5,7 +5,7 @@ import { Component, ViewEncapsulation } from '@angular/core';
     templateUrl: './contact.component.html',
     styleUrls: ['./contact.component.scss', '../../app.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    standalone: true
+    standalone: false
 })
 export class ContactComponent {
 

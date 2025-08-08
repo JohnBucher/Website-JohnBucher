@@ -5,7 +5,7 @@ import { Certificate } from 'src/app/models/certificate-model';
     selector: 'app-certificate',
     templateUrl: './certificate.component.html',
     encapsulation: ViewEncapsulation.None,
-    standalone: true
+    standalone: false
 })
 export class CertificateComponent {
   @Input() certificate: Certificate;

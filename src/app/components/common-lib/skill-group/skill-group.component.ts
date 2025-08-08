@@ -6,7 +6,7 @@ import { SkillGroup } from 'src/app/models/skill-group-model';
     templateUrl: './skill-group.component.html',
     styleUrls: ['./skill-group.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    standalone: true
+    standalone: false
 })
 export class SkillGroupComponent {
     @Input() skillGroupData: SkillGroup;
