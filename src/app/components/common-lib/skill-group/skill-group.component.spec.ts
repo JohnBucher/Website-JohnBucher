@@ -8,13 +8,11 @@ describe('HomeComponent', () => {
 
     beforeEach(fakeAsync(() => {
         TestBed.configureTestingModule({
-            declarations: [
-                SkillGroupComponent
-            ],
-            schemas: [
-                CUSTOM_ELEMENTS_SCHEMA
-            ]
-        }).compileComponents();
+    imports: [SkillGroupComponent],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+    ]
+}).compileComponents();
     }));
 
     beforeEach(() => {

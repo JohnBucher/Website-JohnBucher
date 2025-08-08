@@ -9,16 +9,14 @@ describe('HomeComponent', () => {
 
     beforeEach(fakeAsync(() => {
         TestBed.configureTestingModule({
-            imports: [
-                BrowserAnimationsModule
-            ],
-            declarations: [
-                TimelineComponent
-            ],
-            schemas: [
-                CUSTOM_ELEMENTS_SCHEMA
-            ]
-        }).compileComponents();
+    imports: [
+        BrowserAnimationsModule,
+        TimelineComponent
+    ],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+    ]
+}).compileComponents();
     }));
 
     beforeEach(() => {

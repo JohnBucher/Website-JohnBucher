@@ -10,19 +10,17 @@ describe('HomeComponent', () => {
 
     beforeEach(fakeAsync(() => {
         TestBed.configureTestingModule({
-            imports: [
-                BrowserAnimationsModule
-            ],
-            declarations: [
-                HomeComponent
-            ],
-            schemas: [
-                CUSTOM_ELEMENTS_SCHEMA
-            ],
-            providers: [
-                ThemeUtilityService
-            ]
-        }).compileComponents();
+    imports: [
+        BrowserAnimationsModule,
+        HomeComponent
+    ],
+    schemas: [
+        CUSTOM_ELEMENTS_SCHEMA
+    ],
+    providers: [
+        ThemeUtilityService
+    ]
+}).compileComponents();
     }));
 
     beforeEach(() => {

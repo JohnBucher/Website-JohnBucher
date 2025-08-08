@@ -1,6 +1,9 @@
 import { Component, ViewEncapsulation, Input } from '@angular/core';
 import { Position, TimelineItem } from '../../../models/timeline-model';
 import { state, style, transition, animate, trigger } from '@angular/animations';
+import { NgFor, NgIf } from '@angular/common';
+import { Tooltip } from 'primeng/tooltip';
+import { MatButton } from '@angular/material/button';
 
 @Component({
     selector: 'app-timeline',
@@ -19,7 +22,7 @@ import { state, style, transition, animate, trigger } from '@angular/animations'
             ])
         ])
     ],
-    standalone: false
+    imports: [NgFor, Tooltip, NgIf, MatButton]
 })
 export class TimelineComponent {
   @Input() timelineData: TimelineItem[];

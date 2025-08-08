@@ -1,11 +1,12 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { TitleComponent } from '../common-lib/title/title.component';
 
 @Component({
     selector: 'app-research',
     templateUrl: './research.component.html',
     styleUrls: ['./research.component.scss', '../../app.component.scss'],
     encapsulation: ViewEncapsulation.None,
-    standalone: false
+    imports: [TitleComponent]
 })
 export class ResearchComponent {
   title = '';

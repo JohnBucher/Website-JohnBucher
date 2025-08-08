@@ -1,6 +1,9 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { trigger, state, style, animate, transition } from '@angular/animations';
 import { ThemeUtilityService } from '../../services/theme-utility-service';
+import { Drawer } from 'primeng/drawer';
+import { PrimeTemplate } from 'primeng/api';
+import { MatSlideToggle } from '@angular/material/slide-toggle';
 
 @Component({
     selector: 'app-home',
@@ -59,7 +62,7 @@ import { ThemeUtilityService } from '../../services/theme-utility-service';
             ]),
         ]),
     ],
-    standalone: false
+    imports: [Drawer, PrimeTemplate, MatSlideToggle]
 })
 export class HomeComponent implements OnInit {
   display: boolean;
