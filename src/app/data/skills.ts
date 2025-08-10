@@ -24,12 +24,12 @@ export const skillList = [
     {
         icon: 'fas fa-database',
         name: 'Databases',
-        skills: ['Elasticsearch', 'SQL', 'SQL Server']
+        skills: ['Elasticsearch', 'PostgreSQL', 'SQL', 'SQL Server']
     },
     {
         icon: 'fas fa-code',
         name: 'Languages',
-        skills: ['Typescript', 'Javascript', 'Java', 'Golang (Go)', 'C#', 'C', 'Ruby', 'PHP']
+        skills: ['Typescript', 'Javascript', 'Java', 'Golang (Go)', 'Python', 'Kotlin', 'C#', 'C', 'Ruby', 'PHP']
     },
     {
         icon: 'fas fa-tools',
