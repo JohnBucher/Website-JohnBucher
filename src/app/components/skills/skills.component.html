@@ -6,7 +6,7 @@
 
     <div class="row">
       @for (skillGroup of skillData; track skillGroup) {
-        <div class="col-xl-3 col-lg-4 col-sm-6">
+        <div class="col-xl-3 col-lg-4 col-sm-6" style="margin-bottom: 15px;">
           <app-skill-group [skillGroupData]="skillGroup" class="skills-background-color"></app-skill-group>
         </div>
       }
