@@ -47,7 +47,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Deploy to AWS S3
-        run: aws s3 sync dist/Website-JohnBucher/browser s3://your-s3-bucket-name --delete # Sync current directory to S3
+        run: aws s3 sync dist/Website-JohnBucher/browser s3://website-john-bucher --delete # Sync current directory to S3
         env:
           AWS_REGION: us-east-1
         
