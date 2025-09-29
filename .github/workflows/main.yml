@@ -50,9 +50,3 @@ jobs:
         run: aws s3 sync dist/Website-JohnBucher/browser s3://website-john-bucher --delete # Sync current directory to S3
         env:
           AWS_REGION: us-east-1
-        
-      - name: Deploy to gh-pages 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: dist/Website-JohnBucher/browser # The folder the action should deploy.
