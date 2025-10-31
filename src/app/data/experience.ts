@@ -10,13 +10,15 @@ export const experience = [
           title: 'Full Stack Software Engineer Staff',
           dates: 'April 2024 - Present',
           descriptors: [
-            `Created and maintained Full-Stack web applications and tools to support internal Lockheed Martin users and programs.`,
-            `Developed Golang and Python microservices to serve as the backend for our applications; deployed functions into AWS Lambda.`,
-            `Worked extensively with AWS Services such as EC2, Lambda, SQS, S3, and RDS to develop for and ensure the stability of our applications.`,
-            `Automated code changes and updates to our running environments through CICD tools such as ArgoCD to deploy code changes to Kubernetes clusters, 
-              Terraform to provision and manage our cloud resources, Renovate to monitor and upgrade dependency versions, and GitLab Pipelines to build, test, 
-              and deploy our various code bases.`,
-            `Became a subject matter expert for our applications and performed presentations and demos for stakeholders of varying roles and technical levels.`
+            `Built and maintained Full Stack web applications and tools used by Lockheed Martin programs and subcontractors.`,
+            `Reduced our program's AWS Cloud costs by ~28%; identified and documented additional savings of ~40%.`,
+            `Identified a gap in capabilities and built a Chrome Extension sidebar using Typescript and HTML. Integrated tool with 
+              internal APIs, automated builds through a CI/CD pipeline, and distributed to select users for testing.`,
+            `Developed microservices in Java/Spring, Golang, and Python; deployed into AWS Lambda or a Kubernetes cluster.`,
+            `Automated code changes and updates to our running environments through CICD tools such as ArgoCD to deploy code
+              changes to Kubernetes clusters, Terraform to provision and manage our AWS Cloud resources, Renovate to monitor
+              and upgrade dependency versions, and GitLab Pipelines to build, test, and deploy our various code bases.`,
+            `Became a Subject Matter Expert on our applications and presented at a Lockheed Martin virtual conference to ~150 people.`
           ]
         },
         {
