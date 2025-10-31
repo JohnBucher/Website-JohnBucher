@@ -38,9 +38,15 @@ jobs:
 
       - name: Build
         run: npm run build:ci
-        
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4 # Or use OIDC configuration
         with:
-          branch: gh-pages # The branch the action should deploy to.
-          folder: dist/Website-JohnBucher/browser # The folder the action should deploy.
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      - name: Deploy to AWS S3
+        run: aws s3 sync dist/Website-JohnBucher/browser s3://website-john-bucher --delete # Sync current directory to S3
+        env:
+          AWS_REGION: us-east-1

@@ -6,7 +6,7 @@ Live at: [johnbucher.me](https://johnbucher.me)
 My name is John Bucher and I am a Software Engineer specializing in Full Stack Web Development with a passion for learning new things and continuously growing and evolving! This website was created to serve as a consolidation and showcase of my projects, skills, education, and experience!
 
 ## Project Details
-- Running on Angular 19
+- Running on Angular v20
 - Implements a Continuous Integration/Continuous Deployment Pipeline through GitHub Actions
   - Lints code quality utilizing: ESLint
   - Runs Unit Tests utilizing: Jasmine and Karma
