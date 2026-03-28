@@ -8,5 +8,5 @@ graduated Cum Laude and as a member of the Shippensburg Honor's Program. I conti
 Colorado Boulder and received a Master of Engineering degree in Engineering Management with a 4.0 GPA.<br /><br />
 I currently work for Lockheed Martin as a Software Engineer Staff in the Enterprise Operations Department. My main duties
 involve designing, developing, and maintaining web-based applications and tools for use by Lockheed Martin employees and programs.
-On a daily basis, I utilize frameworks and languages such as Angular, Java, Spring, AWS, SQL, Elasticsearch, Docker, and Kubernetes
+On a daily basis, I utilize frameworks and languages Angular, Golang, Python, Java/Spring, AWS, Elasticsearch, Docker, and Kubernetes
 among others.`;
